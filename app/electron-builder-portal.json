@@ -1,0 +1,10 @@
+{
+  "win": {
+    "target": [
+      "portable"
+    ]
+  },
+  "portable": {
+    "requestExecutionLevel": "admin"
+  }
+}

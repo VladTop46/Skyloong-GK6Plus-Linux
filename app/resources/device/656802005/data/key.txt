@@ -1,0 +1,121 @@
+{
+        "KeyName": "Page Up",
+        "Show": "Page Up",
+        "LogicCode": 80,
+        "LocationCode": 17,
+        "Position": {
+            "Left": 876,
+            "Top": 156,
+            "Width": 42,
+            "Height": 42
+        }
+    },
+    {
+        "KeyName": "Page Down",
+        "Show": "Page Down",
+        "LogicCode": 83,
+        "LocationCode": 18,
+        "Position": {
+            "Left": 923,
+           "Top": 156,
+            "Width": 42,
+            "Height": 42
+        }
+    },
+    {
+        "KeyName": "Pause Break",
+        "Show": "PB",
+        "LogicCode": 77,
+        "LocationCode": 19,
+        "Position": {
+            "Left": 971,
+            "Top": 156,
+            "Width": 42,
+            "Height": 42
+        }
+    },
+    {
+        "KeyName": "Print Screen",
+        "Show": "PrtSC",
+        "LogicCode": 75,
+        "LocationCode": 20,
+        "Position": {
+            "Left": 1018,
+            "Top": 156,
+            "Width": 42,
+            "Height": 42
+        }
+    },
+     {
+        "KeyName": "Escape up",
+        "Show": "Esc",
+        "LogicCode": 120,
+        "LocationCode": 0,
+        "Position": {
+            "Left": 166,
+            "Top": 163,
+            "Width": 21,
+            "Height": 21
+        }
+    },
+    {
+        "KeyName": "Escape down",
+        "Show": "Esc",
+        "LogicCode": 121,
+        "LocationCode": 0,
+        "Position": {
+            "Left": 178,
+            "Top": 166,
+            "Width": 21,
+            "Height": 21
+        }
+    },
+    {
+        "KeyName": "Escape mute",
+        "Show": "Esc",
+        "LogicCode": 122,
+        "LocationCode": 0,
+        "Position": {
+            "Left": 143,
+            "Top": 166,
+            "Width": 21,
+            "Height": 21
+        }
+    },
+
+     {
+        "KeyName": "Left Space",
+        "Show": "Left Space",
+        "LogicCode": 109,
+        "LocationCode": 114,
+        "Position": {
+            "Left": 320,
+            "Top": 463,
+            "Width": 120,
+            "Height": 41
+        }
+    },
+    {
+        "KeyName": "Middle Space",
+        "Show": "Middle Space",
+        "LogicCode": 110,
+        "LocationCode": 117,
+        "Position": {
+            "Left": 445,
+            "Top": 463,
+            "Width": 95,
+            "Height": 41
+        }
+    },
+    {
+        "KeyName": "Right Space",
+        "Show": "Right Space",
+        "LogicCode": 111,
+        "LocationCode": 119,
+        "Position": {
+            "Left": 543,
+            "Top": 463,
+            "Width": 66,
+            "Height": 41
+        }
+    },

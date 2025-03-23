@@ -1,0 +1,53 @@
+{
+  "name": "GK6xPlus",
+  "productName": "GK6+",
+  "version": "1.0.0.27",
+  "description": "GK6+ serial game keyboard utility",
+  "companyName": "DONGGUAN JIZHIDIANZI Co., LTD",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "debug": "electron-forge start --inspect-electron",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "buildportal": "electron-builder -c electron-builder-portal.json --windows portable",
+    "buildinstaller": "electron-builder -c electron-builder.json --windows"
+  },
+  "keywords": [],
+  "author": "DONGGUAN JIZHIDIANZI Co., LTD",
+  "license": "MIT",
+  "config": {},
+  "build": {
+    "mac": {
+      "target": "default",
+      "arch": [
+        "x64"
+      ]
+    }
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "color-convert": "^2.0.1",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.1.1",
+    "lodash": "^4.17.21",
+    "node-hid": "^2.1.2",
+    "uiohook-napi": "^1.5.0",
+    "usb-detection": "^4.14.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-dmg": "^7.3.0",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "@electron/osx-sign": "^1.0.5",
+    "electron": "22.3.7",
+    "electron-builder": "^23.6.0",
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+left ↑       106
+left ↓       107
+left click   108
+
+right ↑      113
+right ↓      114
+right click  112

@@ -1,0 +1,13 @@
+[{
+	"Name": "GK66",
+	"Type": 1,
+	"GUID": "",
+	"Icon": "defaultcate.png",
+	"IconSrc": "macro_icon_default_folder",
+	"Data": [{
+		"Name": "00",
+		"Type": 0,
+		"GUID": "9A3793A9-013E-4b34-A63A-7DA572985CB4",
+		"Icon": "default.png"
+	}]
+}]

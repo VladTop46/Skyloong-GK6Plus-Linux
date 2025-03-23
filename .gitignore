@@ -1,0 +1,19 @@
+# Игнорирование файла заметок для будущих обновлений
+future_updates.txt
+
+# Игнорирование зависимостей Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Игнорирование логов и временных файлов
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Игнорирование конфигов IDE
+.idea/
+.vscode/
+*.sublime-*

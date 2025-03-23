@@ -1,0 +1,999 @@
+[
+   {
+      "GUID": "2BCE9E32-D806-46d0-A866-3ADAFAFDD7C1",
+      "Name": "Full Red light",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "7D765D1C-64FD-4033-90EA-1556502AA9B5",
+      "Name": "Full Purple Light",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "A606CEF7-17C9-4849-BC2A-CFADD27AF02E",
+      "Name": "Full White Light",
+      "Hidden": "0"
+   },
+   {
+      "GUID": "EAE11DA5-004D-49f9-A5A6-050F00FB9038",
+      "Name": "Full Blue Light",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "61B57825-DEBB-470d-B39A-258888529250",
+      "Name": "Magic Waves",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "96D9DB51-DC2A-4f26-B7F1-CC03C087D0EA",
+      "Name": "White Light Breathing",
+      "Hidden": "0"
+   },
+   {
+      "GUID": "6920D09F-C280-4e97-8734-0054FAD4D770",
+      "Name": "Red Light Breathing",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "CB7DBFD0-2463-4aa7-AAEF-0512BFC1F6A2",
+      "Name": "Blue Light Breathing",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "01BF5484-6303-486e-BD3F-2267B53C3926",
+      "Name": "Green Light Breathing",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "9A5905BC-25AE-46a2-AAF0-25B13BC2BF3B",
+      "Name": "HustleandFlow",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "26C232E5-B89B-4b17-BF1D-75DC61351A93",
+      "Name": "Full Green Light",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "014D58A9-7E44-43c7-BA92-1063623B02DD",
+      "Name": "RGB",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "1B6DB72C-6093-43ac-B4BC-59670CA31696",
+      "Name": "Spectral Cycle",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "7E8488C3-EB93-46a8-B505-F9E95FD67322",
+      "Name": "Windmill",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "B09FC694-4B0E-4fcb-83E7-8EB4A77E566A",
+      "Name": "Rainbow Waves",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "6C3B992C-55C8-4c61-B1D0-1789B9E4A8D9",
+      "Name": "Gradually Bright",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "51FF89E8-8E4D-4fd2-8B26-B1BC7F2BB57E",
+      "Name": "Seasons Like Spring",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "66D1B9F8-888E-4d90-A83F-7FBF61D0EF01",
+      "Name": "Flame",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "71FFEFF4-BB1C-4d13-8FB3-9598C757458E",
+      "Name": "Two poles",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "83D327C0-CB0B-4bdf-AA1D-37C1D81BDD8B",
+      "Name": "Colorful Waterfall",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "186CDCE3-FA12-41d9-9B6D-80F3CA47B360",
+      "Name": "Neon Ribbon",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "586C6562-3006-4c92-8B44-50920FE0C213",
+      "Name": "Drifting Collision",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "6107B7F8-5C91-4ee1-8220-D80C15715710",
+      "Name": "Colored clouds flying",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "C72F3EE5-3B74-4f5e-A2B4-A71D008D2731",
+      "Name": "Colorful Gradient",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "B0239EDC-6B9B-44e4-B2B5-BC0C2297B9C6",
+      "Name": "Waverider",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "908AA962-B0C8-4517-8E61-1E4C106CC4BA",
+      "Name": "Star lighting",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "642A72E2-037D-43cb-9ABD-BD99F0D26DA9",
+      "Name": "6X-F1-F12 Key",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "64D11D2A-B45D-46b5-87A3-49EE65A5F528",
+      "Name": "6X-FN9Key",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "423AA6B6-1D6A-4ec9-8F57-FE9E2F11DA31",
+      "Name": "61 Arrow-Key",
+      "LeCate": 610,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "BDD42643-67BC-4a7b-9019-E2824F718442",
+      "Name": "61-Layer2",
+      "LeCate": 610,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "15AF7F87-B386-466c-9A8F-DD7CD55339D3",
+      "Name": "62 Arrow-Key",
+      "LeCate": 620,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "71775289-0685-4c00-8F80-5E44FF1E173B",
+      "Name": "64 Arrow-key",
+      "LeCate": 640,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "2E9AC818-0C23-41f1-9BA8-B35FBDA3F3E4",
+      "Name": "84-key Spectral Cycle up & down",
+      "LeCate": 840,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "0D9BFF78-3427-4569-8419-D1715CDC06AC",
+      "Name": "84 Arrow-Key",
+      "LeCate": 840,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "081497C1-F999-4c76-A622-B08CD827A58A",
+      "Name": "84 Calculator",
+      "LeCate": 840,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "0051FC09-7093-4320-ADE6-28052EB141F0",
+      "Name": "81-key FN9Key",
+      "LeCate": 810,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "062C401D-A908-4083-9C7E-DC0CB1C93A8E",
+      "Name": "81-key F1-F12",
+      "LeCate": 810,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "7FC41E34-FF7E-4150-B351-07376BC1C6C8",
+      "Name": "81 Arrow-key",
+      "LeCate": 810,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "1272AE09-AC03-424e-81BF-9FE422F30D15",
+      "Name": "68-key Arrow-Key",
+      "LeCate": 680,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "A48178E4-1617-4f57-B31E-191B0B25C898",
+      "Name": "68-key F1-F12",
+      "LeCate": 680,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "188805E0-0322-4fa6-BB84-E9DA9D8CD482",
+      "Name": "68-key FN9Key",
+      "LeCate": 680,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "553A5737-BCB5-4814-BB16-36B7DFE4329E",
+      "Name": "Battle Royale",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "26D4E615-0A05-4208-8295-6E3C333FC98F",
+      "Name": "LOL",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "31EFF8B5-3363-4905-924A-B4FC9D31D084",
+      "Name": "DOTA",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "BB2F8B7D-61F7-46e2-8566-054E95AEB344",
+      "Name": "68 Bluetooth F1-F12",
+      "LeCate": 681,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "99B3BB2B-E973-4544-BC18-25C92A3F1A97",
+      "Name": "68 Bluetooth FN 9 Key",
+      "LeCate": 681,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "9E19B278-3BFC-4e96-9858-61AEB84AF17C",
+      "Name": "68 Bluetooth Arrow-Key",
+      "LeCate": 681,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "806098FC-F845-4187-898E-8A6259EC6326",
+      "Name": "61 Bluetooth Arrow-Key",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "75430B47-A033-4ffa-95E1-41D0DC98393C",
+      "Name": "61 Bluetooth F1-F12",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "6F3292E7-9D9B-4166-99A2-C128DAA7E8E5",
+      "Name": "61 Bluetooth FN 9 Key",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "D621E59B-2AEB-47ea-9CDF-00B9359E810C",
+      "Name": "64 Bluetooth Arrow-key",
+      "LeCate": 641,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "B9221CEB-F80E-408b-B074-EBB615DB93B4",
+      "Name": "64 Bluetooth F1-F12",
+      "LeCate": 641,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "0EEFA343-3E25-4368-A332-665298D91EBD",
+      "Name": "64 Bluetooth FN 9 key",
+      "LeCate": 641,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "C31BE9AC-D417-4572-B242-C3D592E02CE3",
+      "Name": "2LED Full lighting",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "1AD8F682-9629-4991-B7DB-E422C2FCA808",
+      "Name": "Fn1",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "2B229551-3D2C-4cae-AF77-5AFF1CE21CEB",
+      "Name": "64 lighting",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "3651411A-6076-4586-B21F-F3BD42566630",
+      "Name": "Fn3_68",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "304110DE-00A4-4d4a-8A24-CAEA739A0303",
+      "Name": "Fn3_69",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "65F5A876-E4E1-4bd5-9543-781AC3DAC791",
+      "Name": "66 All green & ESC change",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "8201889D-2AE8-4bc0-BE08-899557795A45",
+      "Name": "66 Upper red light & lower green breath",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "65FF33CB-5FD5-4a72-B29A-DF62E6DC7311",
+      "Name": "Fn1_65",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "4E18397D-19A4-419c-8DE7-34FE1DFB8634",
+      "Name": "Fn3_69_66",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "3504C1C0-6EC5-4b6d-A3E5-6A28A279A620",
+      "Name": "66 All lighting",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "9E1D4237-22CA-46e2-8D51-A3945D107825",
+      "Name": "66 Green Breathing On Red_67",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "5DC44DDE-914E-4090-9C21-6FA3E649B449",
+      "Name": "GK66 Rainbow Waves",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "BB3D9CF2-7063-4b37-85B5-B8C9F38D819A",
+      "Name": "GK64S-1",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "72DAFC80-5562-4da1-A2FF-9B1C493D2F3F",
+      "Name": "GK64S-2",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "9026B029-F1D1-4cff-9478-775D082ADBAF",
+      "Name": "GK64S-3",
+      "LeCate": 1320,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "F6686425-3D58-45ea-81F5-047D4CD725B6",
+      "Name": "SK87S-1",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "7F31C6F4-DBAF-4eb6-A2A3-7A6251495F1A",
+      "Name": "SK87S-3",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "D6F9B55C-8B54-485d-8C16-EDCD691D74AE",
+      "Name": "SK87S-Lights all up and down",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "CEDAA65F-E9AB-4ced-BE76-974E4F56DE4B",
+      "Name": "SK87S-RGB Gradient",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "E38935F8-621F-4af9-989F-73F29FE93675",
+      "Name": "SK87S-Pure green",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "0795CBB3-C232-4914-9424-E614E4C9F688",
+      "Name": "SK87S-Up and down RGB transformation",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "51F4BB4C-82D4-442f-913C-715EFF89853C",
+      "Name": "SK87S-Rainbow",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "B3E8785B-EA2B-4ac3-ABCD-0817127C4276",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-1",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "6A7D46FF-324B-4498-ADB4-3043D879EDD5",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-2",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "AD8652EF-155C-4f6c-BA4E-306908DC0584",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-3",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "28832822-89DA-414c-802A-8BED4F944BD4",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-PTIR-1",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "31B50ED2-38A8-4b56-A98D-FAC1516E2E20",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-PTIR-2",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "F39846AE-6897-4b7e-A2C7-A32E1DFDDFD8",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-PTIR-3",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "4EC23E13-4653-49d9-A247-17BC309866BC",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-PTIR-A",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "6C635C54-846F-4539-8AAC-765851E87A10",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-PTIR-B",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "D641AFF3-3BE1-4022-AB1C-0ABD7F55989D",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-PTIR-C",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "46818228-57DF-4d10-86D3-6FBD94E98ECB",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-PTIR-D",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "A311847B-D68B-477c-978E-AD68BB47FDE1",
+      "LeCate": 67,
+      "LeType": "simple",
+      "Name": "SK64/66-PTIR-E",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "77E996FB-044E-4e95-BEF3-1F9D19B994FF",
+      "Name": "Telepathy",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "4C42BDD5-DCFE-4d60-ABE8-7E573C3E1F46",
+      "Name": "SK61S-F1~F12",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "1E0EB05E-DE43-4143-8E41-A3EE9C486B03",
+      "Name": "SK61S-PTIR-1",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "4B8FE201-4B61-4cf7-BBEB-D7B3EDC37326",
+      "Name": "SK61S-PTIR-2",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "48B12B9E-897D-4e50-85E0-883B76C0F88F",
+      "Name": "SK61S-PTIR-3",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "28AA6B77-DDE5-4bba-B3E6-F8DD27C7BCF2",
+      "Name": "SK61S-PTIR-A",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "849A6BA8-7C6F-4cab-BB62-7CEABCFC9E5E",
+      "Name": "SK61S-PTIR-B",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "4ED93DAC-2475-40b2-A77A-AF29A33384EF",
+      "Name": "SK61S-PTIR-C",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {  
+      "GUID": "15AF7F87-B386-466c-9A8F-DD7CD55339D3",
+      "Name": "SK61S-PTIR-D",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "81C77B1C-2585-48ec-B5DD-2EA2E34D43C0",
+      "Name": "61-1",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "84840307-472B-47a6-9C63-466288B2FFD5",	 
+      "Name": "61-2",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "4B912E04-A3EB-4fec-852B-4575FBBF2980",
+      "Name": "61-3",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "4E0380BB-C38B-48ab-A04B-593757E0339B",
+      "Name": "SK84S-PTIR-1",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "B37F7AE1-F791-4780-A302-0D56A9061D21",
+      "Name": "SK84S-PTIR-2",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "1263A412-C744-402a-A3E4-9F81D1071634",
+      "Name": "SK84S-PTIR-3",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "D0E0FEC0-BFDE-48fb-B26E-6A8AFD391B9A",
+      "Name": "SK84S-PTIR-A",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "F6743740-C759-4843-82BA-91584E9ACD90",
+      "Name": "SK84S-PTIR-B",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "D1EE3B44-1F93-46cf-87E6-7D7AC132FD2E",
+      "Name": "SK84S-PTIR-C",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "7AF6BF8E-3D55-46a6-B53D-25F280022967",
+      "Name": "SK84S-PTIR-D",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "1EC1A2B9-A5A8-4c62-9268-B9498E7EF3C7",
+      "Name": "SK84S-PTIR-E",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "96775CA3-3586-4a01-AAE8-1B9C3FE01D5E",
+      "Name": "GK61 Arrow Transition",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "C1FFFBC9-8C6E-4b94-94D5-1F7A449DE57B",
+      "Name": "GK61 Diffusion",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+     "GUID": "0769121D-4ACC-41b8-8E7F-CC8F72F49975",
+      "Name": "GK61 Two-way Arrow Transition",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "8307ED76-71CA-4432-857E-98CCFACD96D3",
+      "Name": "RGB",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "161051F5-6014-454e-9A4F-7A3B67BA905B",
+      "Name": "KB-6-1",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "FA7E0A89-CAF6-4671-8744-41EA0212DDE1",
+      "Name": "KB-6-2",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "4F37A84D-3244-4181-ABF3-6795762A48D6",
+      "Name": "KB-6-A",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "6256FDA1-D694-48b3-B441-0BE885AA88A1",
+      "Name": "KB-6-B",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "48195C54-9E36-4066-A266-85E20527EF83",
+      "Name": "KB-6-C",
+      "LeType": "simple",
+      "LeCate": 870,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "B65A5D44-CF46-4300-9877-8C3822AA9634",
+      "Name": "KB-4-A",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "9C61B688-2411-4c10-AD82-A45519C8C3E3",
+      "Name": "KB-4-B",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "CA020A92-F4FF-4fe1-8B9D-589B4B4F057A",
+      "Name": "KB-4-C",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "C90481D7-B35E-4a4a-83CA-B65798964DDB",
+      "Name": "Gradual",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "2BEFFACF-9539-4ade-AECD-A0E33EC6BEFE",
+      "Name": "Calculator",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "43CE9D4D-E131-4f22-AC36-069DF45C00A6",
+      "Name": "GK73S-1",
+      "LeType": "simple",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "0906FE95-9A1F-443d-A52A-74119DAAA790",
+      "Name": "GK73S-2",
+      "LeType": "simple",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "8C5B3D2E-7C99-42a3-823B-F59BCCB649CE",
+      "Name": "GK73S-3",
+      "LeType": "simple",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "83CB4FFD-895B-484c-8708-8DEAB1D620B5",
+      "Name": "GK68S-1",
+      "LeCate": 67,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "406931D7-3D67-4d0d-AB2C-67DD6B4DFD58",
+      "Name": "GK68S-2",
+      "LeCate": 67,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "FEB949EE-7491-45ea-8D8E-948295DB80EA",
+      "Name": "GK68S-3",
+      "LeCate": 67,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "25EB4826-0858-4e48-BCF0-41813AE9DB23",
+      "Name": "61-Mac",
+      "LeType": "simple",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "45545AC4-B450-4ed5-918D-6AD5F5969F29",
+      "Name": "JK-061-Mac",
+      "LeType": "simple",
+      "LeCate": 611,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "90F1DFED-5C11-438a-A835-74C6E3403524",
+      "Name": "GK96XS-1",
+      "LeType": "simple",
+      "LeCate": 960,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "7710161F-D779-4d9d-AE4E-8F6E5618C82A",
+      "Name": "SK68S-A",
+      "LeType": "simple",
+      "LeCate": 68,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "86F9A695-FD6F-4991-ADDE-D18DE8E982D9",
+      "Name": "SK68S-B",
+      "LeType": "simple",
+      "LeCate": 68,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "037C2AFB-0D92-4941-B026-FC61E4024181",
+      "Name": "SK68S-C",
+      "LeType": "simple",
+      "LeCate": 68,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "A3A23C09-8ACF-45a7-96FD-796EFCDE3FB6",
+      "Name": "SK68S-D",
+      "LeType": "simple",
+      "LeCate": 68,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "EDB0237B-E183-4281-9D82-0D56B005C01D",
+      "Name": "SK71S-B",
+      "LeType": "simple",
+      "LeCate": 71,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "142030C6-F69C-4474-9444-AACC51FE4496",
+      "Name": "SK71S-C",
+      "LeType": "simple",
+      "LeCate": 71,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "A4697BA0-A8A6-489a-AEA8-DF6AFE9469E4",
+      "Name": "SK71S-D",
+      "LeType": "simple",
+      "LeCate": 71,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "4B193D50-EF01-4617-8E7C-8552290EDE76",
+      "Name": "Macice Blue",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "5AF46B12-DE42-4b00-BE66-B2F07626C0BC",
+      "Name": "GK61XS Arrow-Key",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "FA163A21-86B3-45ba-A705-427E1956FC46",
+      "Name": "JK-178-SK87-A",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "2DAF69B8-FEFC-456a-B006-8F57C82EA421",
+      "Name": "JK-178-SK87-B",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "FD73E2A2-1EAB-483e-AD9D-14C6BB21F05F",
+      "Name": "JK-178-SK87-C",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "1BE39DA0-4161-4292-8B43-B626128B74C1",
+      "Name": "GK73-73S Rotating Runner",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "BE88009D-16A3-4fcd-8BB9-99452AEA32BA",
+      "Name": "GK73-73S Spill effect",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "41E19459-784C-4564-9C10-B6D9BA9C6E83",
+      "Name": "GK84/S Spectral Cycle",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "14BC0DEE-E7DA-4896-873D-38CA669D34C6",
+      "Name": "GK84/S Windmill",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "6D18CA10-284D-4266-8113-37794E437543",
+      "Name": "AK63/S Arrow-Key",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "729C0435-D1BB-4816-80F4-DDBA9AC6A05E",
+      "Name": "FIN61/S Arrow-Key",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "DEF006E5-2F0E-4c5c-8A7C-6FB0C6F7F532",
+      "Name": "AC61M-UK Spectral cycle",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "A494ACB6-6A5B-4b2c-9E74-D8ED3DB84C5F",
+      "Name": "AC61M-UK Windmill",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "5E597FE5-111D-4696-8295-D4B5F5DECEFE",
+      "Name": "Spectral cycle 96",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "286E5C34-7EC4-470f-9BDC-D2B456161B66",
+      "Name": "Windmill 96",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "16E57649-83E8-4e78-8EC5-CECB53EE8E36",
+      "Name": "Spectral cycle 68",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "66B14E2F-6627-4671-A9B9-F1470B553FB9",
+      "Name": "Windmill 68",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "B9074D2C-9995-4b07-AA7D-F9DBDFB3ABFE",
+      "Name": "Spectral cycle 61",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "7DC1DC8D-E428-4da4-90D1-43F6E96B5A6A",
+      "Name": "Windmill 61",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "83CD281F-78CD-4c9e-B14A-8AB2B05292CC",
+      "Name": "Spectral cycle 63",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "FBF49CC5-731C-4010-890D-6D82E75B18C8",
+      "Name": "Windmill 63",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "5EE2ED5D-691B-4682-93E6-2B6D45C6BD68",
+      "Name": "Full Magenta light",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "AF4076A4-D303-4eed-B206-6D6A1EEA21FA",
+      "Name": "SpringGreen Light Breathing",
+      "Hidden": "1"
+   },
+   {
+      "GUID": "B9021A9A-311D-4a9f-993A-D0E5B1469E27",
+      "Name": "AK61S-PTIR-A",
+      "LeType": "simple",
+      "LeCate": 61,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "152F294E-E2F1-4e31-BF58-44B7F574A674",
+      "Name": "AK61S-PTIR-B",
+      "LeType": "simple",
+      "LeCate": 61,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "A7117973-E5C5-4fab-A0CF-1C7D08981467",
+      "Name": "SK61SUK-PTIR-A",
+      "LeType": "simple",
+      "LeCate": 61,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "FA70147F-F645-4326-AB5B-D21466F4ADC0",
+      "Name": "SK61SUK-PTIR-B",
+      "LeType": "simple",
+      "LeCate": 61,
+      "Hidden": "1"
+   },
+   {
+      "GUID": "92801CEC-6958-4dc4-A820-088A03C16124",
+      "Name": "White bipolar",
+      "Hidden": "0"
+   },
+   {
+      "GUID": "3C15E295-3CF3-4f81-8EFD-83CB99088C10",
+      "Name": "White treading",
+      "Hidden": "0"
+   },
+   {
+      "GUID": "1794025C-C02E-4937-AA4E-1123B2636928",
+      "Name": "White drift collision",
+      "Hidden": "0"
+   },
+   {
+      "GUID": "4C6552FC-B946-4308-801D-E759BBD0B857",
+      "Name": "Neon980",
+      "Hidden": "1"
+   }]

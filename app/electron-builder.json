@@ -1,0 +1,18 @@
+{
+ 
+  "win": {
+    "target": [
+      "nsis"
+    ],
+    "publisherName": "DONGGUAN JIZHIDIANZI Co., LTD",
+    "certificateFile": "build/semitek.pfx",
+    "certificatePassword": "semitek",
+    "timeStampServer": "http://timestamp.digicert.com/scripts/timstamp.dll"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowToChangeInstallationDirectory": true
+  }
+  
+}

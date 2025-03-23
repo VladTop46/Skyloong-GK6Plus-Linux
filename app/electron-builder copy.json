@@ -1,0 +1,13 @@
+{
+  "win": {
+    "requestedExecutionLevel": "requireAdministrator",
+    "target": [
+      "nsis"
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowToChangeInstallationDirectory": true
+  }
+}

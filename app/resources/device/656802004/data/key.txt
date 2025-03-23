@@ -1,0 +1,87 @@
+
+    {
+        "KeyName": "Delup",
+        "Show": "Del",
+        "LogicCode": 105,
+        "LocationCode": 132,
+        "Position": {
+            "Left": 840,
+            "Top": 155,
+            "Width": 21,
+            "Height": 21
+        }
+    },
+    {
+        "KeyName": "Deldown",
+        "Show": "Del",
+        "LogicCode": 106,
+        "LocationCode": 133,
+        "Position": {
+            "Left": 840,
+            "Top": 175,
+            "Width": 21,
+            "Height": 21
+        }
+    },
+    {
+        "KeyName": "Delmute",
+        "Show": "Del",
+        "LogicCode": 107,
+        "LocationCode": 15,
+        "Position": {
+          "Left": 818,
+            "Top": 155,
+            "Width": 21,
+            "Height": 42
+        }
+    },
+    {
+        "KeyName": "Page Up",
+        "Show": "Page Up",
+        "LogicCode": 81,
+        "LocationCode": 16,
+        "Position": {
+            "Left": 876,
+            "Top": 155,
+            "Width": 42,
+            "Height": 42
+        }
+    },
+    
+    {
+        "KeyName": "Page Down",
+        "Show": "Page Down",
+        "LogicCode": 80,
+        "LocationCode": 17,
+        "Position": {
+            "Left": 923,
+            "Top": 155,
+            "Width": 42,
+            "Height": 42
+        }
+    },
+    {
+        "KeyName": "Pause Break",
+        "Show": "PB",
+        "LogicCode": 83,
+        "LocationCode": 18,
+        "Position": {
+            "Left": 971,
+            "Top": 155,
+            "Width": 42,
+            "Height": 42
+        }
+    },
+
+    {
+        "KeyName": "Print Screen",
+        "Show": "PrtSC",
+        "LogicCode": 75,
+        "LocationCode": 19,
+        "Position": {
+            "Left": 1018,
+            "Top": 155,
+            "Width": 42,
+            "Height": 42
+        }
+    },
