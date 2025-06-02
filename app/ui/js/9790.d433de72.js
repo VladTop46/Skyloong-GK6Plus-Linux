@@ -1,1 +1,124 @@
-(self["webpackChunkkeyboard_driver"]=self["webpackChunkkeyboard_driver"]||[]).push([[9790],{54664:function(e,t,a){t=e.exports=a(54765)(!1),t.push([e.id,"\n.vc-editable-input {\r\n  position: relative;\n}\n.vc-input__input {\r\n  padding: 0;\r\n  border: 0;\r\n  outline: none;\n}\n.vc-input__label {\r\n  text-transform: capitalize;\n}\r\n",""])},19790:function(e,t,a){"use strict";a.r(t),a.d(t,{default:function(){return d}});var n=function(){var e=this,t=e._self._c;return t("div",{staticClass:"vc-editable-input"},[t("input",{directives:[{name:"model",rawName:"v-model",value:e.val,expression:"val"}],ref:"input",staticClass:"vc-input__input",attrs:{"aria-labelledby":e.labelId},domProps:{value:e.val},on:{keydown:e.handleKeyDown,input:[function(t){t.target.composing||(e.val=t.target.value)},e.update]}}),t("span",{staticClass:"vc-input__label",attrs:{for:e.label,id:e.labelId}},[e._v(e._s(e.labelSpanText))])])},l=[],i=(a(34782),a(26099),a(38781),{name:"editableInput",props:{label:String,value:[String,Number],arrowOffset:{type:Number,default:1}},computed:{val:{get(){return this.value},set(e){if(!(void 0!==this.max&&+e>this.max))return e;this.$refs.input.value=this.max}},labelId(){return`input__label__${this.label}__${Math.random().toString().slice(2,5)}`},labelSpanText(){return this.labelText||this.label}},methods:{update(e){this.handleChange(e.target.value)},handleChange(e){var t={};t[this.label]=e,(void 0===t.hex&&void 0===t["#"]||e.length>5)&&this.$emit("change",t)},handleKeyDown(e){var t=this.val,a=Number(t);if(a){var n=this.arrowOffset||1;38===e.keyCode&&(t=a+n,this.handleChange(t),e.preventDefault()),40===e.keyCode&&(t=a-n,this.handleChange(t),e.preventDefault())}}}}),r=i,s=(a(46001),a(14486)),u=(0,s.A)(r,n,l,!1,null,null,null),d=u.exports},46001:function(e,t,a){var n=a(54664);n.__esModule&&(n=n.default),"string"===typeof n&&(n=[[e.id,n,""]]),n.locals&&(e.exports=n.locals);var l=a(70534).A;l("5e5dd18e",n,!0,{})}}]);
+(self["webpackChunkkeyboard_driver"] =
+  self["webpackChunkkeyboard_driver"] || []).push([
+  [9790],
+  {
+    54664: function (e, t, a) {
+      (t = e.exports = a(54765)(!1)),
+        t.push([
+          e.id,
+          "\n.vc-editable-input {\r\n  position: relative;\n}\n.vc-input__input {\r\n  padding: 0;\r\n  border: 0;\r\n  outline: none;\n}\n.vc-input__label {\r\n  text-transform: capitalize;\n}\r\n",
+          "",
+        ]);
+    },
+    19790: function (e, t, a) {
+      "use strict";
+      a.r(t),
+        a.d(t, {
+          default: function () {
+            return d;
+          },
+        });
+      var n = function () {
+          var e = this,
+            t = e._self._c;
+          return t("div", { staticClass: "vc-editable-input" }, [
+            t("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: e.val,
+                  expression: "val",
+                },
+              ],
+              ref: "input",
+              staticClass: "vc-input__input",
+              attrs: { "aria-labelledby": e.labelId },
+              domProps: { value: e.val },
+              on: {
+                keydown: e.handleKeyDown,
+                input: [
+                  function (t) {
+                    t.target.composing || (e.val = t.target.value);
+                  },
+                  e.update,
+                ],
+              },
+            }),
+            t(
+              "span",
+              {
+                staticClass: "vc-input__label",
+                attrs: { for: e.label, id: e.labelId },
+              },
+              [e._v(e._s(e.labelSpanText))],
+            ),
+          ]);
+        },
+        l = [],
+        i =
+          (a(34782),
+          a(26099),
+          a(38781),
+          {
+            name: "editableInput",
+            props: {
+              label: String,
+              value: [String, Number],
+              arrowOffset: { type: Number, default: 1 },
+            },
+            computed: {
+              val: {
+                get() {
+                  return this.value;
+                },
+                set(e) {
+                  if (!(void 0 !== this.max && +e > this.max)) return e;
+                  this.$refs.input.value = this.max;
+                },
+              },
+              labelId() {
+                return `input__label__${this.label}__${Math.random().toString().slice(2, 5)}`;
+              },
+              labelSpanText() {
+                return this.labelText || this.label;
+              },
+            },
+            methods: {
+              update(e) {
+                this.handleChange(e.target.value);
+              },
+              handleChange(e) {
+                var t = {};
+                (t[this.label] = e),
+                  ((void 0 === t.hex && void 0 === t["#"]) || e.length > 5) &&
+                    this.$emit("change", t);
+              },
+              handleKeyDown(e) {
+                var t = this.val,
+                  a = Number(t);
+                if (a) {
+                  var n = this.arrowOffset || 1;
+                  38 === e.keyCode &&
+                    ((t = a + n), this.handleChange(t), e.preventDefault()),
+                    40 === e.keyCode &&
+                      ((t = a - n), this.handleChange(t), e.preventDefault());
+                }
+              },
+            },
+          }),
+        r = i,
+        s = (a(46001), a(14486)),
+        u = (0, s.A)(r, n, l, !1, null, null, null),
+        d = u.exports;
+    },
+    46001: function (e, t, a) {
+      var n = a(54664);
+      n.__esModule && (n = n.default),
+        "string" === typeof n && (n = [[e.id, n, ""]]),
+        n.locals && (e.exports = n.locals);
+      var l = a(70534).A;
+      l("5e5dd18e", n, !0, {});
+    },
+  },
+]);

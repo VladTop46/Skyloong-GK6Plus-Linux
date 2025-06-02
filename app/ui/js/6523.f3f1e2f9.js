@@ -1,1 +1,409 @@
-(self["webpackChunkkeyboard_driver"]=self["webpackChunkkeyboard_driver"]||[]).push([[6523],{69317:function(t,e,r){e=t.exports=r(54765)(!1),e.push([t.id,"\n/* .svg-icon {\n  width: 1em;\n  height: 1em;\n  vertical-align: -0.15em;\n  fill: currentColor;\n  overflow: hidden;\n} */\n.svg-icon[data-v-26a0bc66] {\n  display: inline-block;\n  width: 1em;\n  height: 1em;\n  vertical-align: -0.165em;\n  font-style: normal;\n  line-height: 1;\n}\n.svg-icon__icon[data-v-26a0bc66] {\n  display: block;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  fill: currentColor;\n}\n[id^='icon__']:not([id^='icon__mt-'])\n  [fill][data-v-26a0bc66]:not([fill='none']):not([fill='transparent']) {\n  fill: currentColor;\n}\n[id^='icon__']:not([id^='icon__mt-'])\n  [stroke][data-v-26a0bc66]:not([stroke='none']):not([stroke='transparent']) {\n  stroke: currentColor;\n}\n",""])},33998:function(t,e,r){"use strict";r(2008),r(74423),r(23792),r(62062),r(34782),r(26910),r(26099),r(38781),r(21699),r(23500),r(62953);t=r.hmd(t);var n=function(t){return t.keys().map(t)},i=r(72922);n(i),function(e,n){"function"===typeof define&&r.amdO?define([],n(e)):"object"===typeof exports?t.exports=n(e):e.inlineSVG=n(e)}("undefined"!==typeof r.g?r.g:(void 0).window||(void 0).global,(function(t){var e,r={},n=!!document.querySelector&&!!t.addEventListener,i={initClass:"js-inlinesvg",svgSelector:"img.svg"},o=function(t,e){return function(){if(--t<1)return e.apply(this,arguments)}},a=function t(){var e={},r=!1,n=0,i=arguments.length;"[object Boolean]"===Object.prototype.toString.call(arguments[0])&&(r=arguments[0],n++);for(var o=function(n){for(var i in n)Object.prototype.hasOwnProperty.call(n,i)&&(r&&"[object Object]"===Object.prototype.toString.call(n[i])?e[i]=t(!0,e[i],n[i]):e[i]=n[i])};n<i;n++){var a=arguments[n];o(a)}return e},s=function(){var t=document.querySelectorAll(e.svgSelector);return t},l=function(){return"_"+Math.random().toString(36).substr(2,9)},c=function(t){var r=s(),n=o(r.length,t);Array.prototype.forEach.call(r,(function(t,r){var i=t.src||t.getAttribute("data-src"),o=t.attributes,a=new XMLHttpRequest;a.open("GET",i,!0),a.onload=function(){if(a.status>=200&&a.status<400){var r=new DOMParser,i=r.parseFromString(a.responseText,"text/xml"),s=i.getElementsByTagName("svg")[0];if(s.removeAttribute("xmlns:a"),s.removeAttribute("width"),s.removeAttribute("height"),s.removeAttribute("x"),s.removeAttribute("y"),s.removeAttribute("enable-background"),s.removeAttribute("xmlns:xlink"),s.removeAttribute("xml:space"),s.removeAttribute("version"),Array.prototype.slice.call(o).forEach((function(t){"src"!==t.name&&"alt"!==t.name&&"longdesc"!==t.name&&s.setAttribute(t.name,t.value)})),s.classList?s.classList.add("inlined-svg"):s.setAttribute("class",s.getAttribute("class")+" inlined-svg"),s.setAttribute("role","img"),o.alt){var c=document.createElementNS("http://www.w3.org/2000/svg","title"),u=document.createTextNode(o.alt.value);if(c.setAttribute("id",l()),c.appendChild(u),s.insertBefore(c,s.firstChild),o.id)s.setAttribute("aria-labelledby",o.id.value);else if(!o.id){var d=function(){if(s.getElementsByTagName("title").length>0){var t=s.getElementsByTagName("title")[0].getAttribute("id");return t}return""};s.setAttribute("aria-labelledby",d())}}if(o.alt||(s.setAttribute("aria-hidden","true"),s.setAttribute("role","presentation")),o.longdesc){var f=document.createElementNS("http://www.w3.org/2000/svg","desc"),v=document.createTextNode(o.longdesc.value);f.setAttribute("id",l()),f.appendChild(v),o.alt?s.insertBefore(f,s.firstChild.nextSibling):s.insertBefore(f,s.firstChild);var g=function(){if(s.getElementsByTagName("desc").length>0){var t=s.getElementsByTagName("desc")[0].getAttribute("id");return t}return""};if(o.alt){var h=s.getAttribute("aria-labelledby");s.setAttribute("aria-labelledby",h+=" "+g())}else s.setAttribute("aria-labelledby",g())}t.parentNode&&t.parentNode.replaceChild(s,t),n&&n(e.svgSelector)}else console.error("There was an error retrieving the source of the SVG.")},a.onerror=function(){console.error("There was an error connecting to the origin server.")},a.send()}))};return r.init=function(t,r){n&&(e=a(i,t||{}),c(r||function(){}),document.documentElement.className+=" "+e.initClass)},r}))},86523:function(t,e,r){"use strict";r.r(e),r.d(e,{default:function(){return c}});var n=function(){var t=this,e=t._self._c;return e("i",{class:t.svgClass},[e("svg",{staticClass:"svg-icon__icon",attrs:{"aria-hidden":"true"}},[e("use",{attrs:{"xlink:href":t.iconName}})])])},i=[],o=(r(33998),{name:"svg-icon",props:{name:{type:String},className:{type:String}},computed:{iconName(){return`#icon-${this.name}`},svgClass(){return this.className?`svg-icon ${this.className}`:"svg-icon"}}}),a=o,s=(r(22026),r(14486)),l=(0,s.A)(a,n,i,!1,null,"26a0bc66",null),c=l.exports},22026:function(t,e,r){var n=r(69317);n.__esModule&&(n=n.default),"string"===typeof n&&(n=[[t.id,n,""]]),n.locals&&(t.exports=n.locals);var i=r(70534).A;i("716ceb0e",n,!0,{})},74488:function(t,e,r){"use strict";var n=r(67680),i=Math.floor,o=function(t,e){var r=t.length;if(r<8){var a,s,l=1;while(l<r){s=l,a=t[l];while(s&&e(t[s-1],a)>0)t[s]=t[--s];s!==l++&&(t[s]=a)}}else{var c=i(r/2),u=o(n(t,0,c),e),d=o(n(t,c),e),f=u.length,v=d.length,g=0,h=0;while(g<f||h<v)t[g+h]=g<f&&h<v?e(u[g],d[h])<=0?u[g++]:d[h++]:g<f?u[g++]:d[h++]}return t};t.exports=o},28834:function(t,e,r){"use strict";var n=r(79392),i=n.match(/firefox\/(\d+)/i);t.exports=!!i&&+i[1]},63202:function(t,e,r){"use strict";var n=r(79392);t.exports=/MSIE|Trident/.test(n)},89160:function(t,e,r){"use strict";var n=r(79392),i=n.match(/AppleWebKit\/(\d+)\./);t.exports=!!i&&+i[1]},26910:function(t,e,r){"use strict";var n=r(46518),i=r(79504),o=r(79306),a=r(48981),s=r(26198),l=r(84606),c=r(655),u=r(79039),d=r(74488),f=r(34598),v=r(28834),g=r(63202),h=r(77388),m=r(89160),b=[],p=i(b.sort),y=i(b.push),A=u((function(){b.sort(void 0)})),w=u((function(){b.sort(null)})),x=f("sort"),k=!u((function(){if(h)return h<70;if(!(v&&v>3)){if(g)return!0;if(m)return m<603;var t,e,r,n,i="";for(t=65;t<76;t++){switch(e=String.fromCharCode(t),t){case 66:case 69:case 70:case 72:r=3;break;case 68:case 71:r=4;break;default:r=2}for(n=0;n<47;n++)b.push({k:e+n,v:r})}for(b.sort((function(t,e){return e.v-t.v})),n=0;n<b.length;n++)e=b[n].k.charAt(0),i.charAt(i.length-1)!==e&&(i+=e);return"DGBEFHACIJK"!==i}})),C=A||!w||!x||!k,_=function(t){return function(e,r){return void 0===r?-1:void 0===e?1:void 0!==t?+t(e,r)||0:c(e)>c(r)?1:-1}};n({target:"Array",proto:!0,forced:C},{sort:function(t){void 0!==t&&o(t);var e=a(this);if(k)return void 0===t?p(e):p(e,t);var r,n,i=[],c=s(e);for(n=0;n<c;n++)n in e&&y(i,e[n]);d(i,_(t)),r=s(i),n=0;while(n<r)e[n]=i[n++];while(n<c)l(e,n++);return e}})}}]);
+(self["webpackChunkkeyboard_driver"] =
+  self["webpackChunkkeyboard_driver"] || []).push([
+  [6523],
+  {
+    69317: function (t, e, r) {
+      (e = t.exports = r(54765)(!1)),
+        e.push([
+          t.id,
+          "\n/* .svg-icon {\n  width: 1em;\n  height: 1em;\n  vertical-align: -0.15em;\n  fill: currentColor;\n  overflow: hidden;\n} */\n.svg-icon[data-v-26a0bc66] {\n  display: inline-block;\n  width: 1em;\n  height: 1em;\n  vertical-align: -0.165em;\n  font-style: normal;\n  line-height: 1;\n}\n.svg-icon__icon[data-v-26a0bc66] {\n  display: block;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  fill: currentColor;\n}\n[id^='icon__']:not([id^='icon__mt-'])\n  [fill][data-v-26a0bc66]:not([fill='none']):not([fill='transparent']) {\n  fill: currentColor;\n}\n[id^='icon__']:not([id^='icon__mt-'])\n  [stroke][data-v-26a0bc66]:not([stroke='none']):not([stroke='transparent']) {\n  stroke: currentColor;\n}\n",
+          "",
+        ]);
+    },
+    33998: function (t, e, r) {
+      "use strict";
+      r(2008),
+        r(74423),
+        r(23792),
+        r(62062),
+        r(34782),
+        r(26910),
+        r(26099),
+        r(38781),
+        r(21699),
+        r(23500),
+        r(62953);
+      t = r.hmd(t);
+      var n = function (t) {
+          return t.keys().map(t);
+        },
+        i = r(72922);
+      n(i),
+        (function (e, n) {
+          "function" === typeof define && r.amdO
+            ? define([], n(e))
+            : "object" === typeof exports
+              ? (t.exports = n(e))
+              : (e.inlineSVG = n(e));
+        })(
+          "undefined" !== typeof r.g ? r.g : (void 0).window || (void 0).global,
+          function (t) {
+            var e,
+              r = {},
+              n = !!document.querySelector && !!t.addEventListener,
+              i = { initClass: "js-inlinesvg", svgSelector: "img.svg" },
+              o = function (t, e) {
+                return function () {
+                  if (--t < 1) return e.apply(this, arguments);
+                };
+              },
+              a = function t() {
+                var e = {},
+                  r = !1,
+                  n = 0,
+                  i = arguments.length;
+                "[object Boolean]" ===
+                  Object.prototype.toString.call(arguments[0]) &&
+                  ((r = arguments[0]), n++);
+                for (
+                  var o = function (n) {
+                    for (var i in n)
+                      Object.prototype.hasOwnProperty.call(n, i) &&
+                        (r &&
+                        "[object Object]" ===
+                          Object.prototype.toString.call(n[i])
+                          ? (e[i] = t(!0, e[i], n[i]))
+                          : (e[i] = n[i]));
+                  };
+                  n < i;
+                  n++
+                ) {
+                  var a = arguments[n];
+                  o(a);
+                }
+                return e;
+              },
+              s = function () {
+                var t = document.querySelectorAll(e.svgSelector);
+                return t;
+              },
+              l = function () {
+                return "_" + Math.random().toString(36).substr(2, 9);
+              },
+              c = function (t) {
+                var r = s(),
+                  n = o(r.length, t);
+                Array.prototype.forEach.call(r, function (t, r) {
+                  var i = t.src || t.getAttribute("data-src"),
+                    o = t.attributes,
+                    a = new XMLHttpRequest();
+                  a.open("GET", i, !0),
+                    (a.onload = function () {
+                      if (a.status >= 200 && a.status < 400) {
+                        var r = new DOMParser(),
+                          i = r.parseFromString(a.responseText, "text/xml"),
+                          s = i.getElementsByTagName("svg")[0];
+                        if (
+                          (s.removeAttribute("xmlns:a"),
+                          s.removeAttribute("width"),
+                          s.removeAttribute("height"),
+                          s.removeAttribute("x"),
+                          s.removeAttribute("y"),
+                          s.removeAttribute("enable-background"),
+                          s.removeAttribute("xmlns:xlink"),
+                          s.removeAttribute("xml:space"),
+                          s.removeAttribute("version"),
+                          Array.prototype.slice.call(o).forEach(function (t) {
+                            "src" !== t.name &&
+                              "alt" !== t.name &&
+                              "longdesc" !== t.name &&
+                              s.setAttribute(t.name, t.value);
+                          }),
+                          s.classList
+                            ? s.classList.add("inlined-svg")
+                            : s.setAttribute(
+                                "class",
+                                s.getAttribute("class") + " inlined-svg",
+                              ),
+                          s.setAttribute("role", "img"),
+                          o.alt)
+                        ) {
+                          var c = document.createElementNS(
+                              "http://www.w3.org/2000/svg",
+                              "title",
+                            ),
+                            u = document.createTextNode(o.alt.value);
+                          if (
+                            (c.setAttribute("id", l()),
+                            c.appendChild(u),
+                            s.insertBefore(c, s.firstChild),
+                            o.id)
+                          )
+                            s.setAttribute("aria-labelledby", o.id.value);
+                          else if (!o.id) {
+                            var d = function () {
+                              if (s.getElementsByTagName("title").length > 0) {
+                                var t = s
+                                  .getElementsByTagName("title")[0]
+                                  .getAttribute("id");
+                                return t;
+                              }
+                              return "";
+                            };
+                            s.setAttribute("aria-labelledby", d());
+                          }
+                        }
+                        if (
+                          (o.alt ||
+                            (s.setAttribute("aria-hidden", "true"),
+                            s.setAttribute("role", "presentation")),
+                          o.longdesc)
+                        ) {
+                          var f = document.createElementNS(
+                              "http://www.w3.org/2000/svg",
+                              "desc",
+                            ),
+                            v = document.createTextNode(o.longdesc.value);
+                          f.setAttribute("id", l()),
+                            f.appendChild(v),
+                            o.alt
+                              ? s.insertBefore(f, s.firstChild.nextSibling)
+                              : s.insertBefore(f, s.firstChild);
+                          var g = function () {
+                            if (s.getElementsByTagName("desc").length > 0) {
+                              var t = s
+                                .getElementsByTagName("desc")[0]
+                                .getAttribute("id");
+                              return t;
+                            }
+                            return "";
+                          };
+                          if (o.alt) {
+                            var h = s.getAttribute("aria-labelledby");
+                            s.setAttribute("aria-labelledby", (h += " " + g()));
+                          } else s.setAttribute("aria-labelledby", g());
+                        }
+                        t.parentNode && t.parentNode.replaceChild(s, t),
+                          n && n(e.svgSelector);
+                      } else
+                        console.error(
+                          "There was an error retrieving the source of the SVG.",
+                        );
+                    }),
+                    (a.onerror = function () {
+                      console.error(
+                        "There was an error connecting to the origin server.",
+                      );
+                    }),
+                    a.send();
+                });
+              };
+            return (
+              (r.init = function (t, r) {
+                n &&
+                  ((e = a(i, t || {})),
+                  c(r || function () {}),
+                  (document.documentElement.className += " " + e.initClass));
+              }),
+              r
+            );
+          },
+        );
+    },
+    86523: function (t, e, r) {
+      "use strict";
+      r.r(e),
+        r.d(e, {
+          default: function () {
+            return c;
+          },
+        });
+      var n = function () {
+          var t = this,
+            e = t._self._c;
+          return e("i", { class: t.svgClass }, [
+            e(
+              "svg",
+              {
+                staticClass: "svg-icon__icon",
+                attrs: { "aria-hidden": "true" },
+              },
+              [e("use", { attrs: { "xlink:href": t.iconName } })],
+            ),
+          ]);
+        },
+        i = [],
+        o =
+          (r(33998),
+          {
+            name: "svg-icon",
+            props: { name: { type: String }, className: { type: String } },
+            computed: {
+              iconName() {
+                return `#icon-${this.name}`;
+              },
+              svgClass() {
+                return this.className
+                  ? `svg-icon ${this.className}`
+                  : "svg-icon";
+              },
+            },
+          }),
+        a = o,
+        s = (r(22026), r(14486)),
+        l = (0, s.A)(a, n, i, !1, null, "26a0bc66", null),
+        c = l.exports;
+    },
+    22026: function (t, e, r) {
+      var n = r(69317);
+      n.__esModule && (n = n.default),
+        "string" === typeof n && (n = [[t.id, n, ""]]),
+        n.locals && (t.exports = n.locals);
+      var i = r(70534).A;
+      i("716ceb0e", n, !0, {});
+    },
+    74488: function (t, e, r) {
+      "use strict";
+      var n = r(67680),
+        i = Math.floor,
+        o = function (t, e) {
+          var r = t.length;
+          if (r < 8) {
+            var a,
+              s,
+              l = 1;
+            while (l < r) {
+              (s = l), (a = t[l]);
+              while (s && e(t[s - 1], a) > 0) t[s] = t[--s];
+              s !== l++ && (t[s] = a);
+            }
+          } else {
+            var c = i(r / 2),
+              u = o(n(t, 0, c), e),
+              d = o(n(t, c), e),
+              f = u.length,
+              v = d.length,
+              g = 0,
+              h = 0;
+            while (g < f || h < v)
+              t[g + h] =
+                g < f && h < v
+                  ? e(u[g], d[h]) <= 0
+                    ? u[g++]
+                    : d[h++]
+                  : g < f
+                    ? u[g++]
+                    : d[h++];
+          }
+          return t;
+        };
+      t.exports = o;
+    },
+    28834: function (t, e, r) {
+      "use strict";
+      var n = r(79392),
+        i = n.match(/firefox\/(\d+)/i);
+      t.exports = !!i && +i[1];
+    },
+    63202: function (t, e, r) {
+      "use strict";
+      var n = r(79392);
+      t.exports = /MSIE|Trident/.test(n);
+    },
+    89160: function (t, e, r) {
+      "use strict";
+      var n = r(79392),
+        i = n.match(/AppleWebKit\/(\d+)\./);
+      t.exports = !!i && +i[1];
+    },
+    26910: function (t, e, r) {
+      "use strict";
+      var n = r(46518),
+        i = r(79504),
+        o = r(79306),
+        a = r(48981),
+        s = r(26198),
+        l = r(84606),
+        c = r(655),
+        u = r(79039),
+        d = r(74488),
+        f = r(34598),
+        v = r(28834),
+        g = r(63202),
+        h = r(77388),
+        m = r(89160),
+        b = [],
+        p = i(b.sort),
+        y = i(b.push),
+        A = u(function () {
+          b.sort(void 0);
+        }),
+        w = u(function () {
+          b.sort(null);
+        }),
+        x = f("sort"),
+        k = !u(function () {
+          if (h) return h < 70;
+          if (!(v && v > 3)) {
+            if (g) return !0;
+            if (m) return m < 603;
+            var t,
+              e,
+              r,
+              n,
+              i = "";
+            for (t = 65; t < 76; t++) {
+              switch (((e = String.fromCharCode(t)), t)) {
+                case 66:
+                case 69:
+                case 70:
+                case 72:
+                  r = 3;
+                  break;
+                case 68:
+                case 71:
+                  r = 4;
+                  break;
+                default:
+                  r = 2;
+              }
+              for (n = 0; n < 47; n++) b.push({ k: e + n, v: r });
+            }
+            for (
+              b.sort(function (t, e) {
+                return e.v - t.v;
+              }),
+                n = 0;
+              n < b.length;
+              n++
+            )
+              (e = b[n].k.charAt(0)), i.charAt(i.length - 1) !== e && (i += e);
+            return "DGBEFHACIJK" !== i;
+          }
+        }),
+        C = A || !w || !x || !k,
+        _ = function (t) {
+          return function (e, r) {
+            return void 0 === r
+              ? -1
+              : void 0 === e
+                ? 1
+                : void 0 !== t
+                  ? +t(e, r) || 0
+                  : c(e) > c(r)
+                    ? 1
+                    : -1;
+          };
+        };
+      n(
+        { target: "Array", proto: !0, forced: C },
+        {
+          sort: function (t) {
+            void 0 !== t && o(t);
+            var e = a(this);
+            if (k) return void 0 === t ? p(e) : p(e, t);
+            var r,
+              n,
+              i = [],
+              c = s(e);
+            for (n = 0; n < c; n++) n in e && y(i, e[n]);
+            d(i, _(t)), (r = s(i)), (n = 0);
+            while (n < r) e[n] = i[n++];
+            while (n < c) l(e, n++);
+            return e;
+          },
+        },
+      );
+    },
+  },
+]);

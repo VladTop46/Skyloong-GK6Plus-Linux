@@ -1,1 +1,584 @@
-(self["webpackChunkkeyboard_driver"]=self["webpackChunkkeyboard_driver"]||[]).push([[4766,9659,6516,9267,5880],{41535:function(e,t,r){t=e.exports=r(54765)(!1),t.push([e.id,"\n.rv-content-view {\r\n  position: absolute;\n}\r\n",""])},71685:function(e,t,r){t=e.exports=r(54765)(!1),t.push([e.id,"\n.rv-item {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: relative;\n}\r\n",""])},32415:function(e,t,r){t=e.exports=r(54765)(!1),t.push([e.id,"\n.rv-slider-area {\r\n  position: absolute;\r\n  cursor: nwse-resize;\r\n  z-index: 1;\n}\n.rv-slider-area:hover,\r\n.rv-slider-area:active {\r\n  background: #333;\n}\n.rv-slider-area-left-top {\r\n  top: 0;\r\n  left: 0;\n}\n.rv-slider-area-right-top {\r\n  top: 0;\r\n  right: 0;\r\n  cursor: nesw-resize;\n}\n.rv-slider-area-right-bottom {\r\n  bottom: 0;\r\n  right: 0;\n}\n.rv-slider-area-left-bottom {\r\n  bottom: 0;\r\n  left: 0;\r\n  cursor: nesw-resize;\n}\r\n",""])},75029:function(e,t,r){t=e.exports=r(54765)(!1),t.push([e.id,"\n.rv-slider-bar {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: absolute;\r\n  background: #ccc;\n}\n.rv-slider-bar:hover,\r\n.rv-slider-bar:active {\r\n  background: #999;\n}\n.rv-slider-bar-top,\r\n.rv-slider-bar-top:hover\r\n.rv-slider-bar-top:active\r\n {\r\n  cursor: ns-resize;\n}\n.rv-slider-bar-right,\r\n.rv-slider-bar-right:hover\r\n.rv-slider-bar-right:active\r\n{\r\n  right: 0;\r\n  cursor: ew-resize;\n}\n.rv-slider-bar-bottom,\r\n.rv-slider-bar-bottom:hover,\r\n.rv-slider-bar-bottom:active\r\n{\r\n  bottom: 0;\r\n  cursor: ns-resize;\n}\n.rv-slider-bar-left,\r\n.rv-slider-bar-left:hover\r\n.rv-slider-bar-left:active\r\n{\r\n  cursor: ew-resize;\n}\r\n",""])},45880:function(e,t,r){"use strict";r.r(t),t["default"]={props:{mode:{type:String,default:""},baseWidth:{type:[Number,String],default:"100%"},baseHeight:{type:[Number,String],default:"100%"}},data(){return{width:void 0,height:void 0}},methods:{parseNumberToString(e){var t=e;return"number"===typeof e&&(t=e+"px"),t},onMouseDown(e){this.$emit("mousedown",e,this)},onMouseUp(e){this.$emit("mouseup",e,this)},onMouseEnter(e){this.$emit("mouseenter",e,this)},onMouseOut(e){this.$emit("mouseout",e,this)},onMouseMove(e){this.$emit("mousemove",e,this)},onMouseOver(e){this.$emit("mouseover",e,this)},onMouseWheel(e){this.$emit("mousewheel",e,this)}},computed:{clientWidth(){return this.width,this.$el.clientWidth},clientHeight(){return this.height,this.$el.clientHeight},rect(){return{width:this.parseNumberToString(this.width),height:this.parseNumberToString(this.height)}}},mounted(){this.width=this.baseWidth,this.height=this.baseHeight}}},39659:function(e,t,r){"use strict";r.r(t),r.d(t,{default:function(){return a}});var i=function(){var e=this,t=e._self._c;return t("div",{staticClass:"rv-content-view",style:e.rect,on:{mousedown:e.onMouseDown,mouseup:e.onMouseUp,mouseenter:e.onMouseEnter,mouseout:e.onMouseOut,mousemove:e.onMouseMove,mouseover:e.onMouseOver,mousewheel:e.onMouseWheel}},[e._t("default")],2)},o=[],s=r(45880),n={mixins:[s["default"]],data(){return{leftSliderSize:0,rightSliderSize:0,topSliderSize:0,bottomSliderSize:0}},props:{baseLeftSliderSize:{type:Number,default:0},baseRightSliderSize:{type:Number,default:0},baseTopSliderSize:{type:Number,default:0},baseBottomSliderSize:{type:Number,default:0}},computed:{rect(){return{width:`calc(${this.parseNumberToString(this.width)} - ${this.parseNumberToString(this.leftSliderSize+this.rightSliderSize)})`,height:`calc(${this.parseNumberToString(this.height)} - ${this.parseNumberToString(this.topSliderSize+this.bottomSliderSize)})`,top:this.parseNumberToString(this.topSliderSize),left:this.parseNumberToString(this.leftSliderSize),right:this.parseNumberToString(this.rightSliderSize),bottom:this.parseNumberToString(this.bottomSliderSize)}}},mounted(){this.topSliderSize=this.baseTopSliderSize,this.leftSliderSize=this.baseLeftSliderSize,this.rightSliderSize=this.baseRightSliderSize,this.bottomSliderSize=this.baseBottomSliderSize}},l=n,u=(r(50086),r(14486)),d=(0,u.A)(l,i,o,!1,null,null,null),a=d.exports},34766:function(e,t,r){"use strict";r.r(t),r.d(t,{default:function(){return S}});var i=function(){var e=this,t=e._self._c;return t("div",{staticClass:"rv-item",style:[e.rect,e.minRect],on:{mousedown:e.onMouseDown,mouseup:e.onMouseUp,mouseenter:e.onMouseEnter,mouseout:e.onMouseOut,mousemove:e.onMouseMove,mouseover:e.onMouseOver,mousewheel:e.onMouseWheel}},[t("content-view",{ref:"contentView"},[e._t("default")],2),e._l(e.enabledSliderBarItems,(function(r,i){return t("slider-bar",{key:"bar-"+i,attrs:{mode:r.mode,size:r.size},on:{mousedown:e.onSliderBarMouseDown,mouseup:e.onSliderBarMouseUp,mouseenter:e.onSliderBarMouseEnter,mouseout:e.onSliderBarMouseOut,mousemove:e.onSliderBarMouseMove,mouseover:e.onSliderBarMouseOver,mousewheel:e.onSliderBarMouseWheel}})})),e._l(e.enabledSliderAreaItems,(function(r,i){return t("slider-area",{key:"area-"+i,attrs:{mode:r.mode,baseWidth:r.width,baseHeight:r.height},on:{mousedown:e.onSliderAreaMouseDown,mouseup:e.onSliderAreaMouseUp,mouseenter:e.onSliderAreaMouseEnter,mouseout:e.onSliderAreaMouseOut,mousemove:e.onSliderAreaMouseMove,mouseover:e.onSliderAreaMouseOver,mousewheel:e.onSliderAreaMouseWheel}})}))],2)},o=[],s=(r(74423),r(34782),r(26099),r(21699),r(45880)),n=r(56516),l=r(29267),u=r(39659),d={name:"ResizableItem",mixins:[s["default"]],components:{SliderArea:n["default"],SliderBar:l["default"],ContentView:u["default"]},props:{minWidth:{type:Number,default:0},minHeight:{type:Number,default:0},baseTopSliderSize:{type:Number,default:5},baseRightSliderSize:{type:Number,default:5},baseBottomSliderSize:{type:Number,default:5},baseLeftSliderSize:{type:Number,default:5},baseLeftTopSliderWidth:{type:Number,default:5},baseLeftTopSliderHeight:{type:Number,default:5},baseRightTopSliderWidth:{type:Number,default:5},baseRightTopSliderHeight:{type:Number,default:5},baseRightBottomSliderWidth:{type:Number,default:5},baseRightBottomSliderHeight:{type:Number,default:5},baseLeftBottomSliderWidth:{type:Number,default:5},baseLeftBottomSliderHeight:{type:Number,default:5},sliderBar:{type:[Array,String],default:function(){return"right"},validator:function(e){var t=["none","all","top","right","bottom","left"];return Array.isArray(e)?e.every((function(e){return t.includes(e)})):t.includes(e)}},sliderArea:{type:[Array,String],default:function(){return"none"},validator:function(e){var t=["none","all","left-top","right-top","right-bottom","left-bottom"];return Array.isArray(e)?e.every((function(e){return t.includes(e)})):t.includes(e)}}},data(){return{sliderBarItems:[],sliderAreaItems:[],rightSliderSize:5,bottomSliderSize:5,leftSliderSize:5,topSliderSize:5,leftTopSliderWidth:5,leftTopSliderHeight:5,rightTopSliderWidth:5,rightTopSliderHeight:5,rightBottomSliderWidth:5,rightBottomSliderHeight:5,leftBottomSliderWidth:5,leftBottomSliderHeight:5}},methods:{onSliderBarMouseDown(e,t){this.$emit("sliderbarmousedown",e,t)},onSliderBarMouseUp(e,t){this.$emit("sliderbarmouseup",e,t)},onSliderBarMouseEnter(e,t){this.$emit("sliderbarmouseenter",e,t)},onSliderBarMouseOut(e,t){this.$emit("sliderbarmouseout",e,t)},onSliderBarMouseMove(e,t){this.$emit("sliderbarmousemove",e,t)},onSliderBarMouseOver(e,t){this.$emit("sliderbarmouseover",e,t)},onSliderBarMouseWheel(e,t){this.$emit("sliderbarmousewheel",e,t)},onSliderAreaMouseDown(e,t){this.$emit("sliderareamousedown",e,t)},onSliderAreaMouseUp(e,t){this.$emit("sliderareamouseup",e,t)},onSliderAreaMouseEnter(e,t){this.$emit("sliderareamouseenter",e,t)},onSliderAreaMouseOut(e,t){this.$emit("sliderareamouseout",e,t)},onSliderAreaMouseMove(e,t){this.$emit("sliderareamousemove",e,t)},onSliderAreaMouseOver(e,t){this.$emit("sliderareamouseover",e,t)},onSliderAreaMouseWheel(e,t){this.$emit("sliderareamousewheel",e,t)}},computed:{minRect(){return{minWidth:this.parseNumberToString(this.minWidth),minHeight:this.parseNumberToString(this.minHeight)}},enabledSliderBarItems(){var e=["none","all","top","right","bottom","left"],t=[],r=[];"string"===typeof this.sliderBarItems?r.push(this.sliderBarItems):r=this.sliderBarItems;for(var i=0;i<r.length;i++){var o=r[i];if("none"===o)break;if("all"===o){t=e.slice(2);break}!t.includes(o)&&e.includes(o)&&t.push(o)}for(var s=0;s<t.length;s++){var n=t[s];t[s]={mode:n,size:this[`${n}SliderSize`]}}return t},enabledSliderAreaItems(){var e=["none","all","left-top","right-top","right-bottom","left-bottom"],t=[],r=[];"string"===typeof this.sliderAreaItems?r.push(this.sliderAreaItems):r=this.sliderAreaItems;for(var i=0;i<r.length;i++){var o=r[i];if("none"===o)break;if("all"===o){t=e.slice(2);break}!t.includes(o)&&e.includes(o)&&t.push(o)}for(var s=0;s<t.length;s++){var n=t[s];t[s]={mode:n,width:this[`${n}SliderWidth`],height:this[`${n}SliderHeight`]}}return t}},mounted(){this.sliderBarItems=this.sliderBar,this.sliderAreaItems=this.sliderArea,this.rightSliderSize=this.baseRightSliderSize,this.bottomSliderSize=this.baseBottomSliderSize,this.leftSliderSize=this.baseLeftSliderSize,this.topSliderSize=this.baseTopSliderSize,this.leftTopSliderWidth=this.baseLeftTopSliderWidth,this.leftTopSliderHeight=this.baseLeftTopSliderHeight,this.leftBottomSliderWidth=this.baseLeftBottomSliderWidth,this.leftBottomSliderHeight=this.baseLeftBottomSliderHeight,this.rightTopSliderWidth=this.baseRightTopSliderWidth,this.rightTopSliderHeight=this.baseRightTopSliderHeight,this.rightBottomSliderWidth=this.baseRightBottomSliderWidth,this.rightBottomSliderHeight=this.baseRightBottomSliderHeight;for(var e=this.enabledSliderBarItems,t=0;t<e.length;t++){var r=e[t];this.$refs.contentView[`${r.mode}SliderSize`]=this[`${r.mode}SliderSize`]}}},a=d,h=(r(12836),r(14486)),m=(0,h.A)(a,i,o,!1,null,null,null),S=m.exports},56516:function(e,t,r){"use strict";r.r(t),r.d(t,{default:function(){return a}});var i=function(){var e=this,t=e._self._c;return t("div",{class:["rv-slider-area",`rv-slider-area-${e.mode}`],style:e.rect,on:{mousedown:e.onMouseDown,mouseup:e.onMouseUp,mouseenter:e.onMouseEnter,mouseout:e.onMouseOut,mousemove:e.onMouseMove,mouseover:e.onMouseOver,mousewheel:e.onMouseWheel}},[e._t("default")],2)},o=[],s=r(45880),n={mixins:[s["default"]],props:{mode:{type:String,default:"left-top"},baseWidth:{type:[Number,String],default:5},baseHeight:{type:[Number,String],default:5}}},l=n,u=(r(41592),r(14486)),d=(0,u.A)(l,i,o,!1,null,null,null),a=d.exports},29267:function(e,t,r){"use strict";r.r(t),r.d(t,{default:function(){return a}});var i=function(){var e=this,t=e._self._c;return t("div",{class:["rv-slider-bar",`rv-slider-bar-${e.mode}`],style:e.rect,on:{mousedown:e.onMouseDown,mouseup:e.onMouseUp,mouseenter:e.onMouseEnter,mouseout:e.onMouseOut,mousemove:e.onMouseMove,mouseover:e.onMouseOver,mousewheel:e.onMouseWheel}},[e._t("default")],2)},o=[],s=r(45880),n={mixins:[s["default"]],props:{mode:{type:String,default:"top"},size:{type:[Number,String],default:5}},mounted(){var e=this.parseNumberToString(this.size);switch(this.mode){case"top":case"bottom":this.height=e;break;case"right":case"left":this.width=e;break}}},l=n,u=(r(61440),r(14486)),d=(0,u.A)(l,i,o,!1,null,null,null),a=d.exports},50086:function(e,t,r){var i=r(41535);i.__esModule&&(i=i.default),"string"===typeof i&&(i=[[e.id,i,""]]),i.locals&&(e.exports=i.locals);var o=r(70534).A;o("2142f0aa",i,!0,{})},12836:function(e,t,r){var i=r(71685);i.__esModule&&(i=i.default),"string"===typeof i&&(i=[[e.id,i,""]]),i.locals&&(e.exports=i.locals);var o=r(70534).A;o("ddfe8100",i,!0,{})},41592:function(e,t,r){var i=r(32415);i.__esModule&&(i=i.default),"string"===typeof i&&(i=[[e.id,i,""]]),i.locals&&(e.exports=i.locals);var o=r(70534).A;o("1614fc48",i,!0,{})},61440:function(e,t,r){var i=r(75029);i.__esModule&&(i=i.default),"string"===typeof i&&(i=[[e.id,i,""]]),i.locals&&(e.exports=i.locals);var o=r(70534).A;o("d7bd6728",i,!0,{})}}]);
+(self["webpackChunkkeyboard_driver"] =
+  self["webpackChunkkeyboard_driver"] || []).push([
+  [4766, 9659, 6516, 9267, 5880],
+  {
+    41535: function (e, t, r) {
+      (t = e.exports = r(54765)(!1)),
+        t.push([
+          e.id,
+          "\n.rv-content-view {\r\n  position: absolute;\n}\r\n",
+          "",
+        ]);
+    },
+    71685: function (e, t, r) {
+      (t = e.exports = r(54765)(!1)),
+        t.push([
+          e.id,
+          "\n.rv-item {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: relative;\n}\r\n",
+          "",
+        ]);
+    },
+    32415: function (e, t, r) {
+      (t = e.exports = r(54765)(!1)),
+        t.push([
+          e.id,
+          "\n.rv-slider-area {\r\n  position: absolute;\r\n  cursor: nwse-resize;\r\n  z-index: 1;\n}\n.rv-slider-area:hover,\r\n.rv-slider-area:active {\r\n  background: #333;\n}\n.rv-slider-area-left-top {\r\n  top: 0;\r\n  left: 0;\n}\n.rv-slider-area-right-top {\r\n  top: 0;\r\n  right: 0;\r\n  cursor: nesw-resize;\n}\n.rv-slider-area-right-bottom {\r\n  bottom: 0;\r\n  right: 0;\n}\n.rv-slider-area-left-bottom {\r\n  bottom: 0;\r\n  left: 0;\r\n  cursor: nesw-resize;\n}\r\n",
+          "",
+        ]);
+    },
+    75029: function (e, t, r) {
+      (t = e.exports = r(54765)(!1)),
+        t.push([
+          e.id,
+          "\n.rv-slider-bar {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: absolute;\r\n  background: #ccc;\n}\n.rv-slider-bar:hover,\r\n.rv-slider-bar:active {\r\n  background: #999;\n}\n.rv-slider-bar-top,\r\n.rv-slider-bar-top:hover\r\n.rv-slider-bar-top:active\r\n {\r\n  cursor: ns-resize;\n}\n.rv-slider-bar-right,\r\n.rv-slider-bar-right:hover\r\n.rv-slider-bar-right:active\r\n{\r\n  right: 0;\r\n  cursor: ew-resize;\n}\n.rv-slider-bar-bottom,\r\n.rv-slider-bar-bottom:hover,\r\n.rv-slider-bar-bottom:active\r\n{\r\n  bottom: 0;\r\n  cursor: ns-resize;\n}\n.rv-slider-bar-left,\r\n.rv-slider-bar-left:hover\r\n.rv-slider-bar-left:active\r\n{\r\n  cursor: ew-resize;\n}\r\n",
+          "",
+        ]);
+    },
+    45880: function (e, t, r) {
+      "use strict";
+      r.r(t),
+        (t["default"] = {
+          props: {
+            mode: { type: String, default: "" },
+            baseWidth: { type: [Number, String], default: "100%" },
+            baseHeight: { type: [Number, String], default: "100%" },
+          },
+          data() {
+            return { width: void 0, height: void 0 };
+          },
+          methods: {
+            parseNumberToString(e) {
+              var t = e;
+              return "number" === typeof e && (t = e + "px"), t;
+            },
+            onMouseDown(e) {
+              this.$emit("mousedown", e, this);
+            },
+            onMouseUp(e) {
+              this.$emit("mouseup", e, this);
+            },
+            onMouseEnter(e) {
+              this.$emit("mouseenter", e, this);
+            },
+            onMouseOut(e) {
+              this.$emit("mouseout", e, this);
+            },
+            onMouseMove(e) {
+              this.$emit("mousemove", e, this);
+            },
+            onMouseOver(e) {
+              this.$emit("mouseover", e, this);
+            },
+            onMouseWheel(e) {
+              this.$emit("mousewheel", e, this);
+            },
+          },
+          computed: {
+            clientWidth() {
+              return this.width, this.$el.clientWidth;
+            },
+            clientHeight() {
+              return this.height, this.$el.clientHeight;
+            },
+            rect() {
+              return {
+                width: this.parseNumberToString(this.width),
+                height: this.parseNumberToString(this.height),
+              };
+            },
+          },
+          mounted() {
+            (this.width = this.baseWidth), (this.height = this.baseHeight);
+          },
+        });
+    },
+    39659: function (e, t, r) {
+      "use strict";
+      r.r(t),
+        r.d(t, {
+          default: function () {
+            return a;
+          },
+        });
+      var i = function () {
+          var e = this,
+            t = e._self._c;
+          return t(
+            "div",
+            {
+              staticClass: "rv-content-view",
+              style: e.rect,
+              on: {
+                mousedown: e.onMouseDown,
+                mouseup: e.onMouseUp,
+                mouseenter: e.onMouseEnter,
+                mouseout: e.onMouseOut,
+                mousemove: e.onMouseMove,
+                mouseover: e.onMouseOver,
+                mousewheel: e.onMouseWheel,
+              },
+            },
+            [e._t("default")],
+            2,
+          );
+        },
+        o = [],
+        s = r(45880),
+        n = {
+          mixins: [s["default"]],
+          data() {
+            return {
+              leftSliderSize: 0,
+              rightSliderSize: 0,
+              topSliderSize: 0,
+              bottomSliderSize: 0,
+            };
+          },
+          props: {
+            baseLeftSliderSize: { type: Number, default: 0 },
+            baseRightSliderSize: { type: Number, default: 0 },
+            baseTopSliderSize: { type: Number, default: 0 },
+            baseBottomSliderSize: { type: Number, default: 0 },
+          },
+          computed: {
+            rect() {
+              return {
+                width: `calc(${this.parseNumberToString(this.width)} - ${this.parseNumberToString(this.leftSliderSize + this.rightSliderSize)})`,
+                height: `calc(${this.parseNumberToString(this.height)} - ${this.parseNumberToString(this.topSliderSize + this.bottomSliderSize)})`,
+                top: this.parseNumberToString(this.topSliderSize),
+                left: this.parseNumberToString(this.leftSliderSize),
+                right: this.parseNumberToString(this.rightSliderSize),
+                bottom: this.parseNumberToString(this.bottomSliderSize),
+              };
+            },
+          },
+          mounted() {
+            (this.topSliderSize = this.baseTopSliderSize),
+              (this.leftSliderSize = this.baseLeftSliderSize),
+              (this.rightSliderSize = this.baseRightSliderSize),
+              (this.bottomSliderSize = this.baseBottomSliderSize);
+          },
+        },
+        l = n,
+        u = (r(50086), r(14486)),
+        d = (0, u.A)(l, i, o, !1, null, null, null),
+        a = d.exports;
+    },
+    34766: function (e, t, r) {
+      "use strict";
+      r.r(t),
+        r.d(t, {
+          default: function () {
+            return S;
+          },
+        });
+      var i = function () {
+          var e = this,
+            t = e._self._c;
+          return t(
+            "div",
+            {
+              staticClass: "rv-item",
+              style: [e.rect, e.minRect],
+              on: {
+                mousedown: e.onMouseDown,
+                mouseup: e.onMouseUp,
+                mouseenter: e.onMouseEnter,
+                mouseout: e.onMouseOut,
+                mousemove: e.onMouseMove,
+                mouseover: e.onMouseOver,
+                mousewheel: e.onMouseWheel,
+              },
+            },
+            [
+              t("content-view", { ref: "contentView" }, [e._t("default")], 2),
+              e._l(e.enabledSliderBarItems, function (r, i) {
+                return t("slider-bar", {
+                  key: "bar-" + i,
+                  attrs: { mode: r.mode, size: r.size },
+                  on: {
+                    mousedown: e.onSliderBarMouseDown,
+                    mouseup: e.onSliderBarMouseUp,
+                    mouseenter: e.onSliderBarMouseEnter,
+                    mouseout: e.onSliderBarMouseOut,
+                    mousemove: e.onSliderBarMouseMove,
+                    mouseover: e.onSliderBarMouseOver,
+                    mousewheel: e.onSliderBarMouseWheel,
+                  },
+                });
+              }),
+              e._l(e.enabledSliderAreaItems, function (r, i) {
+                return t("slider-area", {
+                  key: "area-" + i,
+                  attrs: {
+                    mode: r.mode,
+                    baseWidth: r.width,
+                    baseHeight: r.height,
+                  },
+                  on: {
+                    mousedown: e.onSliderAreaMouseDown,
+                    mouseup: e.onSliderAreaMouseUp,
+                    mouseenter: e.onSliderAreaMouseEnter,
+                    mouseout: e.onSliderAreaMouseOut,
+                    mousemove: e.onSliderAreaMouseMove,
+                    mouseover: e.onSliderAreaMouseOver,
+                    mousewheel: e.onSliderAreaMouseWheel,
+                  },
+                });
+              }),
+            ],
+            2,
+          );
+        },
+        o = [],
+        s = (r(74423), r(34782), r(26099), r(21699), r(45880)),
+        n = r(56516),
+        l = r(29267),
+        u = r(39659),
+        d = {
+          name: "ResizableItem",
+          mixins: [s["default"]],
+          components: {
+            SliderArea: n["default"],
+            SliderBar: l["default"],
+            ContentView: u["default"],
+          },
+          props: {
+            minWidth: { type: Number, default: 0 },
+            minHeight: { type: Number, default: 0 },
+            baseTopSliderSize: { type: Number, default: 5 },
+            baseRightSliderSize: { type: Number, default: 5 },
+            baseBottomSliderSize: { type: Number, default: 5 },
+            baseLeftSliderSize: { type: Number, default: 5 },
+            baseLeftTopSliderWidth: { type: Number, default: 5 },
+            baseLeftTopSliderHeight: { type: Number, default: 5 },
+            baseRightTopSliderWidth: { type: Number, default: 5 },
+            baseRightTopSliderHeight: { type: Number, default: 5 },
+            baseRightBottomSliderWidth: { type: Number, default: 5 },
+            baseRightBottomSliderHeight: { type: Number, default: 5 },
+            baseLeftBottomSliderWidth: { type: Number, default: 5 },
+            baseLeftBottomSliderHeight: { type: Number, default: 5 },
+            sliderBar: {
+              type: [Array, String],
+              default: function () {
+                return "right";
+              },
+              validator: function (e) {
+                var t = ["none", "all", "top", "right", "bottom", "left"];
+                return Array.isArray(e)
+                  ? e.every(function (e) {
+                      return t.includes(e);
+                    })
+                  : t.includes(e);
+              },
+            },
+            sliderArea: {
+              type: [Array, String],
+              default: function () {
+                return "none";
+              },
+              validator: function (e) {
+                var t = [
+                  "none",
+                  "all",
+                  "left-top",
+                  "right-top",
+                  "right-bottom",
+                  "left-bottom",
+                ];
+                return Array.isArray(e)
+                  ? e.every(function (e) {
+                      return t.includes(e);
+                    })
+                  : t.includes(e);
+              },
+            },
+          },
+          data() {
+            return {
+              sliderBarItems: [],
+              sliderAreaItems: [],
+              rightSliderSize: 5,
+              bottomSliderSize: 5,
+              leftSliderSize: 5,
+              topSliderSize: 5,
+              leftTopSliderWidth: 5,
+              leftTopSliderHeight: 5,
+              rightTopSliderWidth: 5,
+              rightTopSliderHeight: 5,
+              rightBottomSliderWidth: 5,
+              rightBottomSliderHeight: 5,
+              leftBottomSliderWidth: 5,
+              leftBottomSliderHeight: 5,
+            };
+          },
+          methods: {
+            onSliderBarMouseDown(e, t) {
+              this.$emit("sliderbarmousedown", e, t);
+            },
+            onSliderBarMouseUp(e, t) {
+              this.$emit("sliderbarmouseup", e, t);
+            },
+            onSliderBarMouseEnter(e, t) {
+              this.$emit("sliderbarmouseenter", e, t);
+            },
+            onSliderBarMouseOut(e, t) {
+              this.$emit("sliderbarmouseout", e, t);
+            },
+            onSliderBarMouseMove(e, t) {
+              this.$emit("sliderbarmousemove", e, t);
+            },
+            onSliderBarMouseOver(e, t) {
+              this.$emit("sliderbarmouseover", e, t);
+            },
+            onSliderBarMouseWheel(e, t) {
+              this.$emit("sliderbarmousewheel", e, t);
+            },
+            onSliderAreaMouseDown(e, t) {
+              this.$emit("sliderareamousedown", e, t);
+            },
+            onSliderAreaMouseUp(e, t) {
+              this.$emit("sliderareamouseup", e, t);
+            },
+            onSliderAreaMouseEnter(e, t) {
+              this.$emit("sliderareamouseenter", e, t);
+            },
+            onSliderAreaMouseOut(e, t) {
+              this.$emit("sliderareamouseout", e, t);
+            },
+            onSliderAreaMouseMove(e, t) {
+              this.$emit("sliderareamousemove", e, t);
+            },
+            onSliderAreaMouseOver(e, t) {
+              this.$emit("sliderareamouseover", e, t);
+            },
+            onSliderAreaMouseWheel(e, t) {
+              this.$emit("sliderareamousewheel", e, t);
+            },
+          },
+          computed: {
+            minRect() {
+              return {
+                minWidth: this.parseNumberToString(this.minWidth),
+                minHeight: this.parseNumberToString(this.minHeight),
+              };
+            },
+            enabledSliderBarItems() {
+              var e = ["none", "all", "top", "right", "bottom", "left"],
+                t = [],
+                r = [];
+              "string" === typeof this.sliderBarItems
+                ? r.push(this.sliderBarItems)
+                : (r = this.sliderBarItems);
+              for (var i = 0; i < r.length; i++) {
+                var o = r[i];
+                if ("none" === o) break;
+                if ("all" === o) {
+                  t = e.slice(2);
+                  break;
+                }
+                !t.includes(o) && e.includes(o) && t.push(o);
+              }
+              for (var s = 0; s < t.length; s++) {
+                var n = t[s];
+                t[s] = { mode: n, size: this[`${n}SliderSize`] };
+              }
+              return t;
+            },
+            enabledSliderAreaItems() {
+              var e = [
+                  "none",
+                  "all",
+                  "left-top",
+                  "right-top",
+                  "right-bottom",
+                  "left-bottom",
+                ],
+                t = [],
+                r = [];
+              "string" === typeof this.sliderAreaItems
+                ? r.push(this.sliderAreaItems)
+                : (r = this.sliderAreaItems);
+              for (var i = 0; i < r.length; i++) {
+                var o = r[i];
+                if ("none" === o) break;
+                if ("all" === o) {
+                  t = e.slice(2);
+                  break;
+                }
+                !t.includes(o) && e.includes(o) && t.push(o);
+              }
+              for (var s = 0; s < t.length; s++) {
+                var n = t[s];
+                t[s] = {
+                  mode: n,
+                  width: this[`${n}SliderWidth`],
+                  height: this[`${n}SliderHeight`],
+                };
+              }
+              return t;
+            },
+          },
+          mounted() {
+            (this.sliderBarItems = this.sliderBar),
+              (this.sliderAreaItems = this.sliderArea),
+              (this.rightSliderSize = this.baseRightSliderSize),
+              (this.bottomSliderSize = this.baseBottomSliderSize),
+              (this.leftSliderSize = this.baseLeftSliderSize),
+              (this.topSliderSize = this.baseTopSliderSize),
+              (this.leftTopSliderWidth = this.baseLeftTopSliderWidth),
+              (this.leftTopSliderHeight = this.baseLeftTopSliderHeight),
+              (this.leftBottomSliderWidth = this.baseLeftBottomSliderWidth),
+              (this.leftBottomSliderHeight = this.baseLeftBottomSliderHeight),
+              (this.rightTopSliderWidth = this.baseRightTopSliderWidth),
+              (this.rightTopSliderHeight = this.baseRightTopSliderHeight),
+              (this.rightBottomSliderWidth = this.baseRightBottomSliderWidth),
+              (this.rightBottomSliderHeight = this.baseRightBottomSliderHeight);
+            for (var e = this.enabledSliderBarItems, t = 0; t < e.length; t++) {
+              var r = e[t];
+              this.$refs.contentView[`${r.mode}SliderSize`] =
+                this[`${r.mode}SliderSize`];
+            }
+          },
+        },
+        a = d,
+        h = (r(12836), r(14486)),
+        m = (0, h.A)(a, i, o, !1, null, null, null),
+        S = m.exports;
+    },
+    56516: function (e, t, r) {
+      "use strict";
+      r.r(t),
+        r.d(t, {
+          default: function () {
+            return a;
+          },
+        });
+      var i = function () {
+          var e = this,
+            t = e._self._c;
+          return t(
+            "div",
+            {
+              class: ["rv-slider-area", `rv-slider-area-${e.mode}`],
+              style: e.rect,
+              on: {
+                mousedown: e.onMouseDown,
+                mouseup: e.onMouseUp,
+                mouseenter: e.onMouseEnter,
+                mouseout: e.onMouseOut,
+                mousemove: e.onMouseMove,
+                mouseover: e.onMouseOver,
+                mousewheel: e.onMouseWheel,
+              },
+            },
+            [e._t("default")],
+            2,
+          );
+        },
+        o = [],
+        s = r(45880),
+        n = {
+          mixins: [s["default"]],
+          props: {
+            mode: { type: String, default: "left-top" },
+            baseWidth: { type: [Number, String], default: 5 },
+            baseHeight: { type: [Number, String], default: 5 },
+          },
+        },
+        l = n,
+        u = (r(41592), r(14486)),
+        d = (0, u.A)(l, i, o, !1, null, null, null),
+        a = d.exports;
+    },
+    29267: function (e, t, r) {
+      "use strict";
+      r.r(t),
+        r.d(t, {
+          default: function () {
+            return a;
+          },
+        });
+      var i = function () {
+          var e = this,
+            t = e._self._c;
+          return t(
+            "div",
+            {
+              class: ["rv-slider-bar", `rv-slider-bar-${e.mode}`],
+              style: e.rect,
+              on: {
+                mousedown: e.onMouseDown,
+                mouseup: e.onMouseUp,
+                mouseenter: e.onMouseEnter,
+                mouseout: e.onMouseOut,
+                mousemove: e.onMouseMove,
+                mouseover: e.onMouseOver,
+                mousewheel: e.onMouseWheel,
+              },
+            },
+            [e._t("default")],
+            2,
+          );
+        },
+        o = [],
+        s = r(45880),
+        n = {
+          mixins: [s["default"]],
+          props: {
+            mode: { type: String, default: "top" },
+            size: { type: [Number, String], default: 5 },
+          },
+          mounted() {
+            var e = this.parseNumberToString(this.size);
+            switch (this.mode) {
+              case "top":
+              case "bottom":
+                this.height = e;
+                break;
+              case "right":
+              case "left":
+                this.width = e;
+                break;
+            }
+          },
+        },
+        l = n,
+        u = (r(61440), r(14486)),
+        d = (0, u.A)(l, i, o, !1, null, null, null),
+        a = d.exports;
+    },
+    50086: function (e, t, r) {
+      var i = r(41535);
+      i.__esModule && (i = i.default),
+        "string" === typeof i && (i = [[e.id, i, ""]]),
+        i.locals && (e.exports = i.locals);
+      var o = r(70534).A;
+      o("2142f0aa", i, !0, {});
+    },
+    12836: function (e, t, r) {
+      var i = r(71685);
+      i.__esModule && (i = i.default),
+        "string" === typeof i && (i = [[e.id, i, ""]]),
+        i.locals && (e.exports = i.locals);
+      var o = r(70534).A;
+      o("ddfe8100", i, !0, {});
+    },
+    41592: function (e, t, r) {
+      var i = r(32415);
+      i.__esModule && (i = i.default),
+        "string" === typeof i && (i = [[e.id, i, ""]]),
+        i.locals && (e.exports = i.locals);
+      var o = r(70534).A;
+      o("1614fc48", i, !0, {});
+    },
+    61440: function (e, t, r) {
+      var i = r(75029);
+      i.__esModule && (i = i.default),
+        "string" === typeof i && (i = [[e.id, i, ""]]),
+        i.locals && (e.exports = i.locals);
+      var o = r(70534).A;
+      o("d7bd6728", i, !0, {});
+    },
+  },
+]);

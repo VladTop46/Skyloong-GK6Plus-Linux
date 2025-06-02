@@ -1,1 +1,203 @@
-(self["webpackChunkkeyboard_driver"]=self["webpackChunkkeyboard_driver"]||[]).push([[9854,5777],{11267:function(e,n,t){n=e.exports=t(54765)(!1),n.push([e.id,"\n.vc-alpha {\r\n  position: absolute;\r\n  top: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  left: 0px;\n}\n.vc-alpha-checkboard-wrap {\r\n  position: absolute;\r\n  top: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  left: 0px;\r\n  overflow: hidden;\n}\n.vc-alpha-gradient {\r\n  position: absolute;\r\n  top: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  left: 0px;\n}\n.vc-alpha-container {\r\n  cursor: pointer;\r\n  position: relative;\r\n  z-index: 2;\r\n  height: 100%;\r\n  margin: 0 3px;\n}\n.vc-alpha-pointer {\r\n  z-index: 2;\r\n  position: absolute;\n}\n.vc-alpha-picker {\r\n  cursor: pointer;\r\n  width: 4px;\r\n  border-radius: 1px;\r\n  height: 8px;\r\n  box-shadow: 0 0 2px rgba(0, 0, 0, .6);\r\n  background: #fff;\r\n  margin-top: 1px;\r\n  transform: translateX(-2px);\n}\r\n",""])},93525:function(e,n,t){n=e.exports=t(54765)(!1),n.push([e.id,"\n.vc-checkerboard {\r\n  position: absolute;\r\n  top: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  left: 0px;\r\n  background-size: contain;\n}\r\n",""])},89854:function(e,n,t){"use strict";t.r(n),t.d(n,{default:function(){return h}});var r=function(){var e=this,n=e._self._c;return n("div",{staticClass:"vc-alpha"},[n("div",{staticClass:"vc-alpha-checkboard-wrap"},[n("checkboard")],1),n("div",{staticClass:"vc-alpha-gradient",style:{background:e.gradientColor}}),n("div",{ref:"container",staticClass:"vc-alpha-container",on:{mousedown:e.handleMouseDown,touchmove:e.handleChange,touchstart:e.handleChange}},[n("div",{staticClass:"vc-alpha-pointer",style:{left:100*e.colors.a+"%"}},[n("div",{staticClass:"vc-alpha-picker"})])])])},a=[],o=t(35777),i={name:"Alpha",props:{value:Object},components:{checkboard:o["default"]},computed:{colors(){return this.value},gradientColor(){var e=this.colors.rgba,n=[e.r,e.g,e.b].join(",");return"linear-gradient(to right, rgba("+n+", 0) 0%, rgba("+n+", 1) 100%)"}},methods:{handleChange(e,n){!n&&e.preventDefault();var t=this.$refs.container;if(t){var r,a=t.clientWidth,o=t.getBoundingClientRect().left+window.pageXOffset,i=e.pageX||(e.touches?e.touches[0].pageX:0),s=i-o;r=s<0?0:s>a?1:Math.round(100*s/a)/100,this.colors.a!==r&&this.$emit("change",{h:this.colors.hsl.h,s:this.colors.hsl.s,l:this.colors.hsl.l,a:r,source:"rgba"})}},handleMouseDown(e){this.handleChange(e,!0),window.addEventListener("mousemove",this.handleChange),window.addEventListener("mouseup",this.handleMouseUp)},handleMouseUp(){this.unbindEventListeners()},unbindEventListeners(){window.removeEventListener("mousemove",this.handleChange),window.removeEventListener("mouseup",this.handleMouseUp)}}},s=i,l=(t(76510),t(14486)),c=(0,l.A)(s,r,a,!1,null,null,null),h=c.exports},35777:function(e,n,t){"use strict";t.r(n),t.d(n,{default:function(){return d}});var r=function(){var e=this,n=e._self._c;return n("div",{staticClass:"vc-checkerboard",style:e.bgStyle})},a=[],o={},i={name:"Checkboard",props:{size:{type:[Number,String],default:8},white:{type:String,default:"#fff"},grey:{type:String,default:"#e6e6e6"}},computed:{bgStyle(){return{"background-image":"url("+l(this.white,this.grey,this.size)+")"}}}};function s(e,n,t){if("undefined"===typeof document)return null;var r=document.createElement("canvas");r.width=r.height=2*t;var a=r.getContext("2d");return a?(a.fillStyle=e,a.fillRect(0,0,r.width,r.height),a.fillStyle=n,a.fillRect(0,0,t,t),a.translate(t,t),a.fillRect(0,0,t,t),r.toDataURL()):null}function l(e,n,t){var r=e+","+n+","+t;if(o[r])return o[r];var a=s(e,n,t);return o[r]=a,a}var c=i,h=(t(98754),t(14486)),u=(0,h.A)(c,r,a,!1,null,null,null),d=u.exports},76510:function(e,n,t){var r=t(11267);r.__esModule&&(r=r.default),"string"===typeof r&&(r=[[e.id,r,""]]),r.locals&&(e.exports=r.locals);var a=t(70534).A;a("11c14242",r,!0,{})},98754:function(e,n,t){var r=t(93525);r.__esModule&&(r=r.default),"string"===typeof r&&(r=[[e.id,r,""]]),r.locals&&(e.exports=r.locals);var a=t(70534).A;a("2fd87580",r,!0,{})}}]);
+(self["webpackChunkkeyboard_driver"] =
+  self["webpackChunkkeyboard_driver"] || []).push([
+  [9854, 5777],
+  {
+    11267: function (e, n, t) {
+      (n = e.exports = t(54765)(!1)),
+        n.push([
+          e.id,
+          "\n.vc-alpha {\r\n  position: absolute;\r\n  top: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  left: 0px;\n}\n.vc-alpha-checkboard-wrap {\r\n  position: absolute;\r\n  top: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  left: 0px;\r\n  overflow: hidden;\n}\n.vc-alpha-gradient {\r\n  position: absolute;\r\n  top: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  left: 0px;\n}\n.vc-alpha-container {\r\n  cursor: pointer;\r\n  position: relative;\r\n  z-index: 2;\r\n  height: 100%;\r\n  margin: 0 3px;\n}\n.vc-alpha-pointer {\r\n  z-index: 2;\r\n  position: absolute;\n}\n.vc-alpha-picker {\r\n  cursor: pointer;\r\n  width: 4px;\r\n  border-radius: 1px;\r\n  height: 8px;\r\n  box-shadow: 0 0 2px rgba(0, 0, 0, .6);\r\n  background: #fff;\r\n  margin-top: 1px;\r\n  transform: translateX(-2px);\n}\r\n",
+          "",
+        ]);
+    },
+    93525: function (e, n, t) {
+      (n = e.exports = t(54765)(!1)),
+        n.push([
+          e.id,
+          "\n.vc-checkerboard {\r\n  position: absolute;\r\n  top: 0px;\r\n  right: 0px;\r\n  bottom: 0px;\r\n  left: 0px;\r\n  background-size: contain;\n}\r\n",
+          "",
+        ]);
+    },
+    89854: function (e, n, t) {
+      "use strict";
+      t.r(n),
+        t.d(n, {
+          default: function () {
+            return h;
+          },
+        });
+      var r = function () {
+          var e = this,
+            n = e._self._c;
+          return n("div", { staticClass: "vc-alpha" }, [
+            n(
+              "div",
+              { staticClass: "vc-alpha-checkboard-wrap" },
+              [n("checkboard")],
+              1,
+            ),
+            n("div", {
+              staticClass: "vc-alpha-gradient",
+              style: { background: e.gradientColor },
+            }),
+            n(
+              "div",
+              {
+                ref: "container",
+                staticClass: "vc-alpha-container",
+                on: {
+                  mousedown: e.handleMouseDown,
+                  touchmove: e.handleChange,
+                  touchstart: e.handleChange,
+                },
+              },
+              [
+                n(
+                  "div",
+                  {
+                    staticClass: "vc-alpha-pointer",
+                    style: { left: 100 * e.colors.a + "%" },
+                  },
+                  [n("div", { staticClass: "vc-alpha-picker" })],
+                ),
+              ],
+            ),
+          ]);
+        },
+        a = [],
+        o = t(35777),
+        i = {
+          name: "Alpha",
+          props: { value: Object },
+          components: { checkboard: o["default"] },
+          computed: {
+            colors() {
+              return this.value;
+            },
+            gradientColor() {
+              var e = this.colors.rgba,
+                n = [e.r, e.g, e.b].join(",");
+              return (
+                "linear-gradient(to right, rgba(" +
+                n +
+                ", 0) 0%, rgba(" +
+                n +
+                ", 1) 100%)"
+              );
+            },
+          },
+          methods: {
+            handleChange(e, n) {
+              !n && e.preventDefault();
+              var t = this.$refs.container;
+              if (t) {
+                var r,
+                  a = t.clientWidth,
+                  o = t.getBoundingClientRect().left + window.pageXOffset,
+                  i = e.pageX || (e.touches ? e.touches[0].pageX : 0),
+                  s = i - o;
+                (r = s < 0 ? 0 : s > a ? 1 : Math.round((100 * s) / a) / 100),
+                  this.colors.a !== r &&
+                    this.$emit("change", {
+                      h: this.colors.hsl.h,
+                      s: this.colors.hsl.s,
+                      l: this.colors.hsl.l,
+                      a: r,
+                      source: "rgba",
+                    });
+              }
+            },
+            handleMouseDown(e) {
+              this.handleChange(e, !0),
+                window.addEventListener("mousemove", this.handleChange),
+                window.addEventListener("mouseup", this.handleMouseUp);
+            },
+            handleMouseUp() {
+              this.unbindEventListeners();
+            },
+            unbindEventListeners() {
+              window.removeEventListener("mousemove", this.handleChange),
+                window.removeEventListener("mouseup", this.handleMouseUp);
+            },
+          },
+        },
+        s = i,
+        l = (t(76510), t(14486)),
+        c = (0, l.A)(s, r, a, !1, null, null, null),
+        h = c.exports;
+    },
+    35777: function (e, n, t) {
+      "use strict";
+      t.r(n),
+        t.d(n, {
+          default: function () {
+            return d;
+          },
+        });
+      var r = function () {
+          var e = this,
+            n = e._self._c;
+          return n("div", { staticClass: "vc-checkerboard", style: e.bgStyle });
+        },
+        a = [],
+        o = {},
+        i = {
+          name: "Checkboard",
+          props: {
+            size: { type: [Number, String], default: 8 },
+            white: { type: String, default: "#fff" },
+            grey: { type: String, default: "#e6e6e6" },
+          },
+          computed: {
+            bgStyle() {
+              return {
+                "background-image":
+                  "url(" + l(this.white, this.grey, this.size) + ")",
+              };
+            },
+          },
+        };
+      function s(e, n, t) {
+        if ("undefined" === typeof document) return null;
+        var r = document.createElement("canvas");
+        r.width = r.height = 2 * t;
+        var a = r.getContext("2d");
+        return a
+          ? ((a.fillStyle = e),
+            a.fillRect(0, 0, r.width, r.height),
+            (a.fillStyle = n),
+            a.fillRect(0, 0, t, t),
+            a.translate(t, t),
+            a.fillRect(0, 0, t, t),
+            r.toDataURL())
+          : null;
+      }
+      function l(e, n, t) {
+        var r = e + "," + n + "," + t;
+        if (o[r]) return o[r];
+        var a = s(e, n, t);
+        return (o[r] = a), a;
+      }
+      var c = i,
+        h = (t(98754), t(14486)),
+        u = (0, h.A)(c, r, a, !1, null, null, null),
+        d = u.exports;
+    },
+    76510: function (e, n, t) {
+      var r = t(11267);
+      r.__esModule && (r = r.default),
+        "string" === typeof r && (r = [[e.id, r, ""]]),
+        r.locals && (e.exports = r.locals);
+      var a = t(70534).A;
+      a("11c14242", r, !0, {});
+    },
+    98754: function (e, n, t) {
+      var r = t(93525);
+      r.__esModule && (r = r.default),
+        "string" === typeof r && (r = [[e.id, r, ""]]),
+        r.locals && (e.exports = r.locals);
+      var a = t(70534).A;
+      a("2fd87580", r, !0, {});
+    },
+  },
+]);

@@ -1,1 +1,391 @@
-(self["webpackChunkkeyboard_driver"]=self["webpackChunkkeyboard_driver"]||[]).push([[9726],{47775:function(e,t,o){t=e.exports=o(54765)(!1),t.push([e.id,"\n.color-picker-container {\n    position: fixed;\n    display: none;\n}\n.color-picker-container.active {\n    display: block;\n}\n.color-picker-container * {\n    position: absolute;\n    cursor: crosshair;\n}\n.color-picker-container, .color-picker-container .wheel {\n    width: 195px;\n    height: 195px;\n}\n.color-picker-container .color, .color-picker-container .overlay {\n    top: 47px;\n    left: 47px;\n    width: 101px;\n    height: 101px;\n}\n.color-picker-container .wheel {\n    width: 195px;\n    height: 195px;\n    background-size: 100%;\n}\n.color-picker-container .overlay {\n    background-size: 100%;\n}\n.color-picker-container .marker {\n    width: 17px;\n    height: 17px;\n    margin: -8px 0 0 -8px;\n    overflow: hidden;\n    background-size: 100%;\n}\n",""])},39726:function(e,t,o){"use strict";o.r(t),o.d(t,{default:function(){return l}});var n=function(){var e=this,t=e._self._c;return t("div",[t("div",{staticClass:"color-picker-container",class:{active:e.isShowPicker},attrs:{id:e.containerId}},[t("div",{staticClass:"color"}),t("div",{staticClass:"wheel"}),t("div",{staticClass:"overlay"}),t("div",{staticClass:"h-marker marker"}),t("div",{staticClass:"sl-marker marker"})])])},r=[],i=(o(25276),o(26099),o(38781),{props:{defaultColor:{type:String,default:"#000000"},targetElem:null},data(){return{isShowPicker:!1,wheel:document.querySelector(".wheel"),color:this.defaultColor,containerId:"color-picker-container",dom:{hMarker:null,slMarker:null,color:null,targetElem:null,container:null},radius:84,square:100,width:194}},mounted(){this.dom.container=document.querySelector("#"+this.containerId),this.dom.hMarker=document.querySelector(".h-marker"),this.dom.slMarker=document.querySelector(".sl-marker"),this.dom.color=document.querySelector(".color"),this.dom.targetElem=document.querySelector(this.targetElem),this.init()},methods:{init:function(){var e=this;e.posInit(),e.eventBind(),e.setColor(e.color)},openPicker:function(){var e=this;this.isShowPicker=!0,this.wheel=document.querySelector(".wheel"),document.addEventListener("click",e.documentClick)},closePicker:function(){this.isShowPicker=!1,document.removeEventListener("click",this.documentClick)},eventBind:function(){var e=this;e.dom.container.addEventListener("mousedown",e.mousedown)},documentClick:function(e){var t=this.getParents(e,this.dom.container,!0),o=this.getParents(e,this.dom.targetElem,!0);0===t.length&&0===o.length&&this.closePicker()},posInit:function(){var e=this.dom.targetElem,t=this.getElementViewTop(e),o=this.getElementViewLeft(e);this.dom.container.style.position="fixed",this.dom.container.style.top=t+"px",this.dom.container.style.left=o+this.dom.targetElem.offsetWidth+"px"},getElementViewLeft:function(e){var t=e.offsetLeft,o=e.offsetParent;while(null!==o)t+=o.offsetLeft,o=o.offsetParent;if("BackCompat"==document.compatMode)var n=document.body.scrollLeft;else n=document.documentElement.scrollLeft;return t-n},getElementViewTop:function(e){var t=e.offsetTop,o=e.offsetParent;while(null!==o)t+=o.offsetTop,o=o.offsetParent;if("BackCompat"==document.compatMode)var n=document.body.scrollTop;else n=document.documentElement.scrollTop;return t-n},getParents:function(e,t,o){var n=e.target,r=(t="string"===typeof t?document.querySelector(t):t,n),i="undefined"===typeof o?[r]:[];while(1){if("undefined"!==typeof t&&r==t||"undefined"===typeof t&&9===r.nodeType){i.push(r);break}if(r&&i.push(r),!r.parentNode)break;r=r.parentNode}return t?i.indexOf(t)>-1?i:[]:i},getParent:function(e){return 9!==e.target.nodeType&&e.target.parentNode},updateValue:function(e){var t=this,o=e.target;o.value&&o.value!=t.color&&t.setColor(o.value)},setColor:function(e){var t=this,o=t.unpack(e);t.color!=e&&o&&(t.color=e,t.rgb=o,t.hsl=t.RGBToHSL(t.rgb),t.updateDisplay())},setHSL:function(e){var t=this;t.hsl=e,t.rgb=t.HSLToRGB(e),t.color=t.pack(t.rgb),t.updateDisplay()},widgetCoords:function(e){var t,o,n=this,r=e.target||e.srcElement,i=n.wheel;if("undefined"!=typeof e.offsetX){var s={x:e.offsetX,y:e.offsetY},a=r;while(a)a.mouseX=s.x,a.mouseY=s.y,s.x+=a.offsetLeft,s.y+=a.offsetTop,a=a.offsetParent;a=i;var c={x:0,y:0};while(a){if("undefined"!=typeof a.mouseX){t=a.mouseX-c.x,o=a.mouseY-c.y;break}c.x+=a.offsetLeft,c.y+=a.offsetTop,a=a.offsetParent}a=r;while(a)a.mouseX=void 0,a.mouseY=void 0,a=a.offsetParent}else{s=n.absolutePosition(i);t=(e.pageX||0*(e.clientX+document.documentElement.scrollLeft))-s.x,o=(e.pageY||0*(e.clientY+document.documentElement.scrollTop))-s.y}return{x:t-n.width/2,y:o-n.width/2}},mousedown:function(e){var t=this;document.dragging||(document.documentElement.addEventListener("mousemove",t.mousemove),document.documentElement.addEventListener("mouseup",t.mouseup),document.dragging=!0);var o=t.widgetCoords(e);return t.circleDrag=2*Math.max(Math.abs(o.x),Math.abs(o.y))>t.square,t.mousemove(e),!1},mousemove:function(e){var t=this,o=t.widgetCoords(e);if(t.circleDrag){var n=Math.atan2(o.x,-o.y)/6.28;n<0&&(n+=1),t.setHSL([n,t.hsl[1],t.hsl[2]])}else{var r=Math.max(0,Math.min(1,-o.x/t.square+.5)),i=Math.max(0,Math.min(1,-o.y/t.square+.5));t.setHSL([t.hsl[0],r,i])}return!1},mouseup:function(){var e=this;document.documentElement.removeEventListener("mousemove",e.mousemove),document.documentElement.removeEventListener("mouseup",e.mouseup),document.dragging=!1},updateDisplay:function(){var e=this,t=6.28*e.hsl[0];e.dom.hMarker.style.left=Math.round(Math.sin(t)*e.radius+e.width/2)+"px",e.dom.hMarker.style.top=Math.round(-Math.cos(t)*e.radius+e.width/2)+"px",e.dom.slMarker.style.left=Math.round(e.square*(.5-e.hsl[1])+e.width/2)+"px",e.dom.slMarker.style.top=Math.round(e.square*(.5-e.hsl[2])+e.width/2)+"px",e.dom.color.style.backgroundColor=e.pack(e.HSLToRGB([e.hsl[0],1,.5])),e.$emit("onChange",e.color)},absolutePosition:function(e){var t=this,o={x:e.offsetLeft,y:e.offsetTop};if(e.offsetParent){var n=t.absolutePosition(e.offsetParent);o.x+=n.x,o.y+=n.y}return o},pack:function(e){var t=Math.round(255*e[0]),o=Math.round(255*e[1]),n=Math.round(255*e[2]);return"#"+(t<16?"0":"")+t.toString(16)+(o<16?"0":"")+o.toString(16)+(n<16?"0":"")+n.toString(16)},unpack:function(e){return 7==e.length?[parseInt("0x"+e.substring(1,3))/255,parseInt("0x"+e.substring(3,5))/255,parseInt("0x"+e.substring(5,7))/255]:4==e.length?[parseInt("0x"+e.substring(1,2))/15,parseInt("0x"+e.substring(2,3))/15,parseInt("0x"+e.substring(3,4))/15]:void 0},HSLToRGB:function(e){var t,o,n=e[0],r=e[1],i=e[2];return o=i<=.5?i*(r+1):i+r-i*r,t=2*i-o,[this.hueToRGB(t,o,n+.33333),this.hueToRGB(t,o,n),this.hueToRGB(t,o,n-.33333)]},hueToRGB:function(e,t,o){return o=o<0?o+1:o>1?o-1:o,6*o<1?e+(t-e)*o*6:2*o<1?t:3*o<2?e+(t-e)*(.66666-o)*6:e},RGBToHSL:function(e){var t,o,n,r,i,s,a=e[0],c=e[1],l=e[2];return t=Math.min(a,Math.min(c,l)),o=Math.max(a,Math.max(c,l)),n=o-t,s=(t+o)/2,i=0,s>0&&s<1&&(i=n/(s<.5?2*s:2-2*s)),r=0,n>0&&(o==a&&o!=c&&(r+=(c-l)/n),o==c&&o!=l&&(r+=2+(l-a)/n),o==l&&o!=a&&(r+=4+(a-c)/n),r/=6),[r,i,s]}}}),s=i,a=(o(36754),o(14486)),c=(0,a.A)(s,n,r,!1,null,null,null),l=c.exports},36754:function(e,t,o){var n=o(47775);n.__esModule&&(n=n.default),"string"===typeof n&&(n=[[e.id,n,""]]),n.locals&&(e.exports=n.locals);var r=o(70534).A;r("558b52a1",n,!0,{})}}]);
+(self["webpackChunkkeyboard_driver"] =
+  self["webpackChunkkeyboard_driver"] || []).push([
+  [9726],
+  {
+    47775: function (e, t, o) {
+      (t = e.exports = o(54765)(!1)),
+        t.push([
+          e.id,
+          "\n.color-picker-container {\n    position: fixed;\n    display: none;\n}\n.color-picker-container.active {\n    display: block;\n}\n.color-picker-container * {\n    position: absolute;\n    cursor: crosshair;\n}\n.color-picker-container, .color-picker-container .wheel {\n    width: 195px;\n    height: 195px;\n}\n.color-picker-container .color, .color-picker-container .overlay {\n    top: 47px;\n    left: 47px;\n    width: 101px;\n    height: 101px;\n}\n.color-picker-container .wheel {\n    width: 195px;\n    height: 195px;\n    background-size: 100%;\n}\n.color-picker-container .overlay {\n    background-size: 100%;\n}\n.color-picker-container .marker {\n    width: 17px;\n    height: 17px;\n    margin: -8px 0 0 -8px;\n    overflow: hidden;\n    background-size: 100%;\n}\n",
+          "",
+        ]);
+    },
+    39726: function (e, t, o) {
+      "use strict";
+      o.r(t),
+        o.d(t, {
+          default: function () {
+            return l;
+          },
+        });
+      var n = function () {
+          var e = this,
+            t = e._self._c;
+          return t("div", [
+            t(
+              "div",
+              {
+                staticClass: "color-picker-container",
+                class: { active: e.isShowPicker },
+                attrs: { id: e.containerId },
+              },
+              [
+                t("div", { staticClass: "color" }),
+                t("div", { staticClass: "wheel" }),
+                t("div", { staticClass: "overlay" }),
+                t("div", { staticClass: "h-marker marker" }),
+                t("div", { staticClass: "sl-marker marker" }),
+              ],
+            ),
+          ]);
+        },
+        r = [],
+        i =
+          (o(25276),
+          o(26099),
+          o(38781),
+          {
+            props: {
+              defaultColor: { type: String, default: "#000000" },
+              targetElem: null,
+            },
+            data() {
+              return {
+                isShowPicker: !1,
+                wheel: document.querySelector(".wheel"),
+                color: this.defaultColor,
+                containerId: "color-picker-container",
+                dom: {
+                  hMarker: null,
+                  slMarker: null,
+                  color: null,
+                  targetElem: null,
+                  container: null,
+                },
+                radius: 84,
+                square: 100,
+                width: 194,
+              };
+            },
+            mounted() {
+              (this.dom.container = document.querySelector(
+                "#" + this.containerId,
+              )),
+                (this.dom.hMarker = document.querySelector(".h-marker")),
+                (this.dom.slMarker = document.querySelector(".sl-marker")),
+                (this.dom.color = document.querySelector(".color")),
+                (this.dom.targetElem = document.querySelector(this.targetElem)),
+                this.init();
+            },
+            methods: {
+              init: function () {
+                var e = this;
+                e.posInit(), e.eventBind(), e.setColor(e.color);
+              },
+              openPicker: function () {
+                var e = this;
+                (this.isShowPicker = !0),
+                  (this.wheel = document.querySelector(".wheel")),
+                  document.addEventListener("click", e.documentClick);
+              },
+              closePicker: function () {
+                (this.isShowPicker = !1),
+                  document.removeEventListener("click", this.documentClick);
+              },
+              eventBind: function () {
+                var e = this;
+                e.dom.container.addEventListener("mousedown", e.mousedown);
+              },
+              documentClick: function (e) {
+                var t = this.getParents(e, this.dom.container, !0),
+                  o = this.getParents(e, this.dom.targetElem, !0);
+                0 === t.length && 0 === o.length && this.closePicker();
+              },
+              posInit: function () {
+                var e = this.dom.targetElem,
+                  t = this.getElementViewTop(e),
+                  o = this.getElementViewLeft(e);
+                (this.dom.container.style.position = "fixed"),
+                  (this.dom.container.style.top = t + "px"),
+                  (this.dom.container.style.left =
+                    o + this.dom.targetElem.offsetWidth + "px");
+              },
+              getElementViewLeft: function (e) {
+                var t = e.offsetLeft,
+                  o = e.offsetParent;
+                while (null !== o) (t += o.offsetLeft), (o = o.offsetParent);
+                if ("BackCompat" == document.compatMode)
+                  var n = document.body.scrollLeft;
+                else n = document.documentElement.scrollLeft;
+                return t - n;
+              },
+              getElementViewTop: function (e) {
+                var t = e.offsetTop,
+                  o = e.offsetParent;
+                while (null !== o) (t += o.offsetTop), (o = o.offsetParent);
+                if ("BackCompat" == document.compatMode)
+                  var n = document.body.scrollTop;
+                else n = document.documentElement.scrollTop;
+                return t - n;
+              },
+              getParents: function (e, t, o) {
+                var n = e.target,
+                  r =
+                    ((t =
+                      "string" === typeof t ? document.querySelector(t) : t),
+                    n),
+                  i = "undefined" === typeof o ? [r] : [];
+                while (1) {
+                  if (
+                    ("undefined" !== typeof t && r == t) ||
+                    ("undefined" === typeof t && 9 === r.nodeType)
+                  ) {
+                    i.push(r);
+                    break;
+                  }
+                  if ((r && i.push(r), !r.parentNode)) break;
+                  r = r.parentNode;
+                }
+                return t ? (i.indexOf(t) > -1 ? i : []) : i;
+              },
+              getParent: function (e) {
+                return 9 !== e.target.nodeType && e.target.parentNode;
+              },
+              updateValue: function (e) {
+                var t = this,
+                  o = e.target;
+                o.value && o.value != t.color && t.setColor(o.value);
+              },
+              setColor: function (e) {
+                var t = this,
+                  o = t.unpack(e);
+                t.color != e &&
+                  o &&
+                  ((t.color = e),
+                  (t.rgb = o),
+                  (t.hsl = t.RGBToHSL(t.rgb)),
+                  t.updateDisplay());
+              },
+              setHSL: function (e) {
+                var t = this;
+                (t.hsl = e),
+                  (t.rgb = t.HSLToRGB(e)),
+                  (t.color = t.pack(t.rgb)),
+                  t.updateDisplay();
+              },
+              widgetCoords: function (e) {
+                var t,
+                  o,
+                  n = this,
+                  r = e.target || e.srcElement,
+                  i = n.wheel;
+                if ("undefined" != typeof e.offsetX) {
+                  var s = { x: e.offsetX, y: e.offsetY },
+                    a = r;
+                  while (a)
+                    (a.mouseX = s.x),
+                      (a.mouseY = s.y),
+                      (s.x += a.offsetLeft),
+                      (s.y += a.offsetTop),
+                      (a = a.offsetParent);
+                  a = i;
+                  var c = { x: 0, y: 0 };
+                  while (a) {
+                    if ("undefined" != typeof a.mouseX) {
+                      (t = a.mouseX - c.x), (o = a.mouseY - c.y);
+                      break;
+                    }
+                    (c.x += a.offsetLeft),
+                      (c.y += a.offsetTop),
+                      (a = a.offsetParent);
+                  }
+                  a = r;
+                  while (a)
+                    (a.mouseX = void 0),
+                      (a.mouseY = void 0),
+                      (a = a.offsetParent);
+                } else {
+                  s = n.absolutePosition(i);
+                  (t =
+                    (e.pageX ||
+                      0 * (e.clientX + document.documentElement.scrollLeft)) -
+                    s.x),
+                    (o =
+                      (e.pageY ||
+                        0 * (e.clientY + document.documentElement.scrollTop)) -
+                      s.y);
+                }
+                return { x: t - n.width / 2, y: o - n.width / 2 };
+              },
+              mousedown: function (e) {
+                var t = this;
+                document.dragging ||
+                  (document.documentElement.addEventListener(
+                    "mousemove",
+                    t.mousemove,
+                  ),
+                  document.documentElement.addEventListener(
+                    "mouseup",
+                    t.mouseup,
+                  ),
+                  (document.dragging = !0));
+                var o = t.widgetCoords(e);
+                return (
+                  (t.circleDrag =
+                    2 * Math.max(Math.abs(o.x), Math.abs(o.y)) > t.square),
+                  t.mousemove(e),
+                  !1
+                );
+              },
+              mousemove: function (e) {
+                var t = this,
+                  o = t.widgetCoords(e);
+                if (t.circleDrag) {
+                  var n = Math.atan2(o.x, -o.y) / 6.28;
+                  n < 0 && (n += 1), t.setHSL([n, t.hsl[1], t.hsl[2]]);
+                } else {
+                  var r = Math.max(0, Math.min(1, -o.x / t.square + 0.5)),
+                    i = Math.max(0, Math.min(1, -o.y / t.square + 0.5));
+                  t.setHSL([t.hsl[0], r, i]);
+                }
+                return !1;
+              },
+              mouseup: function () {
+                var e = this;
+                document.documentElement.removeEventListener(
+                  "mousemove",
+                  e.mousemove,
+                ),
+                  document.documentElement.removeEventListener(
+                    "mouseup",
+                    e.mouseup,
+                  ),
+                  (document.dragging = !1);
+              },
+              updateDisplay: function () {
+                var e = this,
+                  t = 6.28 * e.hsl[0];
+                (e.dom.hMarker.style.left =
+                  Math.round(Math.sin(t) * e.radius + e.width / 2) + "px"),
+                  (e.dom.hMarker.style.top =
+                    Math.round(-Math.cos(t) * e.radius + e.width / 2) + "px"),
+                  (e.dom.slMarker.style.left =
+                    Math.round(e.square * (0.5 - e.hsl[1]) + e.width / 2) +
+                    "px"),
+                  (e.dom.slMarker.style.top =
+                    Math.round(e.square * (0.5 - e.hsl[2]) + e.width / 2) +
+                    "px"),
+                  (e.dom.color.style.backgroundColor = e.pack(
+                    e.HSLToRGB([e.hsl[0], 1, 0.5]),
+                  )),
+                  e.$emit("onChange", e.color);
+              },
+              absolutePosition: function (e) {
+                var t = this,
+                  o = { x: e.offsetLeft, y: e.offsetTop };
+                if (e.offsetParent) {
+                  var n = t.absolutePosition(e.offsetParent);
+                  (o.x += n.x), (o.y += n.y);
+                }
+                return o;
+              },
+              pack: function (e) {
+                var t = Math.round(255 * e[0]),
+                  o = Math.round(255 * e[1]),
+                  n = Math.round(255 * e[2]);
+                return (
+                  "#" +
+                  (t < 16 ? "0" : "") +
+                  t.toString(16) +
+                  (o < 16 ? "0" : "") +
+                  o.toString(16) +
+                  (n < 16 ? "0" : "") +
+                  n.toString(16)
+                );
+              },
+              unpack: function (e) {
+                return 7 == e.length
+                  ? [
+                      parseInt("0x" + e.substring(1, 3)) / 255,
+                      parseInt("0x" + e.substring(3, 5)) / 255,
+                      parseInt("0x" + e.substring(5, 7)) / 255,
+                    ]
+                  : 4 == e.length
+                    ? [
+                        parseInt("0x" + e.substring(1, 2)) / 15,
+                        parseInt("0x" + e.substring(2, 3)) / 15,
+                        parseInt("0x" + e.substring(3, 4)) / 15,
+                      ]
+                    : void 0;
+              },
+              HSLToRGB: function (e) {
+                var t,
+                  o,
+                  n = e[0],
+                  r = e[1],
+                  i = e[2];
+                return (
+                  (o = i <= 0.5 ? i * (r + 1) : i + r - i * r),
+                  (t = 2 * i - o),
+                  [
+                    this.hueToRGB(t, o, n + 0.33333),
+                    this.hueToRGB(t, o, n),
+                    this.hueToRGB(t, o, n - 0.33333),
+                  ]
+                );
+              },
+              hueToRGB: function (e, t, o) {
+                return (
+                  (o = o < 0 ? o + 1 : o > 1 ? o - 1 : o),
+                  6 * o < 1
+                    ? e + (t - e) * o * 6
+                    : 2 * o < 1
+                      ? t
+                      : 3 * o < 2
+                        ? e + (t - e) * (0.66666 - o) * 6
+                        : e
+                );
+              },
+              RGBToHSL: function (e) {
+                var t,
+                  o,
+                  n,
+                  r,
+                  i,
+                  s,
+                  a = e[0],
+                  c = e[1],
+                  l = e[2];
+                return (
+                  (t = Math.min(a, Math.min(c, l))),
+                  (o = Math.max(a, Math.max(c, l))),
+                  (n = o - t),
+                  (s = (t + o) / 2),
+                  (i = 0),
+                  s > 0 && s < 1 && (i = n / (s < 0.5 ? 2 * s : 2 - 2 * s)),
+                  (r = 0),
+                  n > 0 &&
+                    (o == a && o != c && (r += (c - l) / n),
+                    o == c && o != l && (r += 2 + (l - a) / n),
+                    o == l && o != a && (r += 4 + (a - c) / n),
+                    (r /= 6)),
+                  [r, i, s]
+                );
+              },
+            },
+          }),
+        s = i,
+        a = (o(36754), o(14486)),
+        c = (0, a.A)(s, n, r, !1, null, null, null),
+        l = c.exports;
+    },
+    36754: function (e, t, o) {
+      var n = o(47775);
+      n.__esModule && (n = n.default),
+        "string" === typeof n && (n = [[e.id, n, ""]]),
+        n.locals && (e.exports = n.locals);
+      var r = o(70534).A;
+      r("558b52a1", n, !0, {});
+    },
+  },
+]);

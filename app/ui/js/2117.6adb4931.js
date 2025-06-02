@@ -1,1 +1,2009 @@
-(self["webpackChunkkeyboard_driver"]=self["webpackChunkkeyboard_driver"]||[]).push([[2117,3190],{59686:function(e,t,i){t=e.exports=i(54765)(void 0),t.push([e.id,".row-con[data-v-045474b4]{display:flex;flex-flow:row wrap}.row-con .card[data-v-045474b4]{height:100%}.grid-container[data-v-045474b4]{display:grid;width:100%;grid-template-columns:auto 1fr 1fr;grid-auto-flow:column;grid-auto-columns:minmax(0, 1fr);grid-template-rows:1fr;justify-content:space-between !important}[data-v-045474b4] .el-button--mini{font-size:10px}.grid-item[data-v-045474b4]:nth-child(1){display:inline-flex;width:max-content;justify-items:end}.grid-item[data-v-045474b4]:nth-child(2){display:inline-flex;width:max-content;justify-items:start}.grid-item[data-v-045474b4]:nth-child(3){display:inline-flex;width:max-content;justify-items:end}.saveApply[data-v-045474b4]{position:absolute;right:1rem}.layout .sidebar[data-v-045474b4]{width:100%;min-width:100%}.el-radio-button__orig-radio:disabled+.el-radio-button__inner[data-v-045474b4]{color:#67696d;cursor:not-allowed;background-image:none;background-color:#383838;border-color:#111;box-shadow:none}.el-tabs__content[data-v-045474b4]{overflow-y:auto;padding:0px !important}.devinfo[data-v-045474b4]{position:absolute;display:inline-block;left:1rem;color:#0090cc;line-height:1.5rem;font-weight:bold}.devinfo span[data-v-045474b4]{width:max-content;font-size:10px;color:#ababab;font-weight:bold}[data-v-045474b4] .el-table .hidden-row{display:none}",""])},48928:function(e,t,i){t=e.exports=i(54765)(!1),t.push([e.id,"\n.layout .sidebar[data-v-7bb2989f] {\r\n  width: 100%;\r\n  min-width: 100%;\n}\r\n/* @media only screen and (min-height: 700px) and (max-height: 700px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 235px;\r\n    min-width: 100%;\r\n  }\r\n}\r\n@media only screen and (min-height: 750px) and (max-height: 750px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 256px;\r\n    min-width: 100%;\r\n  }\r\n}\r\n@media only screen and (min-height: 768px) and (max-height: 768px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 265px;\r\n    min-width: 100%;\r\n  }\r\n}\r\n@media only screen and (min-height: 800px) and (max-height: 800px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 277px;\r\n    min-width: 100%;\r\n  }\r\n}\r\n@media only screen and (min-height: 850px) and (max-height: 850px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 300px;\r\n    min-width: 100%;\r\n  }\r\n}\r\n@media only screen and (min-height: 900px) and (max-height: 900px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 320px;\r\n    min-width: 100%;\r\n  }\r\n} */\n.el-input-group__prepend[data-v-7bb2989f] {\r\n  width: 3rem;\n}\n.macrolist-oper[data-v-7bb2989f] {\r\n  /* font-size:clamp(10px, calc(1vw + 0.5rem), 12px); */\r\n  padding: 0.3rem 1rem;\n}\n.edit-cell[data-v-7bb2989f] {\r\n  background: #333;\r\n  -webkit-appearance: none;\r\n  background-image: none;\r\n  border-radius: 4px;\r\n  border: 1px solid #111;\r\n  box-sizing: border-box;\r\n  color: #aaa;\r\n  display: inline-block;\r\n  font-size: inherit;\r\n  height: 1.6rem;\r\n  line-height: 1.6rem;\r\n  outline: 0;\r\n  padding: 0 1rem;\r\n  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);\r\n  width: 100%;\n}\n.edit-cell.mini[data-v-7bb2989f] {\r\n  width: 3rem;\r\n  padding: 0 0.2rem;\r\n  text-align: center;\n}\r\n",""])},92117:function(e,t,i){"use strict";i.r(t),i.d(t,{default:function(){return b}});var n=function(){var e=this,t=e._self._c;return t("el-container",{staticClass:"content panel",attrs:{direction:"horizontal"}},[t("el-container",{staticClass:"content panel",attrs:{direction:"vertical"}},[t("div",{style:{height:e.lay_h_show+"px",position:"relative"},attrs:{id:"device-show-box"}},[t("div",{staticClass:"absolute top-1 right-0 z-10"},[t("el-button-group",[t("el-tooltip",{staticClass:"item",attrs:{content:e.$t("common.zoomout_view"),effect:"dark",placement:"top"}},[t("el-button",{attrs:{icon:"el-icon-zoom-out"},on:{click:e.zoomOut}})],1),t("el-tooltip",{staticClass:"item",attrs:{content:e.$t("common.enlarge_view"),effect:"dark",placement:"top"}},[t("el-button",{attrs:{icon:"el-icon-zoom-in"},on:{click:e.zoomIn}})],1)],1)],1),t("cms-device",{ref:"device",staticClass:"aspect-square",staticStyle:{"overflow-y":"auto"},attrs:{disabled:"",deviceid:e.cms.deviceID,isediting:!1,isfnkeyset:e.isfnkeyset,keymap:e.device.keymap,scale:e.lay_show_scale,scaleplus:e.lay_show_scale_plus,showbtn:e.showdevbtn},on:{fnxChange:e.handleFnxChange,openFnLayer:e.openFnLayer,removeKeyFunc:e.removeKeyFunc,removeKeyLE:e.removeKeyLE,removeStdLE:e.removeStdLE,selLeKeys:e.selStaticLeKeys,selectStdLE:e.selectStdLE,showKeyLeSelect:e.showKeyLeSelect}}),t("div",{staticClass:"grid-container",staticStyle:{position:"absolute",bottom:"0rem","z-index":"3"}},[t("el-radio-group",{staticStyle:{"margin-left":"1rem"},on:{change:e.changeProfile},model:{value:e.layerguid,callback:function(t){e.layerguid=t},expression:"layerguid"}},e._l(e.reorderedOptions,(function(i,n){return t("el-radio-button",{key:n,attrs:{"data-guid":i.GUID,label:i.GUID,disabled:1==i.ModeIndex&&e.disabledstd}},[i?[i.ModeIndex>=2&&i.ModeIndex<=4?t("span",[e._v("\n                            "+e._s(e.$t("common")["layer_onboard_"+(i.ModeIndex-1)])+"\n                        ")]):0===i.ModeIndex?t("span",[e._v(e._s(e.$t("common")["layer_driver_1"]))]):1===i.ModeIndex?t("span",[e._v(e._s(e.$t("common.layer_std")))]):t("span",[e._v(e._s(e.$t("common.no_loading_layer")))])]:e._e()],2)})),1),t("el-button-group",{staticClass:"restoretool grid-item",staticStyle:{"margin-left":"0.5rem"},attrs:{size:"mini"}},[t("el-tooltip",{staticClass:"item",attrs:{content:e.$t("common.is_restore_current_layer_to_default"),effect:"dark",placement:"top"}},[t("el-button",{attrs:{loading:e.isrestoring,icon:"el-icon-refresh"},on:{click:e.handleShowRestoreProfileConfirm}})],1),t("el-tooltip",{staticClass:"item",attrs:{content:e.$t("common.is_clear_current_config"),effect:"dark",placement:"top"}},[t("el-button",{attrs:{loading:e.isclearing,icon:"el-icon-delete",type:"danger"},on:{click:e.handleShowClearProfile}})],1),t("el-tooltip",{staticClass:"item",attrs:{content:e.$t("common.is_import_profile_to_current_layer"),effect:"dark",placement:"top"}},[t("el-button",{attrs:{icon:"el-icon-upload2"},on:{click:e.handleImportProfile}})],1),t("el-tooltip",{staticClass:"item",attrs:{content:e.$t("common.is_export_current_layer"),effect:"dark",placement:"top"}},[t("el-button",{attrs:{icon:"el-icon-download"},on:{click:e.handleExportProfile}})],1)],1),t("div",{staticClass:"saveApply grid-item"},[t("el-button-group",{staticStyle:{"margin-right":"0.5rem"},attrs:{size:"mini"}},[t("el-button",{class:{"btn-breath":e.iskeysetchange},attrs:{icon:"el-icon-check"},on:{click:e.saveKeySet}},[e._v(e._s(e.$t("common.save"))+"\n            ")])],1),t("el-button-group",{attrs:{size:"mini"}},[t("el-button",{class:{"btn-breath":e.isapplied},attrs:{loading:e.isapplying,icon:"el-icon-download"},on:{click:e.applyProfile}},[e._v(e._s(e.$t("common.apply"))+"\n            ")])],1)],1)],1),t("div",{staticStyle:{position:"absolute",top:"1rem","z-index":"1",display:"grid","grid-template-columns":"auto","grid-template-rows":"auto"}},[t("div",{staticClass:"devinfo xs:text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl",staticStyle:{"grid-row":"1","grid-column":"1",width:"max-content"}},[t("span",{staticClass:"font-hairline"},[e._v(e._s(e.$t("common.model"))+": ")]),e._v(" "+e._s(e.device.modelInfo.Name)),t("br"),t("span",{staticClass:"font-hairline"},[e._v(e._s(e.$t("common.firm_version"))+": ")]),e._v(e._s(e.device.FWVersion)+"\n        ")])])],1),t("div",{attrs:{id:"device-keys-box"}},[t("cms-keyset",{ref:"keysets",on:{changeKeyFunc:e.changeKeyFunc,saveProfile:e.saveProfile}})],1)]),t("el-aside",{staticClass:"subnav hidden-xs-only",attrs:{width:e.asideWidth,height:"100%"}},[t("el-row",{staticClass:"row-con",attrs:{gutter:20}},[t("el-col",[t("cms-lelist",{ref:"lelist",staticClass:"card",attrs:{title:e.$t("le.le_setting_title"),isstaticle:"true",leseltype:"1",height:e.lay_h_les_list,lelist:e.cms.les,lesel:e.device.lesel},on:{playLE:e.playLE,saveModeLE:e.saveModeLE}})],1)],1),t("el-row",{staticClass:"row-con",attrs:{gutter:20}},[t("el-col",[t("cms-macrolist",{ref:"macrolist",staticClass:"card",attrs:{height:e.lay_h_macros_list,macrolist:e.cms.macros},on:{setKeyMacro:e.setKeyMacro}})],1)],1)],1),t("el-dialog",{attrs:{"before-close":e.handleCloseDialog,"show-close":e.dialog.isshowclose,visible:e.dialog.visible,center:"",width:"30%"},on:{"update:visible":function(t){return e.$set(e.dialog,"visible",t)}}},[t("p",{attrs:{slot:"title"},slot:"title"},[t("i",{staticClass:"el-icon-warning"}),e._v(" "+e._s(e.dialog.title))]),t("span",[e._v(e._s(e.dialog.content))]),t("span",{staticClass:"dialog-footer",attrs:{slot:"footer"},slot:"footer"},[t("el-button",{attrs:{icon:"el-icon-back"},on:{click:function(t){e.dialog.visible=!1}}},[e._v(e._s(e.$t("common.cancel")))]),t("el-button",{attrs:{icon:"el-icon-check",type:"primary"},on:{click:e.handleConfirm}},[e._v(e._s(e.$t("common.confirm")))])],1)]),t("el-dialog",{attrs:{"show-close":e.dialogkeylesel.isshowclose,visible:e.dialogkeylesel.visible,center:"","custom-class":"dia-keyle",width:"31.8vw"},on:{"update:visible":function(t){return e.$set(e.dialogkeylesel,"visible",t)}}},[t("p",{attrs:{slot:"title"},slot:"title"},[t("i",{staticClass:"el-icon-circle-check"}),e._v(" "+e._s(e.dialogkeylesel.title)+"\n    ")]),t("span",[t("el-table",{ref:"keylestable",attrs:{data:e.filterkeylelist,"show-header":!1,"row-class-name":e.dialogRowClassName,border:"",height:"250","highlight-current-row":"",size:"mini"},on:{"row-click":e.handleKeyLeRowChange}},[t("el-table-column",{scopedSlots:e._u([{key:"default",fn:function(i){return[t("svg-icon",{attrs:{name:"light"}}),t("span",{staticStyle:{"margin-left":"10px"}},[e._v(e._s(i.row.Name))])]}}])})],1)],1),t("span",{staticClass:"dialog-footer",attrs:{slot:"footer"},slot:"footer"},[t("el-button",{attrs:{icon:"el-icon-back"},on:{click:function(t){e.dialogkeylesel.visible=!1}}},[e._v(e._s(e.$t("common.cancel")))]),t("el-button",{attrs:{icon:"el-icon-check",type:"primary"},on:{click:e.handleKeyLeConfirm}},[e._v(e._s(e.$t("common.confirm")))])],1)]),t("div",{directives:[{name:"show",rawName:"v-show",value:!1,expression:"false"}],staticStyle:{position:"absolute",right:"1rem"}},[e.hasfnkeyset?t("el-switch",{staticStyle:{"margin-left":"1rem"},attrs:{"active-color":"#00A0DD","active-text":"Fn+X","inactive-color":"#666"},on:{change:e.handleIsFnKeySet},model:{value:e.isfnkeyset,callback:function(t){e.isfnkeyset=t},expression:"isfnkeyset"}}):e._e()],1)],1)},o=[],r=(i(52675),i(81278),i(64467)),s=(i(2008),i(25276),i(62062),i(26099),i(16034),i(38781),i(23500),i(66285)),a=i(22606),l=i(11264),c=i(10088),d=i(33190),f=i(49271),m=i.n(f),u=i(95353);function h(e,t){var i=Object.keys(e);if(Object.getOwnPropertySymbols){var n=Object.getOwnPropertySymbols(e);t&&(n=n.filter((function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable}))),i.push.apply(i,n)}return i}function y(e){for(var t=1;t<arguments.length;t++){var i=null!=arguments[t]?arguments[t]:{};t%2?h(Object(i),!0).forEach((function(t){(0,r.A)(e,t,i[t])})):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(i)):h(Object(i)).forEach((function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(i,t))}))}return e}var p=document.getElementById("mainbox").offsetHeight,g=document.getElementById("mainbox").offsetWidth;window.KeyFunc=m();var E={data(){return{asideWidth:"256px",cms:window.CMS,device:window.DEVICE,mainh:p,mainw:g,scale:g/24*18/1200,layeroper:"",isapplying:!1,isrestoring:!1,isclearing:!1,iskeysetchange:!1,ismodelechange:!1,isapplied:!1,isshowkeyset:!0,hasfnkeyset:!1,isfnkeyset:!1,disimportprofile:!0,disexportprofile:!0,dialog:{visible:!1,isshowclose:!1,title:"",content:"",dtype:0},dialogkeylesel:{visible:!1,isshowclose:!1,title:"",content:""},staticleh:150,layerguid:0}},components:{"cms-device":s["default"],"cms-keyset":a["default"],"cms-lelist":l["default"],"cms-lestatic":c["default"],"cms-macrolist":d["default"]},ready(){this.handleHeightTableResize(),window.addEventListener("resize",this.handleHeightTableResize,!1)},beforeCreate(){try{var e=CMS.userConfig.ModelInit[CMS.deviceID].Mode;window.getProfileGuidByModeIndex(e,function(e){this.changeProfile(e)}.bind(this))}catch(t){console.warn("An error occurred: ",t)}},mounted(){var e=this,t=this;window.addEventListener("resize",(function(){return e.handleHeightTableResize()}),!1),window.addEventListener("resize",this.onResize),this.onResize(),window.onresize=function(){return function(){t.mainh=document.getElementById("mainbox").offsetHeight,t.mainw=document.getElementById("mainbox").offsetWidth}()},t.$refs.device.isshowkeyset=t.isshowkeyset,t.staticleh=document.querySelector("#colorpbox").offsetHeight,document.querySelector("#staticlebox").style.height=document.querySelector("#colorpbox").offsetHeight+"px",DEVICE.isEditStaticLE=!1,DEVICE.editStaticLEColor="#ff0000"},beforeDestroy(){window.removeEventListener("resize",this.handleHeightTableResize(),!1),window.removeEventListener("resize",this.onResize)},watch:{mainh(e){this.mainh=e},mainw(e){this.mainw=e},"cms.deviceID":function(e,t){var i=this;e!==t&&0!==e&&setTimeout((function(){DEVICE.ensureLoaded((function(){window.getProfileGuidByModeIndex(CMS.userConfig.ModelInit[e].Mode,(function(e){i.changeProfile(e)}))}))}),200)},"device.modeIndex":function(e,t){var i=this;e!==t&&i.changeProfile(DEVICE.profiles[e-1].GUID)},"device.isEditStaticLE":function(e,t){var i=this;e!==t&&(i.$refs.device.ismutiselect=e,DEVICE.isEditStaticLE&&i.renderStaticLE(),window.isModeLEChange()?i.$refs.lelist.isbreath=!0:i.$refs.lelist.isbreath=!1)}},computed:y(y({},(0,u.aH)("app",{showScaleImg:function(e){return e.showScaleImg}})),{},{reorderedOptions(){var e=this,t=[2,3,4,0,1],i=t.map((function(t){return e.device.profiles.find((function(e){return e.ModeIndex===t}))})).filter((function(e){return e}));return i},mode:function(){return DEVICE.currentProfile?DEVICE.currentProfile.ModeIndex:1},hasModeLe:function(){return!!CMS.deviceConfig.hasModeLe},hasOnlineMode(){return!!CMS.deviceConfig.hasOnlineMode},lay_show_scale:function(){return CMS.deviceConfig.hasOwnProperty("ShowScalePlus")?this.mainw/24*18/1200+this.showScaleImg:this.mainw/24*18/1200},lay_show_scale_plus:function(){return CMS.deviceConfig.hasOwnProperty("ShowScalePlus")?this.showScaleImg:0},lay_h_show:function(){return this.mainh/5*3},lay_h_keys:function(){return this.mainh/5*2},lay_h_les:function(){return this.mainh/5*3.1},lay_h_macros:function(){return this.mainh/5*2},lay_h_les_list:function(){return this.mainh/5*3-48-84+16-this.staticleh+10},lay_h_macros_list:function(){return this.mainh/5*2-48-84-24},showdevbtn:function(){return 0===CMS.deviceConfig.DeviceType},filterkeylelist:function(){var e=[];return e=this.cms.les,e},disabledstd(){return 656801992===window.CMS.deviceID||656802033===window.CMS.deviceID||656802036===window.CMS.deviceID}}),methods:y(y({},(0,u.PY)("app",{setScaleImg:"SET_SCALE_IMG"})),{},{zoomOut(){this.setScaleImg(this.showScaleImg-.01)},zoomIn(){this.setScaleImg(this.showScaleImg+.01)},onResize(){var e=window.innerWidth,t=window.innerHeight,i=e/t;t>800?(this.asideWidth="300px",i<1&&(this.asideWidth=t/2+"px")):this.asideWidth="256px"},handleHeightTableResize(){var e=this;try{this.$nextTick((function(){if(e.$refs.macrolist){var t=e.$refs.macrolist.$refs.macrostable.$el.getBoundingClientRect(),i=e.$refs.lelist.$refs.lestable.$el.getBoundingClientRect(),n=document.documentElement.clientHeight;e.$nextTick((function(){e.macroheight=n-t.top-e.$refs.macrolist.$refs.macrostable.$el.offsetTop,e.leheight=n-i.top-e.$refs.lelist.$refs.lestable.$el.offsetTop}))}}))}catch(t){}},changeProfile:function(e){var t=this;if(!e)return null;if(t.layerguid=e,t.iskeysetchange=!1,t.isapplied=!1,t.isapplying=!1,t.hasfnkeyset=!1,t.isfnkeyset=!1,DEVICE.editKeyCode){var i=document.getElementById("key"+DEVICE.editKeyCode);i.classList.remove("key-breath"),DEVICE.editKeyCode=0}readProfile(CMS.deviceID,e,(function(e){e?(DEVICE.currentProfile=e,window.cprofile=JSON.parse(JSON.stringify(e)),window.changeMode(CMS.deviceID,e.ModeIndex),t.$refs.keysets.isdrivermode=!1,t.$refs.device.isfnlayer=!1,0===e.ModeIndex&&(t.applyProfile(),t.$refs.keysets.isdrivermode=!0),1==e.ModeIndex?(t.$refs.device.initStdKeyset(),t.disimportprofile=!0,t.disexportprofile=!0,DEVICE.stdlesel=e.DriverLE[0].GUID,t.$refs.lelist.disabled=!0,t.$refs.macrolist.disabled=!0,t.$refs.keysets.disabled=!0):(t.$refs.device.initKeyset(),t.disimportprofile=!0,t.disexportprofile=!0,e.ModeLE.GUID?t.$refs.lelist.leSelected(e.ModeLE.GUID):t.renderStaticLE(),DEVICE.lesel=e.ModeLE.GUID,t.$refs.lelist.disabled=!1,t.$refs.macrolist.disabled=!1,t.$refs.keysets.disabled=!1,DEVICE.currentProfile.hasOwnProperty("FnKeySet")&&(t.hasfnkeyset=!0)),CMS.userConfig.ModelInit[CMS.deviceID].Mode!==e.ModeIndex&&(CMS.userConfig.ModelInit[CMS.deviceID].Mode=e.ModeIndex,window.writeUserConfig(CMS.userConfig))):t.alertInfo("Read profile failed!","fail",800)}))},changeStdProfile:function(){},changeKeyFunc:function(e,t){this.$createElement;var i=this,n=[];if(n=i.isfnkeyset?DEVICE.currentProfile.FnKeySet:DEVICE.currentProfile.KeySet,"disable_enable"==t){for(var o=0;o<n.length;o++)"0x02000000"==n[o].DriverValue.toString()&&window.getDefaultKeySetByLcode(n[o].Index,(function(e){var t=document.getElementById("key"+n[o].Index);t&&(n[o].MenuName="",n[o].DriverValue=e.DriverValue,t.innerHTML="<span></span>",t.setAttribute("data-func",i.$t("common.key_func_no_config")),t.classList.remove("seted"),n[o].KeyLE&&""!==n[o].KeyLE.GUID&&t.classList.add("seted"))}));window.isKeySetChange()?this.iskeysetchange=!0:this.iskeysetchange=!1}else if("disable_all"==t||"disable_num"==t||"disable_fx"==t||"disable_pad"==t||"disable_letter"==t||"disable_symbol"==t||"disable_ctrls"==t||"disable_func9"==t||"disable_direction"==t){var r=window.KeyFunc[t].DriverValue.split(",");if("disable_all"==t){r=[];for(o=0;o<n.length;o++)r.push(n[o].Index.toString())}for(o=0;o<n.length;o++)if(r.indexOf(n[o].Index.toString())>=0){n[o].MenuName=window.KeyFunc["0x02000000"].Name,n[o].DriverValue=window.KeyFunc["0x02000000"].DriverValue;var s=document.getElementById("key"+n[o].Index);s&&(s.innerHTML="<span class='hasfunc'></span>",s.classList.add("seted"),s.children[0].classList.add(window.KeyFunc["0x02000000"].Icon),s.children[0].classList.add(window.KeyFunc["0x02000000"].ShowClass),s.setAttribute("data-func",i.$t("keys")[window.KeyFunc["0x02000000"].LangTitle]))}window.isKeySetChange()?this.iskeysetchange=!0:this.iskeysetchange=!1}else if(DEVICE.editKeyCode){var a=document.getElementById("key"+DEVICE.editKeyCode);if(a){if(window.KeyFunc[t])a.innerHTML="<span class='hasfunc'>"+i.$t("keys")[window.KeyFunc[t].LangTitle]+"</span>",a.setAttribute("data-func",i.$t("keys")[window.KeyFunc[t].LangTitle]),window.KeyFunc[t].Icon&&(a.children[0].classList.add(window.KeyFunc[t].Icon),a.children[0].innerHTML=""),window.KeyFunc[t].ShowClass&&a.children[0].classList.add(window.KeyFunc[t].ShowClass);else{if(e.length<=5)a.innerHTML="<span class='hasfunc'>"+e+"</span>";else var l=a.offsetWidth;var c=a.offsetHeight,d=.3*Math.min(l,c)+"px";a.querySelector("span").style.fontSize=d,a.innerHTML=`<span class='hasfunc' style='font-size: ${d}'>`+e.substring(0,4)+"...</span>",a.setAttribute("data-func",e)}a.classList.add("seted")}for(o=0;o<n.length;o++)n[o].Index===DEVICE.editKeyCode&&(n[o].MenuName=e,n[o].DriverValue=t,e.indexOf(".exe")>0&&(n[o].DriverValue="0x0A030001",n[o].Task={},n[o].Task.Type="OpenURL",n[o].Task.Data={AppPath:t}),window.isKeySetChange()?this.iskeysetchange=!0:this.iskeysetchange=!1)}else i.alertInfo(i.$t("common.key_select_attention"),"warning",1e3)},setKeyMacro:function(e,t){var i=this,n=DEVICE.currentProfile.KeySet;if(i.isfnkeyset&&(n=DEVICE.currentProfile.FnKeySet),DEVICE.editKeyCode){var o=document.getElementById("key"+DEVICE.editKeyCode);o&&(o.innerHTML="<span class='hasfunc'>"+e+"</span>",o.classList.add("seted"),o.setAttribute("data-func",e));for(var r=0;r<n.length;r++)n[r].Index===DEVICE.editKeyCode&&(n[r].MenuPID=1,n[r].MenuName=e,n[r].DriverValue="0x0A010001",n[r].Task={Type:"Macro",Data:{}},n[r].Task.Data=t,window.isKeySetChange()?i.iskeysetchange=!0:i.iskeysetchange=!1)}else i.alertInfo(i.$t("common.key_select_attention"),"warning",1e3)},removeKeyFunc(){var e=this,t=document.getElementById("config_key").getAttribute("data-key"),i=[];i=e.isfnkeyset?DEVICE.currentProfile.FnKeySet:DEVICE.currentProfile.KeySet;for(var n=0;n<i.length;n++)if(i[n].Index==t){window.getDefaultKeySetByLcode(parseInt(t),(function(o){i[n].MenuPID="",i[n].MenuID="",i[n].MenuName="",i[n].DriverValue=o.DriverValue,delete i[n].Task,document.getElementById("config_key").innerHTML=e.$t("common.key_func_no_config"),document.getElementById("key"+t).innerHTML="<span></span>",document.getElementById("key"+t).setAttribute("data-func",e.$t("common.key_func_no_config")),i[n].KeyLE?""==i[n].KeyLE.GUID&&document.getElementById("key"+t).classList.remove("seted"):document.getElementById("key"+t).classList.remove("seted"),window.isKeySetChange()?e.iskeysetchange=!0:e.iskeysetchange=!1}));break}},changeKeyLE:function(e,t,i){if(0!==e){document.getElementById("key"+e).classList.add("seted");for(var n=0;n<DEVICE.currentProfile.KeySet.length;n++)DEVICE.currentProfile.KeySet[n].Index==e&&(DEVICE.currentProfile.KeySet[n].KeyLE={Name:t,GUID:i},document.getElementById("key"+e).setAttribute("data-le",t),window.isKeySetChange()?this.iskeysetchange=!0:this.iskeysetchange=!1)}},removeKeyLE(){for(var e=document.getElementById("config_key").getAttribute("data-key"),t=0;t<DEVICE.currentProfile.KeySet.length;t++)if(DEVICE.currentProfile.KeySet[t].Index==e){DEVICE.currentProfile.KeySet[t].KeyLE&&""!==DEVICE.currentProfile.KeySet[t].KeyLE.GUID&&(delete DEVICE.currentProfile.KeySet[t].KeyLE,document.getElementById("config_le").innerHTML=this.$t("common.key_le_no_config"),document.getElementById("key"+e).setAttribute("data-le",this.$t("common.key_le_no_config")),""==DEVICE.currentProfile.KeySet[t].MenuName&&document.getElementById("key"+e).classList.remove("seted"),window.isKeySetChange()?this.iskeysetchange=!0:this.iskeysetchange=!1);break}},saveProfile:function(){var e=this;window.writeProfile(CMS.deviceID,DEVICE.currentProfile.GUID,window.cprofile,(function(t){0===DEVICE.currentProfile.ModeIndex&&window.apply(CMS.deviceID,DEVICE.currentProfile.GUID,(function(t){var i="",n="success";t?i=e.$t("common.apply_success"):(i=e.$t("common.apply_fail"),n="error"),e.alertInfo(i,n,1e3)}))}))},saveKeySet:function(){var e=this;1!==DEVICE.currentProfile.ModeIndex?(window.cprofile.KeySet=JSON.parse(JSON.stringify(DEVICE.currentProfile.KeySet)),DEVICE.currentProfile.FnKeySet&&(window.cprofile.FnKeySet=JSON.parse(JSON.stringify(DEVICE.currentProfile.FnKeySet))),e.saveProfile()):e.saveStdLE(),e.iskeysetchange=!1,e.isapplied=!0},saveModeLE:function(){var e=this;1!==DEVICE.currentProfile.ModeIndex&&(JSON.stringify(DEVICE.currentProfile.ModeLE),window.cprofile.ModeLE=JSON.parse(JSON.stringify(DEVICE.currentProfile.ModeLE)),e.saveProfile(),e.$refs.lelist.isbreath=!1,e.isapplied=!0)},applyProfile:function(){var e=this;e.isapplying=!0,window.apply(CMS.deviceID,DEVICE.currentProfile.GUID,(function(t){var i="",n="success";t?i=e.$t("common.apply_success"):(i=e.$t("common.apply_fail"),n="error"),e.alertInfo(i,n,1e3),DEVICE.editKeyCode&&(document.getElementById("key"+DEVICE.editKeyCode).classList.remove("key-breath"),DEVICE.editKeyCode=""),e.isapplying=!1,e.isapplied=!1}))},handleIsShowKeySet:function(e){var t=this;window.localStorage.isshowkeyset=e,this.$refs.device.isshowkeyset=e,setTimeout((function(){1==DEVICE.currentProfile.ModeIndex?t.$refs.device.initStdKeyset():t.$refs.device.initKeyset()}),100)},handleIsFnKeySet:function(e){var t=this;setTimeout((function(){1==DEVICE.currentProfile.ModeIndex?t.$refs.device.initStdKeyset():t.$refs.device.initKeyset()}),100)},openFnLayer:function(e){var t=this;this.isfnkeyset=e,this.$nextTick((function(){t.handleIsFnKeySet(e)}))},selectStdLE:function(){this.dialogkeylesel.title=this.$t("common.key_le_select_attention"),this.dialogkeylesel.visible=!0},dialogRowClassName:function(e,t){switch(window.CMS.deviceID){case 656802004:if(1==Object.values(e)[0].Hidden)return"hidden-row";break;case 656802005:if(1==Object.values(e)[0].Hidden)return"hidden-row";break;case 656802006:if(1==Object.values(e)[0].Hidden)return"hidden-row";break;case 656802007:if(1==Object.values(e)[0].Hidden)return"hidden-row";break;case 656802042:if(1==Object.values(e)[0].Hidden)return"hidden-row";break;default:return""}},saveStdLE:function(){DEVICE.currentProfile.hasOwnProperty("KeySet")&&(window.cprofile.KeySet=JSON.parse(JSON.stringify(DEVICE.currentProfile.KeySet))),window.cprofile.DriverLE=JSON.parse(JSON.stringify(DEVICE.currentProfile.DriverLE)),this.saveProfile()},removeStdLE:function(){var e=this;DEVICE.currentProfile.DriverLE[DEVICE.lestdindex].Name="",DEVICE.currentProfile.DriverLE[DEVICE.lestdindex].GUID="",document.getElementById("std_le_"+DEVICE.lestdindex).innerHTML=e.$t("common.key_le_no_config"),window.isStdLEChange()?e.iskeysetchange=!0:e.iskeysetchange=!1},handleFnxChange:function(){var e=this;window.isKeySetChange()?e.iskeysetchange=!0:e.iskeysetchange=!1},handleShowRestoreProfileConfirm:function(){var e=this;e.dialog.visible=!0,e.dialog.title=e.$t("common.attention"),e.dialog.content=e.$t("common.restore_currentprofile_confirm"),e.dialog.dtype=1},restoreCurrentProfile:function(){var e=this;window.restoreLayer(DEVICE.currentProfile.Index,!0).then((function(t){var i="",n="success";"0"==t?(i=e.$t("common.apply_fail"),n="error"):"1"==t?i=e.$t("common.profile_save_success"):"2"==t&&(i=e.$t("common.apply_success")),e.changeProfile(DEVICE.currentProfile.GUID),e.alertInfo(i,n,1e3),e.isrestoring=!1}))},handleShowClearProfile:function(){var e=this;e.dialog.visible=!0,e.dialog.title=e.$t("common.attention"),e.dialog.content=e.$t("common.clear_currentprofile_confirm"),e.dialog.dtype=2},clearCurrentProfile:function(){var e=this;window.clearLayer(DEVICE.currentProfile.ModeIndex,!0).then((function(t){var i="",n="success";"0"==t?(i=e.$t("common.apply_fail"),n="error"):"1"==t?i=e.$t("common.profile_save_success"):"2"==t&&(i=e.$t("common.apply_success")),e.changeProfile(DEVICE.currentProfile.GUID),e.alertInfo(i,n,1e3),e.isclearing=!1}))},handleConfirm:function(){var e=this;1==e.dialog.dtype?(e.isrestoring=!0,e.restoreCurrentProfile()):2==e.dialog.dtype&&(e.isclearing=!0,e.clearCurrentProfile()),e.dialog.visible=!1},handleImportProfile:function(){var e=this;window.importUserProfiles(CMS.deviceID,(function(t){var i=JSON.parse(t);!i.success&&i.canceled||e.alertInfo(e.$t("common.import_userprofile")+e.$t("common.success"),"success",1e3)}))},handleExportProfile:function(){var e=this;window.exportUserProfiles(CMS.deviceID,(function(t){var i=JSON.parse(t);i.success||!i.canceled?e.alertInfo(e.$t("common.export_userprofile")+e.$t("common.success"),"success",1e3):e.alertInfo(e.$t("common.export_userprofile")+e.$t("common.fail"),"fail",1e3)}))},handleCloseDialog:function(){},showKeyLeSelect:function(){this.dialogkeylesel.title=this.$t("common.key_le_select_attention"),this.dialogkeylesel.visible=!0},handleKeyLeRowChange:function(e,t,i){DEVICE.keylesel.Name=e.Name,DEVICE.keylesel.GUID=e.GUID},handleKeyLeConfirm:function(){var e=this;if(1==DEVICE.currentProfile.ModeIndex)DEVICE.currentProfile.DriverLE[DEVICE.lestdindex].Name=DEVICE.keylesel.Name,DEVICE.currentProfile.DriverLE[DEVICE.lestdindex].GUID=DEVICE.keylesel.GUID,document.getElementById("std_le_"+DEVICE.lestdindex).innerHTML=DEVICE.keylesel.Name,window.isStdLEChange()?e.iskeysetchange=!0:e.iskeysetchange=!1;else{var t=document.getElementById("config_key").getAttribute("data-key");document.getElementById("config_le").innerHTML=DEVICE.keylesel.Name,e.changeKeyLE(t,DEVICE.keylesel.Name,DEVICE.keylesel.GUID)}e.dialogkeylesel.visible=!1},playLE(){this.$refs.device.playLe()},stopLe(){DEVICE.timer&&(clearInterval(DEVICE.timer),DEVICE.timer=null);for(var e=0;e<DEVICE.keymap.length;e++){var t=DEVICE.keymap[e].LocationCode.toString();document.getElementById("le"+t)&&document.getElementById("le"+t).style.setProperty("background","#000")}},renderFrame:function(e){for(var t in e){var i=document.getElementById("le"+t);i&&i.style.setProperty("background",window.toJS(e[t]))}},renderStaticLE:function(){var e=this;e.stopLe(),e.$refs.lelist.leUnSelectAll(),e.$refs.lelist.leselname=e.$t("le.diy_static_le"),DEVICE.currentProfile.ModeLE.GUID="",DEVICE.currentProfile.ModeLE.Name=e.$t("le.diy_static_le"),DEVICE.currentProfile.ModeLE.hasOwnProperty("LEData")||(DEVICE.currentProfile.ModeLE.LEData={}),e.renderFrame(DEVICE.currentProfile.ModeLE.LEData)},selStaticLeKeys:function(e,t){var i=this;DEVICE.currentProfile.ModeLE.hasOwnProperty("LEData")||(DEVICE.currentProfile.ModeLE.LEData={}),e.forEach((function(e){"#000000"===DEVICE.editStaticLEColor?DEVICE.currentProfile.ModeLE.LEData.hasOwnProperty(e)&&(delete DEVICE.currentProfile.ModeLE.LEData[e],document.getElementById("le"+e).style.setProperty("background","#000000")):DEVICE.currentProfile.ModeLE.LEData[e]=window.to16(DEVICE.editStaticLEColor)})),i.renderFrame(DEVICE.currentProfile.ModeLE.LEData),window.isModeLEChange()?i.$refs.lelist.isbreath=!0:i.$refs.lelist.isbreath=!1},alertInfo:function(e,t,i){this.$notify({title:e,type:t,duration:i,position:"bottom-left"})},showTestInfo(){var e=this;e.alertInfo(this.$t("common.func_in_dev_info"),"warning",1e3)}}),beforeRouteEnter(e,t,i){CMS.isLoaded=!1,setTimeout((function(){i((function(e){setTimeout((function(){CMS.isLoaded=!0}),500)}))}),5)}},v=E,w=(i(55554),i(14486)),I=(0,w.A)(v,n,o,!1,null,"045474b4",null),b=I.exports},33190:function(e,t,i){"use strict";i.r(t),i.d(t,{default:function(){return c}});var n=function(){var e=this,t=e._self._c;return t("el-row",[t("el-col",{staticStyle:{padding:"0.5rem 0.5rem 0rem 0.5rem"},attrs:{span:24}},[t("el-card",{staticStyle:{position:"relative"}},[t("div",{staticClass:"disablediv",class:{disablehide:!e.disabled}}),t("template",{slot:"header"},[t("div",{style:e.calcI18n},[t("i",{staticClass:"header-icon el-icon-document"}),e._v(" "+e._s(e.$t("macro.macro_setting_title"))+"\n          ")])]),t("el-input",{staticClass:"input-with-select",staticStyle:{"z-index":"3"},attrs:{placeholder:e.$t("common.input_search_text"),size:"mini"},model:{value:e.schfilter,callback:function(t){e.schfilter=t},expression:"schfilter"}},[t("el-select",{staticStyle:{width:"7rem"},attrs:{slot:"prepend",placeholder:e.$t("common.please_select")},on:{change:e.changeMacroType},slot:"prepend",model:{value:e.macrofilter,callback:function(t){e.macrofilter=t},expression:"macrofilter"}},e._l(e.macrolist,(function(e,i){return t("el-option",{key:e.index,attrs:{label:e.Name,value:i}})})),1),t("el-button",{attrs:{slot:"append",icon:"el-icon-search"},slot:"append"})],1),t("el-table",{directives:[{name:"loading",rawName:"v-loading",value:e.loading,expression:"loading"}],ref:"macrostable",attrs:{data:e.filtermacrolist||[],"empty-text":e.$t("common.no_data"),height:e.height,"show-header":!1,border:"","highlight-current-row":"",size:"mini"},on:{"current-change":e.handleCurrentChange}},[t("el-table-column",{scopedSlots:e._u([{key:"default",fn:function(i){return[t("i",{staticClass:"el-icon-document"}),t("span",{staticStyle:{"margin-left":"10px"}},[e._v(e._s(i.row.Name))])]}}])})],1),t("div",{staticClass:"macrolist-oper"},[t("el-radio",{staticClass:"tracking-[-.09em]",attrs:{label:1},model:{value:e.macrocfg.StopMode,callback:function(t){e.$set(e.macrocfg,"StopMode",t)},expression:"macrocfg.StopMode"}},[e._v(e._s(e.$t("macro.macro_btn_execute"))),t("input",{directives:[{name:"model",rawName:"v-model",value:e.macrocfg.Repeats,expression:"macrocfg.Repeats"}],staticClass:"edit-cell mini",domProps:{value:e.macrocfg.Repeats},on:{input:function(t){t.target.composing||e.$set(e.macrocfg,"Repeats",t.target.value)}}}),e._v(e._s(e.$t("macro.n_times_stop"))+"\n          ")]),t("br"),t("el-radio",{staticClass:"tracking-[-.08em]",attrs:{label:2},model:{value:e.macrocfg.StopMode,callback:function(t){e.$set(e.macrocfg,"StopMode",t)},expression:"macrocfg.StopMode"}},[e._v(e._s(e.$t("macro.macro_btn_execute_release_to_stop"))+"\n          ")]),t("br"),t("el-radio",{staticClass:"tracking-[-.09em]",attrs:{label:3},model:{value:e.macrocfg.StopMode,callback:function(t){e.$set(e.macrocfg,"StopMode",t)},expression:"macrocfg.StopMode"}},[e._v(e._s(e.$t("macro.macro_btn_execute_pressagain_to_stop"))+"\n          ")]),t("el-button",{staticStyle:{position:"absolute",right:".0rem",bottom:".4rem"},attrs:{loading:!1,icon:"el-icon-view"},on:{click:e.setMacro}},[e._v(e._s(e.$t("common.use"))+"\n          ")])],1)],2)],1)],1)},o=[],r=(i(2008),i(25276),i(26099),{data(){return{loading:!0,schfilter:"",macrofilter:"",filtermacrolist:[],disabled:!1,macroname:"",macrocfg:{GUID:"",StopMode:1,Repeats:1}}},props:["height","macrolist"],created:function(){},computed:{calcI18n(){var e=(this.$i18n.locale,"12px");return{fontSize:e}}},mounted:function(){var e=this;setTimeout((function(){e.macrolist&&e.macrolist.length>0&&e.macrolist[0].Data?(e.filtermacrolist=e.macrolist[0].Data,e.macrofilter=e.macrolist[0].Name):(e.filtermacrolist=[],e.macrofilter="",console.warn("The macrolist is empty or the first item has no data.")),e.loading=!1}),1e3)},watch:{schfilter:function(e,t){this.filtermacrolist=this.macrolist[0].Data.filter((function(t){return~t.Name.indexOf(e)}))}},methods:{changeMacroType(e){var t=this;t.filtermacrolist=t.macrolist[e].Data},handleCurrentChange(e){this.macroname=e.Name,this.macrocfg.GUID=e.GUID},setMacro(){var e=this;if(""!=e.macrocfg.GUID){var t=JSON.parse(JSON.stringify(this.macrocfg));t.Repeats=parseInt(t.Repeats),JSON.stringify(t),e.macroname,e.$emit("setKeyMacro",e.macroname,t)}else e.alertInfo("提示","请先选择要设置的宏！",800)},alertInfo:function(e,t,i){this.$notify({title:e,type:t,duration:i,position:"bottom"})}}}),s=r,a=(i(53132),i(14486)),l=(0,a.A)(s,n,o,!1,null,"7bb2989f",null),c=l.exports},55554:function(e,t,i){var n=i(59686);n.__esModule&&(n=n.default),"string"===typeof n&&(n=[[e.id,n,""]]),n.locals&&(e.exports=n.locals);var o=i(70534).A;o("1425a185",n,!0,{})},53132:function(e,t,i){var n=i(48928);n.__esModule&&(n=n.default),"string"===typeof n&&(n=[[e.id,n,""]]),n.locals&&(e.exports=n.locals);var o=i(70534).A;o("ed8a8540",n,!0,{})}}]);
+(self["webpackChunkkeyboard_driver"] =
+  self["webpackChunkkeyboard_driver"] || []).push([
+  [2117, 3190],
+  {
+    59686: function (e, t, i) {
+      (t = e.exports = i(54765)(void 0)),
+        t.push([
+          e.id,
+          ".row-con[data-v-045474b4]{display:flex;flex-flow:row wrap}.row-con .card[data-v-045474b4]{height:100%}.grid-container[data-v-045474b4]{display:grid;width:100%;grid-template-columns:auto 1fr 1fr;grid-auto-flow:column;grid-auto-columns:minmax(0, 1fr);grid-template-rows:1fr;justify-content:space-between !important}[data-v-045474b4] .el-button--mini{font-size:10px}.grid-item[data-v-045474b4]:nth-child(1){display:inline-flex;width:max-content;justify-items:end}.grid-item[data-v-045474b4]:nth-child(2){display:inline-flex;width:max-content;justify-items:start}.grid-item[data-v-045474b4]:nth-child(3){display:inline-flex;width:max-content;justify-items:end}.saveApply[data-v-045474b4]{position:absolute;right:1rem}.layout .sidebar[data-v-045474b4]{width:100%;min-width:100%}.el-radio-button__orig-radio:disabled+.el-radio-button__inner[data-v-045474b4]{color:#67696d;cursor:not-allowed;background-image:none;background-color:#383838;border-color:#111;box-shadow:none}.el-tabs__content[data-v-045474b4]{overflow-y:auto;padding:0px !important}.devinfo[data-v-045474b4]{position:absolute;display:inline-block;left:1rem;color:#0090cc;line-height:1.5rem;font-weight:bold}.devinfo span[data-v-045474b4]{width:max-content;font-size:10px;color:#ababab;font-weight:bold}[data-v-045474b4] .el-table .hidden-row{display:none}",
+          "",
+        ]);
+    },
+    48928: function (e, t, i) {
+      (t = e.exports = i(54765)(!1)),
+        t.push([
+          e.id,
+          "\n.layout .sidebar[data-v-7bb2989f] {\r\n  width: 100%;\r\n  min-width: 100%;\n}\r\n/* @media only screen and (min-height: 700px) and (max-height: 700px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 235px;\r\n    min-width: 100%;\r\n  }\r\n}\r\n@media only screen and (min-height: 750px) and (max-height: 750px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 256px;\r\n    min-width: 100%;\r\n  }\r\n}\r\n@media only screen and (min-height: 768px) and (max-height: 768px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 265px;\r\n    min-width: 100%;\r\n  }\r\n}\r\n@media only screen and (min-height: 800px) and (max-height: 800px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 277px;\r\n    min-width: 100%;\r\n  }\r\n}\r\n@media only screen and (min-height: 850px) and (max-height: 850px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 300px;\r\n    min-width: 100%;\r\n  }\r\n}\r\n@media only screen and (min-height: 900px) and (max-height: 900px) {\r\n  .layout .sidebar {\r\n    width: 100%;\r\n    height: 320px;\r\n    min-width: 100%;\r\n  }\r\n} */\n.el-input-group__prepend[data-v-7bb2989f] {\r\n  width: 3rem;\n}\n.macrolist-oper[data-v-7bb2989f] {\r\n  /* font-size:clamp(10px, calc(1vw + 0.5rem), 12px); */\r\n  padding: 0.3rem 1rem;\n}\n.edit-cell[data-v-7bb2989f] {\r\n  background: #333;\r\n  -webkit-appearance: none;\r\n  background-image: none;\r\n  border-radius: 4px;\r\n  border: 1px solid #111;\r\n  box-sizing: border-box;\r\n  color: #aaa;\r\n  display: inline-block;\r\n  font-size: inherit;\r\n  height: 1.6rem;\r\n  line-height: 1.6rem;\r\n  outline: 0;\r\n  padding: 0 1rem;\r\n  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);\r\n  width: 100%;\n}\n.edit-cell.mini[data-v-7bb2989f] {\r\n  width: 3rem;\r\n  padding: 0 0.2rem;\r\n  text-align: center;\n}\r\n",
+          "",
+        ]);
+    },
+    92117: function (e, t, i) {
+      "use strict";
+      i.r(t),
+        i.d(t, {
+          default: function () {
+            return b;
+          },
+        });
+      var n = function () {
+          var e = this,
+            t = e._self._c;
+          return t(
+            "el-container",
+            {
+              staticClass: "content panel",
+              attrs: { direction: "horizontal" },
+            },
+            [
+              t(
+                "el-container",
+                {
+                  staticClass: "content panel",
+                  attrs: { direction: "vertical" },
+                },
+                [
+                  t(
+                    "div",
+                    {
+                      style: {
+                        height: e.lay_h_show + "px",
+                        position: "relative",
+                      },
+                      attrs: { id: "device-show-box" },
+                    },
+                    [
+                      t(
+                        "div",
+                        { staticClass: "absolute top-1 right-0 z-10" },
+                        [
+                          t(
+                            "el-button-group",
+                            [
+                              t(
+                                "el-tooltip",
+                                {
+                                  staticClass: "item",
+                                  attrs: {
+                                    content: e.$t("common.zoomout_view"),
+                                    effect: "dark",
+                                    placement: "top",
+                                  },
+                                },
+                                [
+                                  t("el-button", {
+                                    attrs: { icon: "el-icon-zoom-out" },
+                                    on: { click: e.zoomOut },
+                                  }),
+                                ],
+                                1,
+                              ),
+                              t(
+                                "el-tooltip",
+                                {
+                                  staticClass: "item",
+                                  attrs: {
+                                    content: e.$t("common.enlarge_view"),
+                                    effect: "dark",
+                                    placement: "top",
+                                  },
+                                },
+                                [
+                                  t("el-button", {
+                                    attrs: { icon: "el-icon-zoom-in" },
+                                    on: { click: e.zoomIn },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      ),
+                      t("cms-device", {
+                        ref: "device",
+                        staticClass: "aspect-square",
+                        staticStyle: { "overflow-y": "auto" },
+                        attrs: {
+                          disabled: "",
+                          deviceid: e.cms.deviceID,
+                          isediting: !1,
+                          isfnkeyset: e.isfnkeyset,
+                          keymap: e.device.keymap,
+                          scale: e.lay_show_scale,
+                          scaleplus: e.lay_show_scale_plus,
+                          showbtn: e.showdevbtn,
+                        },
+                        on: {
+                          fnxChange: e.handleFnxChange,
+                          openFnLayer: e.openFnLayer,
+                          removeKeyFunc: e.removeKeyFunc,
+                          removeKeyLE: e.removeKeyLE,
+                          removeStdLE: e.removeStdLE,
+                          selLeKeys: e.selStaticLeKeys,
+                          selectStdLE: e.selectStdLE,
+                          showKeyLeSelect: e.showKeyLeSelect,
+                        },
+                      }),
+                      t(
+                        "div",
+                        {
+                          staticClass: "grid-container",
+                          staticStyle: {
+                            position: "absolute",
+                            bottom: "0rem",
+                            "z-index": "3",
+                          },
+                        },
+                        [
+                          t(
+                            "el-radio-group",
+                            {
+                              staticStyle: { "margin-left": "1rem" },
+                              on: { change: e.changeProfile },
+                              model: {
+                                value: e.layerguid,
+                                callback: function (t) {
+                                  e.layerguid = t;
+                                },
+                                expression: "layerguid",
+                              },
+                            },
+                            e._l(e.reorderedOptions, function (i, n) {
+                              return t(
+                                "el-radio-button",
+                                {
+                                  key: n,
+                                  attrs: {
+                                    "data-guid": i.GUID,
+                                    label: i.GUID,
+                                    disabled: 1 == i.ModeIndex && e.disabledstd,
+                                  },
+                                },
+                                [
+                                  i
+                                    ? [
+                                        i.ModeIndex >= 2 && i.ModeIndex <= 4
+                                          ? t("span", [
+                                              e._v(
+                                                "\n                            " +
+                                                  e._s(
+                                                    e.$t("common")[
+                                                      "layer_onboard_" +
+                                                        (i.ModeIndex - 1)
+                                                    ],
+                                                  ) +
+                                                  "\n                        ",
+                                              ),
+                                            ])
+                                          : 0 === i.ModeIndex
+                                            ? t("span", [
+                                                e._v(
+                                                  e._s(
+                                                    e.$t("common")[
+                                                      "layer_driver_1"
+                                                    ],
+                                                  ),
+                                                ),
+                                              ])
+                                            : 1 === i.ModeIndex
+                                              ? t("span", [
+                                                  e._v(
+                                                    e._s(
+                                                      e.$t("common.layer_std"),
+                                                    ),
+                                                  ),
+                                                ])
+                                              : t("span", [
+                                                  e._v(
+                                                    e._s(
+                                                      e.$t(
+                                                        "common.no_loading_layer",
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ]),
+                                      ]
+                                    : e._e(),
+                                ],
+                                2,
+                              );
+                            }),
+                            1,
+                          ),
+                          t(
+                            "el-button-group",
+                            {
+                              staticClass: "restoretool grid-item",
+                              staticStyle: { "margin-left": "0.5rem" },
+                              attrs: { size: "mini" },
+                            },
+                            [
+                              t(
+                                "el-tooltip",
+                                {
+                                  staticClass: "item",
+                                  attrs: {
+                                    content: e.$t(
+                                      "common.is_restore_current_layer_to_default",
+                                    ),
+                                    effect: "dark",
+                                    placement: "top",
+                                  },
+                                },
+                                [
+                                  t("el-button", {
+                                    attrs: {
+                                      loading: e.isrestoring,
+                                      icon: "el-icon-refresh",
+                                    },
+                                    on: {
+                                      click: e.handleShowRestoreProfileConfirm,
+                                    },
+                                  }),
+                                ],
+                                1,
+                              ),
+                              t(
+                                "el-tooltip",
+                                {
+                                  staticClass: "item",
+                                  attrs: {
+                                    content: e.$t(
+                                      "common.is_clear_current_config",
+                                    ),
+                                    effect: "dark",
+                                    placement: "top",
+                                  },
+                                },
+                                [
+                                  t("el-button", {
+                                    attrs: {
+                                      loading: e.isclearing,
+                                      icon: "el-icon-delete",
+                                      type: "danger",
+                                    },
+                                    on: { click: e.handleShowClearProfile },
+                                  }),
+                                ],
+                                1,
+                              ),
+                              t(
+                                "el-tooltip",
+                                {
+                                  staticClass: "item",
+                                  attrs: {
+                                    content: e.$t(
+                                      "common.is_import_profile_to_current_layer",
+                                    ),
+                                    effect: "dark",
+                                    placement: "top",
+                                  },
+                                },
+                                [
+                                  t("el-button", {
+                                    attrs: { icon: "el-icon-upload2" },
+                                    on: { click: e.handleImportProfile },
+                                  }),
+                                ],
+                                1,
+                              ),
+                              t(
+                                "el-tooltip",
+                                {
+                                  staticClass: "item",
+                                  attrs: {
+                                    content: e.$t(
+                                      "common.is_export_current_layer",
+                                    ),
+                                    effect: "dark",
+                                    placement: "top",
+                                  },
+                                },
+                                [
+                                  t("el-button", {
+                                    attrs: { icon: "el-icon-download" },
+                                    on: { click: e.handleExportProfile },
+                                  }),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                          t(
+                            "div",
+                            { staticClass: "saveApply grid-item" },
+                            [
+                              t(
+                                "el-button-group",
+                                {
+                                  staticStyle: { "margin-right": "0.5rem" },
+                                  attrs: { size: "mini" },
+                                },
+                                [
+                                  t(
+                                    "el-button",
+                                    {
+                                      class: { "btn-breath": e.iskeysetchange },
+                                      attrs: { icon: "el-icon-check" },
+                                      on: { click: e.saveKeySet },
+                                    },
+                                    [
+                                      e._v(
+                                        e._s(e.$t("common.save")) +
+                                          "\n            ",
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                                1,
+                              ),
+                              t(
+                                "el-button-group",
+                                { attrs: { size: "mini" } },
+                                [
+                                  t(
+                                    "el-button",
+                                    {
+                                      class: { "btn-breath": e.isapplied },
+                                      attrs: {
+                                        loading: e.isapplying,
+                                        icon: "el-icon-download",
+                                      },
+                                      on: { click: e.applyProfile },
+                                    },
+                                    [
+                                      e._v(
+                                        e._s(e.$t("common.apply")) +
+                                          "\n            ",
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                                1,
+                              ),
+                            ],
+                            1,
+                          ),
+                        ],
+                        1,
+                      ),
+                      t(
+                        "div",
+                        {
+                          staticStyle: {
+                            position: "absolute",
+                            top: "1rem",
+                            "z-index": "1",
+                            display: "grid",
+                            "grid-template-columns": "auto",
+                            "grid-template-rows": "auto",
+                          },
+                        },
+                        [
+                          t(
+                            "div",
+                            {
+                              staticClass:
+                                "devinfo xs:text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl",
+                              staticStyle: {
+                                "grid-row": "1",
+                                "grid-column": "1",
+                                width: "max-content",
+                              },
+                            },
+                            [
+                              t("span", { staticClass: "font-hairline" }, [
+                                e._v(e._s(e.$t("common.model")) + ": "),
+                              ]),
+                              e._v(" " + e._s(e.device.modelInfo.Name)),
+                              t("br"),
+                              t("span", { staticClass: "font-hairline" }, [
+                                e._v(e._s(e.$t("common.firm_version")) + ": "),
+                              ]),
+                              e._v(e._s(e.device.FWVersion) + "\n        "),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                    1,
+                  ),
+                  t(
+                    "div",
+                    { attrs: { id: "device-keys-box" } },
+                    [
+                      t("cms-keyset", {
+                        ref: "keysets",
+                        on: {
+                          changeKeyFunc: e.changeKeyFunc,
+                          saveProfile: e.saveProfile,
+                        },
+                      }),
+                    ],
+                    1,
+                  ),
+                ],
+              ),
+              t(
+                "el-aside",
+                {
+                  staticClass: "subnav hidden-xs-only",
+                  attrs: { width: e.asideWidth, height: "100%" },
+                },
+                [
+                  t(
+                    "el-row",
+                    { staticClass: "row-con", attrs: { gutter: 20 } },
+                    [
+                      t(
+                        "el-col",
+                        [
+                          t("cms-lelist", {
+                            ref: "lelist",
+                            staticClass: "card",
+                            attrs: {
+                              title: e.$t("le.le_setting_title"),
+                              isstaticle: "true",
+                              leseltype: "1",
+                              height: e.lay_h_les_list,
+                              lelist: e.cms.les,
+                              lesel: e.device.lesel,
+                            },
+                            on: { playLE: e.playLE, saveModeLE: e.saveModeLE },
+                          }),
+                        ],
+                        1,
+                      ),
+                    ],
+                    1,
+                  ),
+                  t(
+                    "el-row",
+                    { staticClass: "row-con", attrs: { gutter: 20 } },
+                    [
+                      t(
+                        "el-col",
+                        [
+                          t("cms-macrolist", {
+                            ref: "macrolist",
+                            staticClass: "card",
+                            attrs: {
+                              height: e.lay_h_macros_list,
+                              macrolist: e.cms.macros,
+                            },
+                            on: { setKeyMacro: e.setKeyMacro },
+                          }),
+                        ],
+                        1,
+                      ),
+                    ],
+                    1,
+                  ),
+                ],
+                1,
+              ),
+              t(
+                "el-dialog",
+                {
+                  attrs: {
+                    "before-close": e.handleCloseDialog,
+                    "show-close": e.dialog.isshowclose,
+                    visible: e.dialog.visible,
+                    center: "",
+                    width: "30%",
+                  },
+                  on: {
+                    "update:visible": function (t) {
+                      return e.$set(e.dialog, "visible", t);
+                    },
+                  },
+                },
+                [
+                  t("p", { attrs: { slot: "title" }, slot: "title" }, [
+                    t("i", { staticClass: "el-icon-warning" }),
+                    e._v(" " + e._s(e.dialog.title)),
+                  ]),
+                  t("span", [e._v(e._s(e.dialog.content))]),
+                  t(
+                    "span",
+                    {
+                      staticClass: "dialog-footer",
+                      attrs: { slot: "footer" },
+                      slot: "footer",
+                    },
+                    [
+                      t(
+                        "el-button",
+                        {
+                          attrs: { icon: "el-icon-back" },
+                          on: {
+                            click: function (t) {
+                              e.dialog.visible = !1;
+                            },
+                          },
+                        },
+                        [e._v(e._s(e.$t("common.cancel")))],
+                      ),
+                      t(
+                        "el-button",
+                        {
+                          attrs: { icon: "el-icon-check", type: "primary" },
+                          on: { click: e.handleConfirm },
+                        },
+                        [e._v(e._s(e.$t("common.confirm")))],
+                      ),
+                    ],
+                    1,
+                  ),
+                ],
+              ),
+              t(
+                "el-dialog",
+                {
+                  attrs: {
+                    "show-close": e.dialogkeylesel.isshowclose,
+                    visible: e.dialogkeylesel.visible,
+                    center: "",
+                    "custom-class": "dia-keyle",
+                    width: "31.8vw",
+                  },
+                  on: {
+                    "update:visible": function (t) {
+                      return e.$set(e.dialogkeylesel, "visible", t);
+                    },
+                  },
+                },
+                [
+                  t("p", { attrs: { slot: "title" }, slot: "title" }, [
+                    t("i", { staticClass: "el-icon-circle-check" }),
+                    e._v(" " + e._s(e.dialogkeylesel.title) + "\n    "),
+                  ]),
+                  t(
+                    "span",
+                    [
+                      t(
+                        "el-table",
+                        {
+                          ref: "keylestable",
+                          attrs: {
+                            data: e.filterkeylelist,
+                            "show-header": !1,
+                            "row-class-name": e.dialogRowClassName,
+                            border: "",
+                            height: "250",
+                            "highlight-current-row": "",
+                            size: "mini",
+                          },
+                          on: { "row-click": e.handleKeyLeRowChange },
+                        },
+                        [
+                          t("el-table-column", {
+                            scopedSlots: e._u([
+                              {
+                                key: "default",
+                                fn: function (i) {
+                                  return [
+                                    t("svg-icon", { attrs: { name: "light" } }),
+                                    t(
+                                      "span",
+                                      {
+                                        staticStyle: { "margin-left": "10px" },
+                                      },
+                                      [e._v(e._s(i.row.Name))],
+                                    ),
+                                  ];
+                                },
+                              },
+                            ]),
+                          }),
+                        ],
+                        1,
+                      ),
+                    ],
+                    1,
+                  ),
+                  t(
+                    "span",
+                    {
+                      staticClass: "dialog-footer",
+                      attrs: { slot: "footer" },
+                      slot: "footer",
+                    },
+                    [
+                      t(
+                        "el-button",
+                        {
+                          attrs: { icon: "el-icon-back" },
+                          on: {
+                            click: function (t) {
+                              e.dialogkeylesel.visible = !1;
+                            },
+                          },
+                        },
+                        [e._v(e._s(e.$t("common.cancel")))],
+                      ),
+                      t(
+                        "el-button",
+                        {
+                          attrs: { icon: "el-icon-check", type: "primary" },
+                          on: { click: e.handleKeyLeConfirm },
+                        },
+                        [e._v(e._s(e.$t("common.confirm")))],
+                      ),
+                    ],
+                    1,
+                  ),
+                ],
+              ),
+              t(
+                "div",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: !1,
+                      expression: "false",
+                    },
+                  ],
+                  staticStyle: { position: "absolute", right: "1rem" },
+                },
+                [
+                  e.hasfnkeyset
+                    ? t("el-switch", {
+                        staticStyle: { "margin-left": "1rem" },
+                        attrs: {
+                          "active-color": "#00A0DD",
+                          "active-text": "Fn+X",
+                          "inactive-color": "#666",
+                        },
+                        on: { change: e.handleIsFnKeySet },
+                        model: {
+                          value: e.isfnkeyset,
+                          callback: function (t) {
+                            e.isfnkeyset = t;
+                          },
+                          expression: "isfnkeyset",
+                        },
+                      })
+                    : e._e(),
+                ],
+                1,
+              ),
+            ],
+            1,
+          );
+        },
+        o = [],
+        r = (i(52675), i(81278), i(64467)),
+        s =
+          (i(2008),
+          i(25276),
+          i(62062),
+          i(26099),
+          i(16034),
+          i(38781),
+          i(23500),
+          i(66285)),
+        a = i(22606),
+        l = i(11264),
+        c = i(10088),
+        d = i(33190),
+        f = i(49271),
+        m = i.n(f),
+        u = i(95353);
+      function h(e, t) {
+        var i = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var n = Object.getOwnPropertySymbols(e);
+          t &&
+            (n = n.filter(function (t) {
+              return Object.getOwnPropertyDescriptor(e, t).enumerable;
+            })),
+            i.push.apply(i, n);
+        }
+        return i;
+      }
+      function y(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var i = null != arguments[t] ? arguments[t] : {};
+          t % 2
+            ? h(Object(i), !0).forEach(function (t) {
+                (0, r.A)(e, t, i[t]);
+              })
+            : Object.getOwnPropertyDescriptors
+              ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(i))
+              : h(Object(i)).forEach(function (t) {
+                  Object.defineProperty(
+                    e,
+                    t,
+                    Object.getOwnPropertyDescriptor(i, t),
+                  );
+                });
+        }
+        return e;
+      }
+      var p = document.getElementById("mainbox").offsetHeight,
+        g = document.getElementById("mainbox").offsetWidth;
+      window.KeyFunc = m();
+      var E = {
+          data() {
+            return {
+              asideWidth: "256px",
+              cms: window.CMS,
+              device: window.DEVICE,
+              mainh: p,
+              mainw: g,
+              scale: ((g / 24) * 18) / 1200,
+              layeroper: "",
+              isapplying: !1,
+              isrestoring: !1,
+              isclearing: !1,
+              iskeysetchange: !1,
+              ismodelechange: !1,
+              isapplied: !1,
+              isshowkeyset: !0,
+              hasfnkeyset: !1,
+              isfnkeyset: !1,
+              disimportprofile: !0,
+              disexportprofile: !0,
+              dialog: {
+                visible: !1,
+                isshowclose: !1,
+                title: "",
+                content: "",
+                dtype: 0,
+              },
+              dialogkeylesel: {
+                visible: !1,
+                isshowclose: !1,
+                title: "",
+                content: "",
+              },
+              staticleh: 150,
+              layerguid: 0,
+            };
+          },
+          components: {
+            "cms-device": s["default"],
+            "cms-keyset": a["default"],
+            "cms-lelist": l["default"],
+            "cms-lestatic": c["default"],
+            "cms-macrolist": d["default"],
+          },
+          ready() {
+            this.handleHeightTableResize(),
+              window.addEventListener(
+                "resize",
+                this.handleHeightTableResize,
+                !1,
+              );
+          },
+          beforeCreate() {
+            try {
+              var e = CMS.userConfig.ModelInit[CMS.deviceID].Mode;
+              window.getProfileGuidByModeIndex(
+                e,
+                function (e) {
+                  this.changeProfile(e);
+                }.bind(this),
+              );
+            } catch (t) {
+              console.warn("An error occurred: ", t);
+            }
+          },
+          mounted() {
+            var e = this,
+              t = this;
+            window.addEventListener(
+              "resize",
+              function () {
+                return e.handleHeightTableResize();
+              },
+              !1,
+            ),
+              window.addEventListener("resize", this.onResize),
+              this.onResize(),
+              (window.onresize = function () {
+                return (function () {
+                  (t.mainh = document.getElementById("mainbox").offsetHeight),
+                    (t.mainw = document.getElementById("mainbox").offsetWidth);
+                })();
+              }),
+              (t.$refs.device.isshowkeyset = t.isshowkeyset),
+              (t.staticleh = document.querySelector("#colorpbox").offsetHeight),
+              (document.querySelector("#staticlebox").style.height =
+                document.querySelector("#colorpbox").offsetHeight + "px"),
+              (DEVICE.isEditStaticLE = !1),
+              (DEVICE.editStaticLEColor = "#ff0000");
+          },
+          beforeDestroy() {
+            window.removeEventListener(
+              "resize",
+              this.handleHeightTableResize(),
+              !1,
+            ),
+              window.removeEventListener("resize", this.onResize);
+          },
+          watch: {
+            mainh(e) {
+              this.mainh = e;
+            },
+            mainw(e) {
+              this.mainw = e;
+            },
+            "cms.deviceID": function (e, t) {
+              var i = this;
+              e !== t &&
+                0 !== e &&
+                setTimeout(function () {
+                  DEVICE.ensureLoaded(function () {
+                    window.getProfileGuidByModeIndex(
+                      CMS.userConfig.ModelInit[e].Mode,
+                      function (e) {
+                        i.changeProfile(e);
+                      },
+                    );
+                  });
+                }, 200);
+            },
+            "device.modeIndex": function (e, t) {
+              var i = this;
+              e !== t && i.changeProfile(DEVICE.profiles[e - 1].GUID);
+            },
+            "device.isEditStaticLE": function (e, t) {
+              var i = this;
+              e !== t &&
+                ((i.$refs.device.ismutiselect = e),
+                DEVICE.isEditStaticLE && i.renderStaticLE(),
+                window.isModeLEChange()
+                  ? (i.$refs.lelist.isbreath = !0)
+                  : (i.$refs.lelist.isbreath = !1));
+            },
+          },
+          computed: y(
+            y(
+              {},
+              (0, u.aH)("app", {
+                showScaleImg: function (e) {
+                  return e.showScaleImg;
+                },
+              }),
+            ),
+            {},
+            {
+              reorderedOptions() {
+                var e = this,
+                  t = [2, 3, 4, 0, 1],
+                  i = t
+                    .map(function (t) {
+                      return e.device.profiles.find(function (e) {
+                        return e.ModeIndex === t;
+                      });
+                    })
+                    .filter(function (e) {
+                      return e;
+                    });
+                return i;
+              },
+              mode: function () {
+                return DEVICE.currentProfile
+                  ? DEVICE.currentProfile.ModeIndex
+                  : 1;
+              },
+              hasModeLe: function () {
+                return !!CMS.deviceConfig.hasModeLe;
+              },
+              hasOnlineMode() {
+                return !!CMS.deviceConfig.hasOnlineMode;
+              },
+              lay_show_scale: function () {
+                return CMS.deviceConfig.hasOwnProperty("ShowScalePlus")
+                  ? ((this.mainw / 24) * 18) / 1200 + this.showScaleImg
+                  : ((this.mainw / 24) * 18) / 1200;
+              },
+              lay_show_scale_plus: function () {
+                return CMS.deviceConfig.hasOwnProperty("ShowScalePlus")
+                  ? this.showScaleImg
+                  : 0;
+              },
+              lay_h_show: function () {
+                return (this.mainh / 5) * 3;
+              },
+              lay_h_keys: function () {
+                return (this.mainh / 5) * 2;
+              },
+              lay_h_les: function () {
+                return (this.mainh / 5) * 3.1;
+              },
+              lay_h_macros: function () {
+                return (this.mainh / 5) * 2;
+              },
+              lay_h_les_list: function () {
+                return (
+                  (this.mainh / 5) * 3 - 48 - 84 + 16 - this.staticleh + 10
+                );
+              },
+              lay_h_macros_list: function () {
+                return (this.mainh / 5) * 2 - 48 - 84 - 24;
+              },
+              showdevbtn: function () {
+                return 0 === CMS.deviceConfig.DeviceType;
+              },
+              filterkeylelist: function () {
+                var e = [];
+                return (e = this.cms.les), e;
+              },
+              disabledstd() {
+                return (
+                  656801992 === window.CMS.deviceID ||
+                  656802033 === window.CMS.deviceID ||
+                  656802036 === window.CMS.deviceID
+                );
+              },
+            },
+          ),
+          methods: y(
+            y({}, (0, u.PY)("app", { setScaleImg: "SET_SCALE_IMG" })),
+            {},
+            {
+              zoomOut() {
+                this.setScaleImg(this.showScaleImg - 0.01);
+              },
+              zoomIn() {
+                this.setScaleImg(this.showScaleImg + 0.01);
+              },
+              onResize() {
+                var e = window.innerWidth,
+                  t = window.innerHeight,
+                  i = e / t;
+                t > 800
+                  ? ((this.asideWidth = "300px"),
+                    i < 1 && (this.asideWidth = t / 2 + "px"))
+                  : (this.asideWidth = "256px");
+              },
+              handleHeightTableResize() {
+                var e = this;
+                try {
+                  this.$nextTick(function () {
+                    if (e.$refs.macrolist) {
+                      var t =
+                          e.$refs.macrolist.$refs.macrostable.$el.getBoundingClientRect(),
+                        i =
+                          e.$refs.lelist.$refs.lestable.$el.getBoundingClientRect(),
+                        n = document.documentElement.clientHeight;
+                      e.$nextTick(function () {
+                        (e.macroheight =
+                          n -
+                          t.top -
+                          e.$refs.macrolist.$refs.macrostable.$el.offsetTop),
+                          (e.leheight =
+                            n -
+                            i.top -
+                            e.$refs.lelist.$refs.lestable.$el.offsetTop);
+                      });
+                    }
+                  });
+                } catch (t) {}
+              },
+              changeProfile: function (e) {
+                var t = this;
+                if (!e) return null;
+                if (
+                  ((t.layerguid = e),
+                  (t.iskeysetchange = !1),
+                  (t.isapplied = !1),
+                  (t.isapplying = !1),
+                  (t.hasfnkeyset = !1),
+                  (t.isfnkeyset = !1),
+                  DEVICE.editKeyCode)
+                ) {
+                  var i = document.getElementById("key" + DEVICE.editKeyCode);
+                  i.classList.remove("key-breath"), (DEVICE.editKeyCode = 0);
+                }
+                readProfile(CMS.deviceID, e, function (e) {
+                  e
+                    ? ((DEVICE.currentProfile = e),
+                      (window.cprofile = JSON.parse(JSON.stringify(e))),
+                      window.changeMode(CMS.deviceID, e.ModeIndex),
+                      (t.$refs.keysets.isdrivermode = !1),
+                      (t.$refs.device.isfnlayer = !1),
+                      0 === e.ModeIndex &&
+                        (t.applyProfile(), (t.$refs.keysets.isdrivermode = !0)),
+                      1 == e.ModeIndex
+                        ? (t.$refs.device.initStdKeyset(),
+                          (t.disimportprofile = !0),
+                          (t.disexportprofile = !0),
+                          (DEVICE.stdlesel = e.DriverLE[0].GUID),
+                          (t.$refs.lelist.disabled = !0),
+                          (t.$refs.macrolist.disabled = !0),
+                          (t.$refs.keysets.disabled = !0))
+                        : (t.$refs.device.initKeyset(),
+                          (t.disimportprofile = !0),
+                          (t.disexportprofile = !0),
+                          e.ModeLE.GUID
+                            ? t.$refs.lelist.leSelected(e.ModeLE.GUID)
+                            : t.renderStaticLE(),
+                          (DEVICE.lesel = e.ModeLE.GUID),
+                          (t.$refs.lelist.disabled = !1),
+                          (t.$refs.macrolist.disabled = !1),
+                          (t.$refs.keysets.disabled = !1),
+                          DEVICE.currentProfile.hasOwnProperty("FnKeySet") &&
+                            (t.hasfnkeyset = !0)),
+                      CMS.userConfig.ModelInit[CMS.deviceID].Mode !==
+                        e.ModeIndex &&
+                        ((CMS.userConfig.ModelInit[CMS.deviceID].Mode =
+                          e.ModeIndex),
+                        window.writeUserConfig(CMS.userConfig)))
+                    : t.alertInfo("Read profile failed!", "fail", 800);
+                });
+              },
+              changeStdProfile: function () {},
+              changeKeyFunc: function (e, t) {
+                this.$createElement;
+                var i = this,
+                  n = [];
+                if (
+                  ((n = i.isfnkeyset
+                    ? DEVICE.currentProfile.FnKeySet
+                    : DEVICE.currentProfile.KeySet),
+                  "disable_enable" == t)
+                ) {
+                  for (var o = 0; o < n.length; o++)
+                    "0x02000000" == n[o].DriverValue.toString() &&
+                      window.getDefaultKeySetByLcode(n[o].Index, function (e) {
+                        var t = document.getElementById("key" + n[o].Index);
+                        t &&
+                          ((n[o].MenuName = ""),
+                          (n[o].DriverValue = e.DriverValue),
+                          (t.innerHTML = "<span></span>"),
+                          t.setAttribute(
+                            "data-func",
+                            i.$t("common.key_func_no_config"),
+                          ),
+                          t.classList.remove("seted"),
+                          n[o].KeyLE &&
+                            "" !== n[o].KeyLE.GUID &&
+                            t.classList.add("seted"));
+                      });
+                  window.isKeySetChange()
+                    ? (this.iskeysetchange = !0)
+                    : (this.iskeysetchange = !1);
+                } else if (
+                  "disable_all" == t ||
+                  "disable_num" == t ||
+                  "disable_fx" == t ||
+                  "disable_pad" == t ||
+                  "disable_letter" == t ||
+                  "disable_symbol" == t ||
+                  "disable_ctrls" == t ||
+                  "disable_func9" == t ||
+                  "disable_direction" == t
+                ) {
+                  var r = window.KeyFunc[t].DriverValue.split(",");
+                  if ("disable_all" == t) {
+                    r = [];
+                    for (o = 0; o < n.length; o++)
+                      r.push(n[o].Index.toString());
+                  }
+                  for (o = 0; o < n.length; o++)
+                    if (r.indexOf(n[o].Index.toString()) >= 0) {
+                      (n[o].MenuName = window.KeyFunc["0x02000000"].Name),
+                        (n[o].DriverValue =
+                          window.KeyFunc["0x02000000"].DriverValue);
+                      var s = document.getElementById("key" + n[o].Index);
+                      s &&
+                        ((s.innerHTML = "<span class='hasfunc'></span>"),
+                        s.classList.add("seted"),
+                        s.children[0].classList.add(
+                          window.KeyFunc["0x02000000"].Icon,
+                        ),
+                        s.children[0].classList.add(
+                          window.KeyFunc["0x02000000"].ShowClass,
+                        ),
+                        s.setAttribute(
+                          "data-func",
+                          i.$t("keys")[window.KeyFunc["0x02000000"].LangTitle],
+                        ));
+                    }
+                  window.isKeySetChange()
+                    ? (this.iskeysetchange = !0)
+                    : (this.iskeysetchange = !1);
+                } else if (DEVICE.editKeyCode) {
+                  var a = document.getElementById("key" + DEVICE.editKeyCode);
+                  if (a) {
+                    if (window.KeyFunc[t])
+                      (a.innerHTML =
+                        "<span class='hasfunc'>" +
+                        i.$t("keys")[window.KeyFunc[t].LangTitle] +
+                        "</span>"),
+                        a.setAttribute(
+                          "data-func",
+                          i.$t("keys")[window.KeyFunc[t].LangTitle],
+                        ),
+                        window.KeyFunc[t].Icon &&
+                          (a.children[0].classList.add(window.KeyFunc[t].Icon),
+                          (a.children[0].innerHTML = "")),
+                        window.KeyFunc[t].ShowClass &&
+                          a.children[0].classList.add(
+                            window.KeyFunc[t].ShowClass,
+                          );
+                    else {
+                      if (e.length <= 5)
+                        a.innerHTML = "<span class='hasfunc'>" + e + "</span>";
+                      else var l = a.offsetWidth;
+                      var c = a.offsetHeight,
+                        d = 0.3 * Math.min(l, c) + "px";
+                      (a.querySelector("span").style.fontSize = d),
+                        (a.innerHTML =
+                          `<span class='hasfunc' style='font-size: ${d}'>` +
+                          e.substring(0, 4) +
+                          "...</span>"),
+                        a.setAttribute("data-func", e);
+                    }
+                    a.classList.add("seted");
+                  }
+                  for (o = 0; o < n.length; o++)
+                    n[o].Index === DEVICE.editKeyCode &&
+                      ((n[o].MenuName = e),
+                      (n[o].DriverValue = t),
+                      e.indexOf(".exe") > 0 &&
+                        ((n[o].DriverValue = "0x0A030001"),
+                        (n[o].Task = {}),
+                        (n[o].Task.Type = "OpenURL"),
+                        (n[o].Task.Data = { AppPath: t })),
+                      window.isKeySetChange()
+                        ? (this.iskeysetchange = !0)
+                        : (this.iskeysetchange = !1));
+                } else
+                  i.alertInfo(
+                    i.$t("common.key_select_attention"),
+                    "warning",
+                    1e3,
+                  );
+              },
+              setKeyMacro: function (e, t) {
+                var i = this,
+                  n = DEVICE.currentProfile.KeySet;
+                if (
+                  (i.isfnkeyset && (n = DEVICE.currentProfile.FnKeySet),
+                  DEVICE.editKeyCode)
+                ) {
+                  var o = document.getElementById("key" + DEVICE.editKeyCode);
+                  o &&
+                    ((o.innerHTML = "<span class='hasfunc'>" + e + "</span>"),
+                    o.classList.add("seted"),
+                    o.setAttribute("data-func", e));
+                  for (var r = 0; r < n.length; r++)
+                    n[r].Index === DEVICE.editKeyCode &&
+                      ((n[r].MenuPID = 1),
+                      (n[r].MenuName = e),
+                      (n[r].DriverValue = "0x0A010001"),
+                      (n[r].Task = { Type: "Macro", Data: {} }),
+                      (n[r].Task.Data = t),
+                      window.isKeySetChange()
+                        ? (i.iskeysetchange = !0)
+                        : (i.iskeysetchange = !1));
+                } else
+                  i.alertInfo(
+                    i.$t("common.key_select_attention"),
+                    "warning",
+                    1e3,
+                  );
+              },
+              removeKeyFunc() {
+                var e = this,
+                  t = document
+                    .getElementById("config_key")
+                    .getAttribute("data-key"),
+                  i = [];
+                i = e.isfnkeyset
+                  ? DEVICE.currentProfile.FnKeySet
+                  : DEVICE.currentProfile.KeySet;
+                for (var n = 0; n < i.length; n++)
+                  if (i[n].Index == t) {
+                    window.getDefaultKeySetByLcode(parseInt(t), function (o) {
+                      (i[n].MenuPID = ""),
+                        (i[n].MenuID = ""),
+                        (i[n].MenuName = ""),
+                        (i[n].DriverValue = o.DriverValue),
+                        delete i[n].Task,
+                        (document.getElementById("config_key").innerHTML = e.$t(
+                          "common.key_func_no_config",
+                        )),
+                        (document.getElementById("key" + t).innerHTML =
+                          "<span></span>"),
+                        document
+                          .getElementById("key" + t)
+                          .setAttribute(
+                            "data-func",
+                            e.$t("common.key_func_no_config"),
+                          ),
+                        i[n].KeyLE
+                          ? "" == i[n].KeyLE.GUID &&
+                            document
+                              .getElementById("key" + t)
+                              .classList.remove("seted")
+                          : document
+                              .getElementById("key" + t)
+                              .classList.remove("seted"),
+                        window.isKeySetChange()
+                          ? (e.iskeysetchange = !0)
+                          : (e.iskeysetchange = !1);
+                    });
+                    break;
+                  }
+              },
+              changeKeyLE: function (e, t, i) {
+                if (0 !== e) {
+                  document.getElementById("key" + e).classList.add("seted");
+                  for (var n = 0; n < DEVICE.currentProfile.KeySet.length; n++)
+                    DEVICE.currentProfile.KeySet[n].Index == e &&
+                      ((DEVICE.currentProfile.KeySet[n].KeyLE = {
+                        Name: t,
+                        GUID: i,
+                      }),
+                      document
+                        .getElementById("key" + e)
+                        .setAttribute("data-le", t),
+                      window.isKeySetChange()
+                        ? (this.iskeysetchange = !0)
+                        : (this.iskeysetchange = !1));
+                }
+              },
+              removeKeyLE() {
+                for (
+                  var e = document
+                      .getElementById("config_key")
+                      .getAttribute("data-key"),
+                    t = 0;
+                  t < DEVICE.currentProfile.KeySet.length;
+                  t++
+                )
+                  if (DEVICE.currentProfile.KeySet[t].Index == e) {
+                    DEVICE.currentProfile.KeySet[t].KeyLE &&
+                      "" !== DEVICE.currentProfile.KeySet[t].KeyLE.GUID &&
+                      (delete DEVICE.currentProfile.KeySet[t].KeyLE,
+                      (document.getElementById("config_le").innerHTML = this.$t(
+                        "common.key_le_no_config",
+                      )),
+                      document
+                        .getElementById("key" + e)
+                        .setAttribute(
+                          "data-le",
+                          this.$t("common.key_le_no_config"),
+                        ),
+                      "" == DEVICE.currentProfile.KeySet[t].MenuName &&
+                        document
+                          .getElementById("key" + e)
+                          .classList.remove("seted"),
+                      window.isKeySetChange()
+                        ? (this.iskeysetchange = !0)
+                        : (this.iskeysetchange = !1));
+                    break;
+                  }
+              },
+              saveProfile: function () {
+                var e = this;
+                window.writeProfile(
+                  CMS.deviceID,
+                  DEVICE.currentProfile.GUID,
+                  window.cprofile,
+                  function (t) {
+                    0 === DEVICE.currentProfile.ModeIndex &&
+                      window.apply(
+                        CMS.deviceID,
+                        DEVICE.currentProfile.GUID,
+                        function (t) {
+                          var i = "",
+                            n = "success";
+                          t
+                            ? (i = e.$t("common.apply_success"))
+                            : ((i = e.$t("common.apply_fail")), (n = "error")),
+                            e.alertInfo(i, n, 1e3);
+                        },
+                      );
+                  },
+                );
+              },
+              saveKeySet: function () {
+                var e = this;
+                1 !== DEVICE.currentProfile.ModeIndex
+                  ? ((window.cprofile.KeySet = JSON.parse(
+                      JSON.stringify(DEVICE.currentProfile.KeySet),
+                    )),
+                    DEVICE.currentProfile.FnKeySet &&
+                      (window.cprofile.FnKeySet = JSON.parse(
+                        JSON.stringify(DEVICE.currentProfile.FnKeySet),
+                      )),
+                    e.saveProfile())
+                  : e.saveStdLE(),
+                  (e.iskeysetchange = !1),
+                  (e.isapplied = !0);
+              },
+              saveModeLE: function () {
+                var e = this;
+                1 !== DEVICE.currentProfile.ModeIndex &&
+                  (JSON.stringify(DEVICE.currentProfile.ModeLE),
+                  (window.cprofile.ModeLE = JSON.parse(
+                    JSON.stringify(DEVICE.currentProfile.ModeLE),
+                  )),
+                  e.saveProfile(),
+                  (e.$refs.lelist.isbreath = !1),
+                  (e.isapplied = !0));
+              },
+              applyProfile: function () {
+                var e = this;
+                (e.isapplying = !0),
+                  window.apply(
+                    CMS.deviceID,
+                    DEVICE.currentProfile.GUID,
+                    function (t) {
+                      var i = "",
+                        n = "success";
+                      t
+                        ? (i = e.$t("common.apply_success"))
+                        : ((i = e.$t("common.apply_fail")), (n = "error")),
+                        e.alertInfo(i, n, 1e3),
+                        DEVICE.editKeyCode &&
+                          (document
+                            .getElementById("key" + DEVICE.editKeyCode)
+                            .classList.remove("key-breath"),
+                          (DEVICE.editKeyCode = "")),
+                        (e.isapplying = !1),
+                        (e.isapplied = !1);
+                    },
+                  );
+              },
+              handleIsShowKeySet: function (e) {
+                var t = this;
+                (window.localStorage.isshowkeyset = e),
+                  (this.$refs.device.isshowkeyset = e),
+                  setTimeout(function () {
+                    1 == DEVICE.currentProfile.ModeIndex
+                      ? t.$refs.device.initStdKeyset()
+                      : t.$refs.device.initKeyset();
+                  }, 100);
+              },
+              handleIsFnKeySet: function (e) {
+                var t = this;
+                setTimeout(function () {
+                  1 == DEVICE.currentProfile.ModeIndex
+                    ? t.$refs.device.initStdKeyset()
+                    : t.$refs.device.initKeyset();
+                }, 100);
+              },
+              openFnLayer: function (e) {
+                var t = this;
+                (this.isfnkeyset = e),
+                  this.$nextTick(function () {
+                    t.handleIsFnKeySet(e);
+                  });
+              },
+              selectStdLE: function () {
+                (this.dialogkeylesel.title = this.$t(
+                  "common.key_le_select_attention",
+                )),
+                  (this.dialogkeylesel.visible = !0);
+              },
+              dialogRowClassName: function (e, t) {
+                switch (window.CMS.deviceID) {
+                  case 656802004:
+                    if (1 == Object.values(e)[0].Hidden) return "hidden-row";
+                    break;
+                  case 656802005:
+                    if (1 == Object.values(e)[0].Hidden) return "hidden-row";
+                    break;
+                  case 656802006:
+                    if (1 == Object.values(e)[0].Hidden) return "hidden-row";
+                    break;
+                  case 656802007:
+                    if (1 == Object.values(e)[0].Hidden) return "hidden-row";
+                    break;
+                  case 656802042:
+                    if (1 == Object.values(e)[0].Hidden) return "hidden-row";
+                    break;
+                  default:
+                    return "";
+                }
+              },
+              saveStdLE: function () {
+                DEVICE.currentProfile.hasOwnProperty("KeySet") &&
+                  (window.cprofile.KeySet = JSON.parse(
+                    JSON.stringify(DEVICE.currentProfile.KeySet),
+                  )),
+                  (window.cprofile.DriverLE = JSON.parse(
+                    JSON.stringify(DEVICE.currentProfile.DriverLE),
+                  )),
+                  this.saveProfile();
+              },
+              removeStdLE: function () {
+                var e = this;
+                (DEVICE.currentProfile.DriverLE[DEVICE.lestdindex].Name = ""),
+                  (DEVICE.currentProfile.DriverLE[DEVICE.lestdindex].GUID = ""),
+                  (document.getElementById(
+                    "std_le_" + DEVICE.lestdindex,
+                  ).innerHTML = e.$t("common.key_le_no_config")),
+                  window.isStdLEChange()
+                    ? (e.iskeysetchange = !0)
+                    : (e.iskeysetchange = !1);
+              },
+              handleFnxChange: function () {
+                var e = this;
+                window.isKeySetChange()
+                  ? (e.iskeysetchange = !0)
+                  : (e.iskeysetchange = !1);
+              },
+              handleShowRestoreProfileConfirm: function () {
+                var e = this;
+                (e.dialog.visible = !0),
+                  (e.dialog.title = e.$t("common.attention")),
+                  (e.dialog.content = e.$t(
+                    "common.restore_currentprofile_confirm",
+                  )),
+                  (e.dialog.dtype = 1);
+              },
+              restoreCurrentProfile: function () {
+                var e = this;
+                window
+                  .restoreLayer(DEVICE.currentProfile.Index, !0)
+                  .then(function (t) {
+                    var i = "",
+                      n = "success";
+                    "0" == t
+                      ? ((i = e.$t("common.apply_fail")), (n = "error"))
+                      : "1" == t
+                        ? (i = e.$t("common.profile_save_success"))
+                        : "2" == t && (i = e.$t("common.apply_success")),
+                      e.changeProfile(DEVICE.currentProfile.GUID),
+                      e.alertInfo(i, n, 1e3),
+                      (e.isrestoring = !1);
+                  });
+              },
+              handleShowClearProfile: function () {
+                var e = this;
+                (e.dialog.visible = !0),
+                  (e.dialog.title = e.$t("common.attention")),
+                  (e.dialog.content = e.$t(
+                    "common.clear_currentprofile_confirm",
+                  )),
+                  (e.dialog.dtype = 2);
+              },
+              clearCurrentProfile: function () {
+                var e = this;
+                window
+                  .clearLayer(DEVICE.currentProfile.ModeIndex, !0)
+                  .then(function (t) {
+                    var i = "",
+                      n = "success";
+                    "0" == t
+                      ? ((i = e.$t("common.apply_fail")), (n = "error"))
+                      : "1" == t
+                        ? (i = e.$t("common.profile_save_success"))
+                        : "2" == t && (i = e.$t("common.apply_success")),
+                      e.changeProfile(DEVICE.currentProfile.GUID),
+                      e.alertInfo(i, n, 1e3),
+                      (e.isclearing = !1);
+                  });
+              },
+              handleConfirm: function () {
+                var e = this;
+                1 == e.dialog.dtype
+                  ? ((e.isrestoring = !0), e.restoreCurrentProfile())
+                  : 2 == e.dialog.dtype &&
+                    ((e.isclearing = !0), e.clearCurrentProfile()),
+                  (e.dialog.visible = !1);
+              },
+              handleImportProfile: function () {
+                var e = this;
+                window.importUserProfiles(CMS.deviceID, function (t) {
+                  var i = JSON.parse(t);
+                  (!i.success && i.canceled) ||
+                    e.alertInfo(
+                      e.$t("common.import_userprofile") +
+                        e.$t("common.success"),
+                      "success",
+                      1e3,
+                    );
+                });
+              },
+              handleExportProfile: function () {
+                var e = this;
+                window.exportUserProfiles(CMS.deviceID, function (t) {
+                  var i = JSON.parse(t);
+                  i.success || !i.canceled
+                    ? e.alertInfo(
+                        e.$t("common.export_userprofile") +
+                          e.$t("common.success"),
+                        "success",
+                        1e3,
+                      )
+                    : e.alertInfo(
+                        e.$t("common.export_userprofile") + e.$t("common.fail"),
+                        "fail",
+                        1e3,
+                      );
+                });
+              },
+              handleCloseDialog: function () {},
+              showKeyLeSelect: function () {
+                (this.dialogkeylesel.title = this.$t(
+                  "common.key_le_select_attention",
+                )),
+                  (this.dialogkeylesel.visible = !0);
+              },
+              handleKeyLeRowChange: function (e, t, i) {
+                (DEVICE.keylesel.Name = e.Name),
+                  (DEVICE.keylesel.GUID = e.GUID);
+              },
+              handleKeyLeConfirm: function () {
+                var e = this;
+                if (1 == DEVICE.currentProfile.ModeIndex)
+                  (DEVICE.currentProfile.DriverLE[DEVICE.lestdindex].Name =
+                    DEVICE.keylesel.Name),
+                    (DEVICE.currentProfile.DriverLE[DEVICE.lestdindex].GUID =
+                      DEVICE.keylesel.GUID),
+                    (document.getElementById(
+                      "std_le_" + DEVICE.lestdindex,
+                    ).innerHTML = DEVICE.keylesel.Name),
+                    window.isStdLEChange()
+                      ? (e.iskeysetchange = !0)
+                      : (e.iskeysetchange = !1);
+                else {
+                  var t = document
+                    .getElementById("config_key")
+                    .getAttribute("data-key");
+                  (document.getElementById("config_le").innerHTML =
+                    DEVICE.keylesel.Name),
+                    e.changeKeyLE(
+                      t,
+                      DEVICE.keylesel.Name,
+                      DEVICE.keylesel.GUID,
+                    );
+                }
+                e.dialogkeylesel.visible = !1;
+              },
+              playLE() {
+                this.$refs.device.playLe();
+              },
+              stopLe() {
+                DEVICE.timer &&
+                  (clearInterval(DEVICE.timer), (DEVICE.timer = null));
+                for (var e = 0; e < DEVICE.keymap.length; e++) {
+                  var t = DEVICE.keymap[e].LocationCode.toString();
+                  document.getElementById("le" + t) &&
+                    document
+                      .getElementById("le" + t)
+                      .style.setProperty("background", "#000");
+                }
+              },
+              renderFrame: function (e) {
+                for (var t in e) {
+                  var i = document.getElementById("le" + t);
+                  i && i.style.setProperty("background", window.toJS(e[t]));
+                }
+              },
+              renderStaticLE: function () {
+                var e = this;
+                e.stopLe(),
+                  e.$refs.lelist.leUnSelectAll(),
+                  (e.$refs.lelist.leselname = e.$t("le.diy_static_le")),
+                  (DEVICE.currentProfile.ModeLE.GUID = ""),
+                  (DEVICE.currentProfile.ModeLE.Name =
+                    e.$t("le.diy_static_le")),
+                  DEVICE.currentProfile.ModeLE.hasOwnProperty("LEData") ||
+                    (DEVICE.currentProfile.ModeLE.LEData = {}),
+                  e.renderFrame(DEVICE.currentProfile.ModeLE.LEData);
+              },
+              selStaticLeKeys: function (e, t) {
+                var i = this;
+                DEVICE.currentProfile.ModeLE.hasOwnProperty("LEData") ||
+                  (DEVICE.currentProfile.ModeLE.LEData = {}),
+                  e.forEach(function (e) {
+                    "#000000" === DEVICE.editStaticLEColor
+                      ? DEVICE.currentProfile.ModeLE.LEData.hasOwnProperty(e) &&
+                        (delete DEVICE.currentProfile.ModeLE.LEData[e],
+                        document
+                          .getElementById("le" + e)
+                          .style.setProperty("background", "#000000"))
+                      : (DEVICE.currentProfile.ModeLE.LEData[e] = window.to16(
+                          DEVICE.editStaticLEColor,
+                        ));
+                  }),
+                  i.renderFrame(DEVICE.currentProfile.ModeLE.LEData),
+                  window.isModeLEChange()
+                    ? (i.$refs.lelist.isbreath = !0)
+                    : (i.$refs.lelist.isbreath = !1);
+              },
+              alertInfo: function (e, t, i) {
+                this.$notify({
+                  title: e,
+                  type: t,
+                  duration: i,
+                  position: "bottom-left",
+                });
+              },
+              showTestInfo() {
+                var e = this;
+                e.alertInfo(this.$t("common.func_in_dev_info"), "warning", 1e3);
+              },
+            },
+          ),
+          beforeRouteEnter(e, t, i) {
+            (CMS.isLoaded = !1),
+              setTimeout(function () {
+                i(function (e) {
+                  setTimeout(function () {
+                    CMS.isLoaded = !0;
+                  }, 500);
+                });
+              }, 5);
+          },
+        },
+        v = E,
+        w = (i(55554), i(14486)),
+        I = (0, w.A)(v, n, o, !1, null, "045474b4", null),
+        b = I.exports;
+    },
+    33190: function (e, t, i) {
+      "use strict";
+      i.r(t),
+        i.d(t, {
+          default: function () {
+            return c;
+          },
+        });
+      var n = function () {
+          var e = this,
+            t = e._self._c;
+          return t(
+            "el-row",
+            [
+              t(
+                "el-col",
+                {
+                  staticStyle: { padding: "0.5rem 0.5rem 0rem 0.5rem" },
+                  attrs: { span: 24 },
+                },
+                [
+                  t(
+                    "el-card",
+                    { staticStyle: { position: "relative" } },
+                    [
+                      t("div", {
+                        staticClass: "disablediv",
+                        class: { disablehide: !e.disabled },
+                      }),
+                      t("template", { slot: "header" }, [
+                        t("div", { style: e.calcI18n }, [
+                          t("i", {
+                            staticClass: "header-icon el-icon-document",
+                          }),
+                          e._v(
+                            " " +
+                              e._s(e.$t("macro.macro_setting_title")) +
+                              "\n          ",
+                          ),
+                        ]),
+                      ]),
+                      t(
+                        "el-input",
+                        {
+                          staticClass: "input-with-select",
+                          staticStyle: { "z-index": "3" },
+                          attrs: {
+                            placeholder: e.$t("common.input_search_text"),
+                            size: "mini",
+                          },
+                          model: {
+                            value: e.schfilter,
+                            callback: function (t) {
+                              e.schfilter = t;
+                            },
+                            expression: "schfilter",
+                          },
+                        },
+                        [
+                          t(
+                            "el-select",
+                            {
+                              staticStyle: { width: "7rem" },
+                              attrs: {
+                                slot: "prepend",
+                                placeholder: e.$t("common.please_select"),
+                              },
+                              on: { change: e.changeMacroType },
+                              slot: "prepend",
+                              model: {
+                                value: e.macrofilter,
+                                callback: function (t) {
+                                  e.macrofilter = t;
+                                },
+                                expression: "macrofilter",
+                              },
+                            },
+                            e._l(e.macrolist, function (e, i) {
+                              return t("el-option", {
+                                key: e.index,
+                                attrs: { label: e.Name, value: i },
+                              });
+                            }),
+                            1,
+                          ),
+                          t("el-button", {
+                            attrs: { slot: "append", icon: "el-icon-search" },
+                            slot: "append",
+                          }),
+                        ],
+                        1,
+                      ),
+                      t(
+                        "el-table",
+                        {
+                          directives: [
+                            {
+                              name: "loading",
+                              rawName: "v-loading",
+                              value: e.loading,
+                              expression: "loading",
+                            },
+                          ],
+                          ref: "macrostable",
+                          attrs: {
+                            data: e.filtermacrolist || [],
+                            "empty-text": e.$t("common.no_data"),
+                            height: e.height,
+                            "show-header": !1,
+                            border: "",
+                            "highlight-current-row": "",
+                            size: "mini",
+                          },
+                          on: { "current-change": e.handleCurrentChange },
+                        },
+                        [
+                          t("el-table-column", {
+                            scopedSlots: e._u([
+                              {
+                                key: "default",
+                                fn: function (i) {
+                                  return [
+                                    t("i", { staticClass: "el-icon-document" }),
+                                    t(
+                                      "span",
+                                      {
+                                        staticStyle: { "margin-left": "10px" },
+                                      },
+                                      [e._v(e._s(i.row.Name))],
+                                    ),
+                                  ];
+                                },
+                              },
+                            ]),
+                          }),
+                        ],
+                        1,
+                      ),
+                      t(
+                        "div",
+                        { staticClass: "macrolist-oper" },
+                        [
+                          t(
+                            "el-radio",
+                            {
+                              staticClass: "tracking-[-.09em]",
+                              attrs: { label: 1 },
+                              model: {
+                                value: e.macrocfg.StopMode,
+                                callback: function (t) {
+                                  e.$set(e.macrocfg, "StopMode", t);
+                                },
+                                expression: "macrocfg.StopMode",
+                              },
+                            },
+                            [
+                              e._v(e._s(e.$t("macro.macro_btn_execute"))),
+                              t("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: e.macrocfg.Repeats,
+                                    expression: "macrocfg.Repeats",
+                                  },
+                                ],
+                                staticClass: "edit-cell mini",
+                                domProps: { value: e.macrocfg.Repeats },
+                                on: {
+                                  input: function (t) {
+                                    t.target.composing ||
+                                      e.$set(
+                                        e.macrocfg,
+                                        "Repeats",
+                                        t.target.value,
+                                      );
+                                  },
+                                },
+                              }),
+                              e._v(
+                                e._s(e.$t("macro.n_times_stop")) +
+                                  "\n          ",
+                              ),
+                            ],
+                          ),
+                          t("br"),
+                          t(
+                            "el-radio",
+                            {
+                              staticClass: "tracking-[-.08em]",
+                              attrs: { label: 2 },
+                              model: {
+                                value: e.macrocfg.StopMode,
+                                callback: function (t) {
+                                  e.$set(e.macrocfg, "StopMode", t);
+                                },
+                                expression: "macrocfg.StopMode",
+                              },
+                            },
+                            [
+                              e._v(
+                                e._s(
+                                  e.$t(
+                                    "macro.macro_btn_execute_release_to_stop",
+                                  ),
+                                ) + "\n          ",
+                              ),
+                            ],
+                          ),
+                          t("br"),
+                          t(
+                            "el-radio",
+                            {
+                              staticClass: "tracking-[-.09em]",
+                              attrs: { label: 3 },
+                              model: {
+                                value: e.macrocfg.StopMode,
+                                callback: function (t) {
+                                  e.$set(e.macrocfg, "StopMode", t);
+                                },
+                                expression: "macrocfg.StopMode",
+                              },
+                            },
+                            [
+                              e._v(
+                                e._s(
+                                  e.$t(
+                                    "macro.macro_btn_execute_pressagain_to_stop",
+                                  ),
+                                ) + "\n          ",
+                              ),
+                            ],
+                          ),
+                          t(
+                            "el-button",
+                            {
+                              staticStyle: {
+                                position: "absolute",
+                                right: ".0rem",
+                                bottom: ".4rem",
+                              },
+                              attrs: { loading: !1, icon: "el-icon-view" },
+                              on: { click: e.setMacro },
+                            },
+                            [e._v(e._s(e.$t("common.use")) + "\n          ")],
+                          ),
+                        ],
+                        1,
+                      ),
+                    ],
+                    2,
+                  ),
+                ],
+                1,
+              ),
+            ],
+            1,
+          );
+        },
+        o = [],
+        r =
+          (i(2008),
+          i(25276),
+          i(26099),
+          {
+            data() {
+              return {
+                loading: !0,
+                schfilter: "",
+                macrofilter: "",
+                filtermacrolist: [],
+                disabled: !1,
+                macroname: "",
+                macrocfg: { GUID: "", StopMode: 1, Repeats: 1 },
+              };
+            },
+            props: ["height", "macrolist"],
+            created: function () {},
+            computed: {
+              calcI18n() {
+                var e = (this.$i18n.locale, "12px");
+                return { fontSize: e };
+              },
+            },
+            mounted: function () {
+              var e = this;
+              setTimeout(function () {
+                e.macrolist && e.macrolist.length > 0 && e.macrolist[0].Data
+                  ? ((e.filtermacrolist = e.macrolist[0].Data),
+                    (e.macrofilter = e.macrolist[0].Name))
+                  : ((e.filtermacrolist = []),
+                    (e.macrofilter = ""),
+                    console.warn(
+                      "The macrolist is empty or the first item has no data.",
+                    )),
+                  (e.loading = !1);
+              }, 1e3);
+            },
+            watch: {
+              schfilter: function (e, t) {
+                this.filtermacrolist = this.macrolist[0].Data.filter(
+                  function (t) {
+                    return ~t.Name.indexOf(e);
+                  },
+                );
+              },
+            },
+            methods: {
+              changeMacroType(e) {
+                var t = this;
+                t.filtermacrolist = t.macrolist[e].Data;
+              },
+              handleCurrentChange(e) {
+                (this.macroname = e.Name), (this.macrocfg.GUID = e.GUID);
+              },
+              setMacro() {
+                var e = this;
+                if ("" != e.macrocfg.GUID) {
+                  var t = JSON.parse(JSON.stringify(this.macrocfg));
+                  (t.Repeats = parseInt(t.Repeats)),
+                    JSON.stringify(t),
+                    e.macroname,
+                    e.$emit("setKeyMacro", e.macroname, t);
+                } else e.alertInfo("提示", "请先选择要设置的宏！", 800);
+              },
+              alertInfo: function (e, t, i) {
+                this.$notify({
+                  title: e,
+                  type: t,
+                  duration: i,
+                  position: "bottom",
+                });
+              },
+            },
+          }),
+        s = r,
+        a = (i(53132), i(14486)),
+        l = (0, a.A)(s, n, o, !1, null, "7bb2989f", null),
+        c = l.exports;
+    },
+    55554: function (e, t, i) {
+      var n = i(59686);
+      n.__esModule && (n = n.default),
+        "string" === typeof n && (n = [[e.id, n, ""]]),
+        n.locals && (e.exports = n.locals);
+      var o = i(70534).A;
+      o("1425a185", n, !0, {});
+    },
+    53132: function (e, t, i) {
+      var n = i(48928);
+      n.__esModule && (n = n.default),
+        "string" === typeof n && (n = [[e.id, n, ""]]),
+        n.locals && (e.exports = n.locals);
+      var o = i(70534).A;
+      o("ed8a8540", n, !0, {});
+    },
+  },
+]);

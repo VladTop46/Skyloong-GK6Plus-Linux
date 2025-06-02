@@ -1,1 +1,791 @@
-(self["webpackChunkkeyboard_driver"]=self["webpackChunkkeyboard_driver"]||[]).push([[1719],{67772:function(n,e,o){e=n.exports=o(54765)(!1),e.push([n.id,"@font-face {\n  font-family: 'iconfont';\n  src:  url("+o(74684)+");\n  src:  url("+o(74684)+"#iefix) format('embedded-opentype'),\n    url("+o(20054)+") format('truetype'),\n    url("+o(70916)+") format('woff'),\n    url("+o(82701)+'#iconfont) format(\'svg\');\n  font-weight: normal;\n  font-style: normal;\n  font-display: block;\n}\n\n[class^="el-icon-kb-"], [class*=" el-icon-kb-"] {\n  font-family: \'iconfont\' !important;\n}\n\n[class^="el-icon-kb-"], [class*=" el-icon-kb-"] {\n  /* use !important to prevent issues with browser extensions that change fonts */\n  speak: never;\n  font-style: normal;\n  font-weight: normal;\n  -webkit-font-feature-settings: normal;\n          font-feature-settings: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.el-icon-kb-hanja:before {\n  content: "\\E900";\n}\n\n.el-icon-kb-katakana-hiragana:before {\n  content: "\\E901";\n}\n\n.el-icon-kb-korea-england:before {\n  content: "\\E902";\n}\n\n.el-icon-kb-non-conversion:before {\n  content: "\\E903";\n}\n\n.el-icon-kb-conversion:before {\n  content: "\\E904";\n}\n\n.el-icon-kb-insert1:before {\n  content: "\\E600";\n}\n\n.el-icon-kb-mouse4:before {\n  content: "\\E601";\n}\n\n.el-icon-kb-computer2:before {\n  content: "\\E602";\n}\n\n.el-icon-kb-right:before {\n  content: "\\E603";\n}\n\n.el-icon-kb-copy1:before {\n  content: "\\E604";\n}\n\n.el-icon-kb-comb:before {\n  content: "\\E605";\n}\n\n.el-icon-kb-key-online3:before {\n  content: "\\E606";\n}\n\n.el-icon-kb-key-backspace:before {\n  content: "\\E607";\n}\n\n.el-icon-kb-key-computer:before {\n  content: "\\E608";\n}\n\n.el-icon-kb-copy:before {\n  content: "\\E609";\n}\n\n.el-icon-kb-key-collection:before {\n  content: "\\E60A";\n}\n\n.el-icon-kb-key-online1:before {\n  content: "\\E60B";\n}\n\n.el-icon-kb-cate1:before {\n  content: "\\E60C";\n}\n\n.el-icon-kb-macro-edit:before {\n  content: "\\E60D";\n}\n\n.el-icon-kb-disable:before {\n  content: "\\E60F";\n}\n\n.el-icon-kb-mac:before {\n  content: "\\E610";\n}\n\n.el-icon-kb-lang:before {\n  content: "\\E611";\n}\n\n.el-icon-kb-media:before {\n  content: "\\E614";\n}\n\n.el-icon-kb-play:before {\n  content: "\\E615";\n}\n\n.el-icon-kb-key-calc:before {\n  content: "\\E617";\n}\n\n.el-icon-kb-keydown2:before {\n  content: "\\E618";\n}\n\n.el-icon-kb-system:before {\n  content: "\\E61A";\n}\n\n.el-icon-kb-comb-o:before {\n  content: "\\E61B";\n}\n\n.el-icon-kb-key-copy:before {\n  content: "\\E61D";\n}\n\n.el-icon-kb-key-browser-backward:before {\n  content: "\\E61E";\n}\n\n.el-icon-kb-key-browser-forward:before {\n  content: "\\E623";\n}\n\n.el-icon-kb-stop:before {\n  content: "\\E626";\n}\n\n.el-icon-kb-key-forward:before {\n  content: "\\E629";\n}\n\n.el-icon-kb-macro-insert:before {\n  content: "\\E62A";\n}\n\n.el-icon-kb-delay:before {\n  content: "\\E62B";\n}\n\n.el-icon-kb-light:before {\n  content: "\\E631";\n}\n\n.el-icon-kb-number:before {\n  content: "\\E634";\n}\n\n.el-icon-kb-switch:before {\n  content: "\\E636";\n}\n\n.el-icon-kb-cmd:before {\n  content: "\\E637";\n}\n\n.el-icon-kb-key-email:before {\n  content: "\\E63B";\n}\n\n.el-icon-kb-keydown:before {\n  content: "\\E63C";\n}\n\n.el-icon-kb-key-online2:before {\n  content: "\\E641";\n}\n\n.el-icon-kb-light1:before {\n  content: "\\E642";\n}\n\n.el-icon-kb-cate:before {\n  content: "\\E653";\n}\n\n.el-icon-kb-key-ps:before {\n  content: "\\E654";\n}\n\n.el-icon-kb-mouse2:before {\n  content: "\\E659";\n}\n\n.el-icon-kb--insert:before {\n  content: "\\E65F";\n}\n\n.el-icon-kb-key-browser-refresh:before {\n  content: "\\E660";\n}\n\n.el-icon-kb-select:before {\n  content: "\\E661";\n}\n\n.el-icon-kb-express-up-icon:before {\n  content: "\\E66E";\n}\n\n.el-icon-kb-express-down-icon:before {\n  content: "\\E66F";\n}\n\n.el-icon-kb-key-home:before {\n  content: "\\E670";\n}\n\n.el-icon-kb-mouse3:before {\n  content: "\\E673";\n}\n\n.el-icon-kb-keyup:before {\n  content: "\\E67A";\n}\n\n.el-icon-kb-Insert3:before {\n  content: "\\E686";\n}\n\n.el-icon-kb-key-mouse-mid:before {\n  content: "\\E697";\n}\n\n.el-icon-kb-key-backward:before {\n  content: "\\E69D";\n}\n\n.el-icon-kb-key-std:before {\n  content: "\\E6A1";\n}\n\n.el-icon-kb-key-layer1:before {\n  content: "\\E6A3";\n}\n\n.el-icon-kb-key-layer3:before {\n  content: "\\E6A4";\n}\n\n.el-icon-kb-key-layer2:before {\n  content: "\\E6A5";\n}\n\n.el-icon-kb-key-paste:before {\n  content: "\\E6B2";\n}\n\n.el-icon-kb-disabled1:before {\n  content: "\\E6CB";\n}\n\n.el-icon-kb-macro-start:before {\n  content: "\\E6DD";\n}\n\n.el-icon-kb-key-volume-mute:before {\n  content: "\\E716";\n}\n\n.el-icon-kb-light3:before {\n  content: "\\E74C";\n}\n\n.el-icon-kb-key-mouse-left:before {\n  content: "\\E757";\n}\n\n.el-icon-kb-key-mouse-right:before {\n  content: "\\E758";\n}\n\n.el-icon-kb-movedown1:before {\n  content: "\\E75A";\n}\n\n.el-icon-kb-moveup1:before {\n  content: "\\E75B";\n}\n\n.el-icon-kb-macro-stop:before {\n  content: "\\E791";\n}\n\n.el-icon-kb-linux:before {\n  content: "\\E7D9";\n}\n\n.el-icon-kb-key-volume-inc:before {\n  content: "\\E7E7";\n}\n\n.el-icon-kb-key-volume-dec:before {\n  content: "\\E7E8";\n}\n\n.el-icon-kb-key-play-pause:before {\n  content: "\\E7F1";\n}\n\n.el-icon-kb-key-next:before {\n  content: "\\E7FF";\n}\n\n.el-icon-kb-key-prev:before {\n  content: "\\E800";\n}\n\n.el-icon-kb-keyboard:before {\n  content: "\\E82B";\n}\n\n.el-icon-kb-key-stop:before {\n  content: "\\E867";\n}\n\n.el-icon-kb-windows:before {\n  content: "\\E8EE";\n}\n\n.el-icon-kb-f10:before {\n  content: "\\E905";\n}\n\n.el-icon-kb-f11:before {\n  content: "\\E906";\n}\n\n.el-icon-kb-f12:before {\n  content: "\\E907";\n}\n\n.el-icon-kb-f13:before {\n  content: "\\E908";\n}\n\n.el-icon-kb-f14:before {\n  content: "\\E909";\n}\n\n.el-icon-kb-f15:before {\n  content: "\\E90A";\n}\n\n.el-icon-kb-f16:before {\n  content: "\\E90B";\n}\n\n.el-icon-kb-f17:before {\n  content: "\\E90C";\n}\n\n.el-icon-kb-f18:before {\n  content: "\\E90D";\n}\n\n.el-icon-kb-f19:before {\n  content: "\\E90E";\n}\n\n.el-icon-kb-f20:before {\n  content: "\\E90F";\n}\n\n.el-icon-kb-f21:before {\n  content: "\\E910";\n}\n\n.el-icon-kb-f22:before {\n  content: "\\E911";\n}\n\n.el-icon-kb-f23:before {\n  content: "\\E912";\n}\n\n.el-icon-kb-f24:before {\n  content: "\\E913";\n}\n\n.el-icon-kb-esc:before {\n  content: "\\E914";\n}\n\n.el-icon-kb-f1:before {\n  content: "\\E915";\n}\n\n.el-icon-kb-f2:before {\n  content: "\\E916";\n}\n\n.el-icon-kb-f3:before {\n  content: "\\E917";\n}\n\n.el-icon-kb-f4:before {\n  content: "\\E918";\n}\n\n.el-icon-kb-f5:before {\n  content: "\\E919";\n}\n\n.el-icon-kb-f6:before {\n  content: "\\E91A";\n}\n\n.el-icon-kb-f7:before {\n  content: "\\E91B";\n}\n\n.el-icon-kb-f8:before {\n  content: "\\E91C";\n}\n\n.el-icon-kb-f9:before {\n  content: "\\E91D";\n}\n\n.el-icon-kb-enter:before {\n  content: "\\E91E";\n}\n\n.el-icon-kb-space:before {\n  content: "\\E91F";\n}\n\n.el-icon-kb-backspace:before {\n  content: "\\E920";\n}\n\n.el-icon-kb-capslock:before {\n  content: "\\E921";\n}\n\n.el-icon-kb-left-win:before {\n  content: "\\E922";\n}\n\n.el-icon-kb-right-alt:before {\n  content: "\\E923";\n}\n\n.el-icon-kb-right-ctrl:before {\n  content: "\\E924";\n}\n\n.el-icon-kb-right-shift:before {\n  content: "\\E925";\n}\n\n.el-icon-kb-right-win:before {\n  content: "\\E926";\n}\n\n.el-icon-kb-left-alt:before {\n  content: "\\E927";\n}\n\n.el-icon-kb-left-ctrl:before {\n  content: "\\E928";\n}\n\n.el-icon-kb-left-shift:before {\n  content: "\\E929";\n}\n\n.el-icon-kb-control-command:before {\n  content: "\\E92A";\n}\n\n.el-icon-kb-control-option:before {\n  content: "\\E92B";\n}\n\n.el-icon-kb-control-option-uppercase:before {\n  content: "\\E92C";\n}\n\n.el-icon-kb-control-option-uppercase-command:before {\n  content: "\\E92D";\n}\n\n.el-icon-kb-control-uppercase-command:before {\n  content: "\\E92E";\n}\n\n.el-icon-kb-option-command:before {\n  content: "\\E92F";\n}\n\n.el-icon-kb-option-uppercase-command:before {\n  content: "\\E930";\n}\n\n.el-icon-kb-uppercase-command:before {\n  content: "\\E931";\n}\n\n.el-icon-kb-uppercase-control:before {\n  content: "\\E932";\n}\n\n.el-icon-kb-uppercase-option:before {\n  content: "\\E933";\n}\n\n.el-icon-kb-option:before {\n  content: "\\E934";\n}\n\n.el-icon-kb-uppercase:before {\n  content: "\\E935";\n}\n\n.el-icon-kb-control:before {\n  content: "\\E936";\n}\n\n.el-icon-kb-command:before {\n  content: "\\E937";\n}\n\n.el-icon-kb-multiform:before {\n  content: "\\E938";\n}\n\n.el-icon-kb-multitask:before {\n  content: "\\E939";\n}\n\n.el-icon-kb-pauselight:before {\n  content: "\\E93A";\n}\n\n.el-icon-kb-screenshot:before {\n  content: "\\E93B";\n}\n\n.el-icon-kb-sunlightdown:before {\n  content: "\\E93C";\n}\n\n.el-icon-kb-sunlightup:before {\n  content: "\\E93D";\n}\n\n.el-icon-kb-voice:before {\n  content: "\\E93E";\n}\n\n.el-icon-kb-backlight_brightness_up:before {\n  content: "\\E93F";\n}\n\n.el-icon-kb-backlight_brightness_down:before {\n  content: "\\E940";\n}\n\n.el-icon-kb-closelight:before {\n  content: "\\E941";\n}\n\n.el-icon-kb-handwritingboard:before {\n  content: "\\E942";\n}\n\n.el-icon-kb-lightspeedfast:before {\n  content: "\\E943";\n}\n\n.el-icon-kb-lightspeedlow:before {\n  content: "\\E944";\n}\n\n.el-icon-kb-customlight:before {\n  content: "\\E945";\n}\n\n.el-icon-kb-singlekeylight:before {\n  content: "\\E946";\n}\n\n.el-icon-kb-edit-setting:before {\n  content: "\\E947";\n}\n\n.el-icon-kb-setting:before {\n  content: "\\E948";\n}\n\n.el-icon-kb-num-add:before {\n  content: "\\E949";\n}\n\n.el-icon-kb-num-decimal:before {\n  content: "\\E94A";\n}\n\n.el-icon-kb-num-divide:before {\n  content: "\\E94B";\n}\n\n.el-icon-kb-numlock:before {\n  content: "\\E94C";\n}\n\n.el-icon-kb-num-enter:before {\n  content: "\\E94D";\n}\n\n.el-icon-kb-num-multiply:before {\n  content: "\\E94E";\n}\n\n.el-icon-kb-num-subtract:before {\n  content: "\\E94F";\n}\n\n.el-icon-kb-page-down:before {\n  content: "\\E950";\n}\n\n.el-icon-kb-page-up:before {\n  content: "\\E951";\n}\n\n.el-icon-kb-pausebreak:before {\n  content: "\\E952";\n}\n\n.el-icon-kb-printscreen:before {\n  content: "\\E953";\n}\n\n.el-icon-kb-scrolllock:before {\n  content: "\\E954";\n}\n\n.el-icon-kb-tab:before {\n  content: "\\E955";\n}\n\n.el-icon-kb-delete:before {\n  content: "\\E956";\n}\n\n.el-icon-kb-end:before {\n  content: "\\E957";\n}\n\n.el-icon-kb-home:before {\n  content: "\\E958";\n}\n\n.el-icon-kb-insert:before {\n  content: "\\E959";\n}\n\n.el-icon-kb-menu:before {\n  content: "\\E95A";\n}\n\n.el-icon-kb-num-equals:before {\n  content: "\\E95B";\n}\n\n.el-icon-kb-num5:before {\n  content: "\\E95C";\n}\n\n.el-icon-kb-num6:before {\n  content: "\\E95D";\n}\n\n.el-icon-kb-num7:before {\n  content: "\\E95E";\n}\n\n.el-icon-kb-num8:before {\n  content: "\\E95F";\n}\n\n.el-icon-kb-num9:before {\n  content: "\\E960";\n}\n\n.el-icon-kb-num0:before {\n  content: "\\E961";\n}\n\n.el-icon-kb-num1:before {\n  content: "\\E962";\n}\n\n.el-icon-kb-num2:before {\n  content: "\\E963";\n}\n\n.el-icon-kb-num3:before {\n  content: "\\E964";\n}\n\n.el-icon-kb-num4:before {\n  content: "\\E965";\n}\n\n.el-icon-kb-movedown:before {\n  content: "\\EA34";\n}\n\n.el-icon-kb-moveup:before {\n  content: "\\EA35";\n}\n\n.el-icon-kb-insert2:before {\n  content: "\\EA39";\n}\n\n.el-icon-kb-key-media:before {\n  content: "\\EDD4";\n}\n\n.el-icon-kb-mouse-right:before {\n  content: "\\F0D3";\n}\n\n.el-icon-kb-mouse-left:before {\n  content: "\\F7D0";\n}\n\n.el-icon-kb-movedown1-copy:before {\n  content: "\\F7D1";\n}\n',""])},91719:function(n,e,o){var t=o(67772);t.__esModule&&(t=t.default),"string"===typeof t&&(t=[[n.id,t,""]]),t.locals&&(n.exports=t.locals);var c=o(70534).A;c("36ba100d",t,!0,{})}}]);
+(self["webpackChunkkeyboard_driver"] = self["webpackChunkkeyboard_driver"] || []).push([
+    [1719], 
+    {
+        67772: function(n, e, o) {
+            e = n.exports = o(54765)(!1),
+            e.push([
+                n.id,
+                `
+@font-face {
+    font-family: 'iconfont';
+    src: url(${o(74684)});
+    src: url(${o(74684)}#iefix) format('embedded-opentype'),
+         url(${o(20054)}) format('truetype'),
+         url(${o(70916)}) format('woff'),
+         url(${o(82701)}#iconfont) format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="el-icon-kb-"], 
+[class*=" el-icon-kb-"] {
+    font-family: 'iconfont' !important;
+}
+
+[class^="el-icon-kb-"], 
+[class*=" el-icon-kb-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-feature-settings: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.el-icon-kb-hanja:before {
+    content: "\\E900";
+}
+
+.el-icon-kb-katakana-hiragana:before {
+    content: "\\E901";
+}
+
+.el-icon-kb-korea-england:before {
+    content: "\\E902";
+}
+
+.el-icon-kb-non-conversion:before {
+    content: "\\E903";
+}
+
+.el-icon-kb-conversion:before {
+    content: "\\E904";
+}
+
+.el-icon-kb-insert1:before {
+    content: "\\E600";
+}
+
+.el-icon-kb-mouse4:before {
+    content: "\\E601";
+}
+
+.el-icon-kb-computer2:before {
+    content: "\\E602";
+}
+
+.el-icon-kb-right:before {
+    content: "\\E603";
+}
+
+.el-icon-kb-copy1:before {
+    content: "\\E604";
+}
+
+.el-icon-kb-comb:before {
+    content: "\\E605";
+}
+
+.el-icon-kb-key-online3:before {
+    content: "\\E606";
+}
+
+.el-icon-kb-key-backspace:before {
+    content: "\\E607";
+}
+
+.el-icon-kb-key-computer:before {
+    content: "\\E608";
+}
+
+.el-icon-kb-copy:before {
+    content: "\\E609";
+}
+
+.el-icon-kb-key-collection:before {
+    content: "\\E60A";
+}
+
+.el-icon-kb-key-online1:before {
+    content: "\\E60B";
+}
+
+.el-icon-kb-cate1:before {
+    content: "\\E60C";
+}
+
+.el-icon-kb-macro-edit:before {
+    content: "\\E60D";
+}
+
+.el-icon-kb-disable:before {
+    content: "\\E60F";
+}
+
+.el-icon-kb-mac:before {
+    content: "\\E610";
+}
+
+.el-icon-kb-lang:before {
+    content: "\\E611";
+}
+
+.el-icon-kb-media:before {
+    content: "\\E614";
+}
+
+.el-icon-kb-play:before {
+    content: "\\E615";
+}
+
+.el-icon-kb-key-calc:before {
+    content: "\\E617";
+}
+
+.el-icon-kb-keydown2:before {
+    content: "\\E618";
+}
+
+.el-icon-kb-system:before {
+    content: "\\E61A";
+}
+
+.el-icon-kb-comb-o:before {
+    content: "\\E61B";
+}
+
+.el-icon-kb-key-copy:before {
+    content: "\\E61D";
+}
+
+.el-icon-kb-key-browser-backward:before {
+    content: "\\E61E";
+}
+
+.el-icon-kb-key-browser-forward:before {
+    content: "\\E623";
+}
+
+.el-icon-kb-stop:before {
+    content: "\\E626";
+}
+
+.el-icon-kb-key-forward:before {
+    content: "\\E629";
+}
+
+.el-icon-kb-macro-insert:before {
+    content: "\\E62A";
+}
+
+.el-icon-kb-delay:before {
+    content: "\\E62B";
+}
+
+.el-icon-kb-light:before {
+    content: "\\E631";
+}
+
+.el-icon-kb-number:before {
+    content: "\\E634";
+}
+
+.el-icon-kb-switch:before {
+    content: "\\E636";
+}
+
+.el-icon-kb-cmd:before {
+    content: "\\E637";
+}
+
+.el-icon-kb-key-email:before {
+    content: "\\E63B";
+}
+
+.el-icon-kb-keydown:before {
+    content: "\\E63C";
+}
+
+.el-icon-kb-key-online2:before {
+    content: "\\E641";
+}
+
+.el-icon-kb-light1:before {
+    content: "\\E642";
+}
+
+.el-icon-kb-cate:before {
+    content: "\\E653";
+}
+
+.el-icon-kb-key-ps:before {
+    content: "\\E654";
+}
+
+.el-icon-kb-mouse2:before {
+    content: "\\E659";
+}
+
+.el-icon-kb--insert:before {
+    content: "\\E65F";
+}
+
+.el-icon-kb-key-browser-refresh:before {
+    content: "\\E660";
+}
+
+.el-icon-kb-select:before {
+    content: "\\E661";
+}
+
+.el-icon-kb-express-up-icon:before {
+    content: "\\E66E";
+}
+
+.el-icon-kb-express-down-icon:before {
+    content: "\\E66F";
+}
+
+.el-icon-kb-key-home:before {
+    content: "\\E670";
+}
+
+.el-icon-kb-mouse3:before {
+    content: "\\E673";
+}
+
+.el-icon-kb-keyup:before {
+    content: "\\E67A";
+}
+
+.el-icon-kb-Insert3:before {
+    content: "\\E686";
+}
+
+.el-icon-kb-key-mouse-mid:before {
+    content: "\\E697";
+}
+
+.el-icon-kb-key-backward:before {
+    content: "\\E69D";
+}
+
+.el-icon-kb-key-std:before {
+    content: "\\E6A1";
+}
+
+.el-icon-kb-key-layer1:before {
+    content: "\\E6A3";
+}
+
+.el-icon-kb-key-layer3:before {
+    content: "\\E6A4";
+}
+
+.el-icon-kb-key-layer2:before {
+    content: "\\E6A5";
+}
+
+.el-icon-kb-key-paste:before {
+    content: "\\E6B2";
+}
+
+.el-icon-kb-disabled1:before {
+    content: "\\E6CB";
+}
+
+.el-icon-kb-macro-start:before {
+    content: "\\E6DD";
+}
+
+.el-icon-kb-key-volume-mute:before {
+    content: "\\E716";
+}
+
+.el-icon-kb-light3:before {
+    content: "\\E74C";
+}
+
+.el-icon-kb-key-mouse-left:before {
+    content: "\\E757";
+}
+
+.el-icon-kb-key-mouse-right:before {
+    content: "\\E758";
+}
+
+.el-icon-kb-movedown1:before {
+    content: "\\E75A";
+}
+
+.el-icon-kb-moveup1:before {
+    content: "\\E75B";
+}
+
+.el-icon-kb-macro-stop:before {
+    content: "\\E791";
+}
+
+.el-icon-kb-linux:before {
+    content: "\\E7D9";
+}
+
+.el-icon-kb-key-volume-inc:before {
+    content: "\\E7E7";
+}
+
+.el-icon-kb-key-volume-dec:before {
+    content: "\\E7E8";
+}
+
+.el-icon-kb-key-play-pause:before {
+    content: "\\E7F1";
+}
+
+.el-icon-kb-key-next:before {
+    content: "\\E7FF";
+}
+
+.el-icon-kb-key-prev:before {
+    content: "\\E800";
+}
+
+.el-icon-kb-keyboard:before {
+    content: "\\E82B";
+}
+
+.el-icon-kb-key-stop:before {
+    content: "\\E867";
+}
+
+.el-icon-kb-windows:before {
+    content: "\\E8EE";
+}
+
+.el-icon-kb-f10:before {
+    content: "\\E905";
+}
+
+.el-icon-kb-f11:before {
+    content: "\\E906";
+}
+
+.el-icon-kb-f12:before {
+    content: "\\E907";
+}
+
+.el-icon-kb-f13:before {
+    content: "\\E908";
+}
+
+.el-icon-kb-f14:before {
+    content: "\\E909";
+}
+
+.el-icon-kb-f15:before {
+    content: "\\E90A";
+}
+
+.el-icon-kb-f16:before {
+    content: "\\E90B";
+}
+
+.el-icon-kb-f17:before {
+    content: "\\E90C";
+}
+
+.el-icon-kb-f18:before {
+    content: "\\E90D";
+}
+
+.el-icon-kb-f19:before {
+    content: "\\E90E";
+}
+
+.el-icon-kb-f20:before {
+    content: "\\E90F";
+}
+
+.el-icon-kb-f21:before {
+    content: "\\E910";
+}
+
+.el-icon-kb-f22:before {
+    content: "\\E911";
+}
+
+.el-icon-kb-f23:before {
+    content: "\\E912";
+}
+
+.el-icon-kb-f24:before {
+    content: "\\E913";
+}
+
+.el-icon-kb-esc:before {
+    content: "\\E914";
+}
+
+.el-icon-kb-f1:before {
+    content: "\\E915";
+}
+
+.el-icon-kb-f2:before {
+    content: "\\E916";
+}
+
+.el-icon-kb-f3:before {
+    content: "\\E917";
+}
+
+.el-icon-kb-f4:before {
+    content: "\\E918";
+}
+
+.el-icon-kb-f5:before {
+    content: "\\E919";
+}
+
+.el-icon-kb-f6:before {
+    content: "\\E91A";
+}
+
+.el-icon-kb-f7:before {
+    content: "\\E91B";
+}
+
+.el-icon-kb-f8:before {
+    content: "\\E91C";
+}
+
+.el-icon-kb-f9:before {
+    content: "\\E91D";
+}
+
+.el-icon-kb-enter:before {
+    content: "\\E91E";
+}
+
+.el-icon-kb-space:before {
+    content: "\\E91F";
+}
+
+.el-icon-kb-backspace:before {
+    content: "\\E920";
+}
+
+.el-icon-kb-capslock:before {
+    content: "\\E921";
+}
+
+.el-icon-kb-left-win:before {
+    content: "\\E922";
+}
+
+.el-icon-kb-right-alt:before {
+    content: "\\E923";
+}
+
+.el-icon-kb-right-ctrl:before {
+    content: "\\E924";
+}
+
+.el-icon-kb-right-shift:before {
+    content: "\\E925";
+}
+
+.el-icon-kb-right-win:before {
+    content: "\\E926";
+}
+
+.el-icon-kb-left-alt:before {
+    content: "\\E927";
+}
+
+.el-icon-kb-left-ctrl:before {
+    content: "\\E928";
+}
+
+.el-icon-kb-left-shift:before {
+    content: "\\E929";
+}
+
+.el-icon-kb-control-command:before {
+    content: "\\E92A";
+}
+
+.el-icon-kb-control-option:before {
+    content: "\\E92B";
+}
+
+.el-icon-kb-control-option-uppercase:before {
+    content: "\\E92C";
+}
+
+.el-icon-kb-control-option-uppercase-command:before {
+    content: "\\E92D";
+}
+
+.el-icon-kb-control-uppercase-command:before {
+    content: "\\E92E";
+}
+
+.el-icon-kb-option-command:before {
+    content: "\\E92F";
+}
+
+.el-icon-kb-option-uppercase-command:before {
+    content: "\\E930";
+}
+
+.el-icon-kb-uppercase-command:before {
+    content: "\\E931";
+}
+
+.el-icon-kb-uppercase-control:before {
+    content: "\\E932";
+}
+
+.el-icon-kb-uppercase-option:before {
+    content: "\\E933";
+}
+
+.el-icon-kb-option:before {
+    content: "\\E934";
+}
+
+.el-icon-kb-uppercase:before {
+    content: "\\E935";
+}
+
+.el-icon-kb-control:before {
+    content: "\\E936";
+}
+
+.el-icon-kb-command:before {
+    content: "\\E937";
+}
+
+.el-icon-kb-multiform:before {
+    content: "\\E938";
+}
+
+.el-icon-kb-multitask:before {
+    content: "\\E939";
+}
+
+.el-icon-kb-pauselight:before {
+    content: "\\E93A";
+}
+
+.el-icon-kb-screenshot:before {
+    content: "\\E93B";
+}
+
+.el-icon-kb-sunlightdown:before {
+    content: "\\E93C";
+}
+
+.el-icon-kb-sunlightup:before {
+    content: "\\E93D";
+}
+
+.el-icon-kb-voice:before {
+    content: "\\E93E";
+}
+
+.el-icon-kb-backlight_brightness_up:before {
+    content: "\\E93F";
+}
+
+.el-icon-kb-backlight_brightness_down:before {
+    content: "\\E940";
+}
+
+.el-icon-kb-closelight:before {
+    content: "\\E941";
+}
+
+.el-icon-kb-handwritingboard:before {
+    content: "\\E942";
+}
+
+.el-icon-kb-lightspeedfast:before {
+    content: "\\E943";
+}
+
+.el-icon-kb-lightspeedlow:before {
+    content: "\\E944";
+}
+
+.el-icon-kb-customlight:before {
+    content: "\\E945";
+}
+
+.el-icon-kb-singlekeylight:before {
+    content: "\\E946";
+}
+
+.el-icon-kb-edit-setting:before {
+    content: "\\E947";
+}
+
+.el-icon-kb-setting:before {
+    content: "\\E948";
+}
+
+.el-icon-kb-num-add:before {
+    content: "\\E949";
+}
+
+.el-icon-kb-num-decimal:before {
+    content: "\\E94A";
+}
+
+.el-icon-kb-num-divide:before {
+    content: "\\E94B";
+}
+
+.el-icon-kb-numlock:before {
+    content: "\\E94C";
+}
+
+.el-icon-kb-num-enter:before {
+    content: "\\E94D";
+}
+
+.el-icon-kb-num-multiply:before {
+    content: "\\E94E";
+}
+
+.el-icon-kb-num-subtract:before {
+    content: "\\E94F";
+}
+
+.el-icon-kb-page-down:before {
+    content: "\\E950";
+}
+
+.el-icon-kb-page-up:before {
+    content: "\\E951";
+}
+
+.el-icon-kb-pausebreak:before {
+    content: "\\E952";
+}
+
+.el-icon-kb-printscreen:before {
+    content: "\\E953";
+}
+
+.el-icon-kb-scrolllock:before {
+    content: "\\E954";
+}
+
+.el-icon-kb-tab:before {
+    content: "\\E955";
+}
+
+.el-icon-kb-delete:before {
+    content: "\\E956";
+}
+
+.el-icon-kb-end:before {
+    content: "\\E957";
+}
+
+.el-icon-kb-home:before {
+    content: "\\E958";
+}
+
+.el-icon-kb-insert:before {
+    content: "\\E959";
+}
+
+.el-icon-kb-menu:before {
+    content: "\\E95A";
+}
+
+.el-icon-kb-num-equals:before {
+    content: "\\E95B";
+}
+
+.el-icon-kb-num5:before {
+    content: "\\E95C";
+}
+
+.el-icon-kb-num6:before {
+    content: "\\E95D";
+}
+
+.el-icon-kb-num7:before {
+    content: "\\E95E";
+}
+
+.el-icon-kb-num8:before {
+    content: "\\E95F";
+}
+
+.el-icon-kb-num9:before {
+    content: "\\E960";
+}
+
+.el-icon-kb-num0:before {
+    content: "\\E961";
+}
+
+.el-icon-kb-num1:before {
+    content: "\\E962";
+}
+
+.el-icon-kb-num2:before {
+    content: "\\E963";
+}
+
+.el-icon-kb-num3:before {
+    content: "\\E964";
+}
+
+.el-icon-kb-num4:before {
+    content: "\\E965";
+}
+
+.el-icon-kb-movedown:before {
+    content: "\\EA34";
+}
+
+.el-icon-kb-moveup:before {
+    content: "\\EA35";
+}
+
+.el-icon-kb-insert2:before {
+    content: "\\EA39";
+}
+
+.el-icon-kb-key-media:before {
+    content: "\\EDD4";
+}
+
+.el-icon-kb-mouse-right:before {
+    content: "\\F0D3";
+}
+
+.el-icon-kb-mouse-left:before {
+    content: "\\F7D0";
+}
+
+.el-icon-kb-movedown1-copy:before {
+    content: "\\F7D1";
+}
+                `,
+                ""
+            ])
+        },
+        91719: function(n, e, o) {
+            var t = o(67772);
+            t.__esModule && (t = t.default),
+            "string" === typeof t && (t = [[n.id, t, ""]]),
+            t.locals && (n.exports = t.locals);
+            var c = o(70534).A;
+            c("36ba100d", t, !0, {})
+        }
+    }
+]);
