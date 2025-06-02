@@ -7,6 +7,15 @@ const EventEmitter = require('events').EventEmitter;
 const eventBus = new EventEmitter();
 const { platform } = require('os');
 const { app, BrowserWindow, ipcMain, Menu, Tray, nativeImage } = require('electron');
+// debug
+process.on('uncaughtException', (err) => {
+  console.error('💥 Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('💥 Unhandled Promise Rejection:', reason);
+});
+// end debug
 if (!config.debug) {
   Menu.setApplicationMenu(false);
 }
@@ -30,7 +39,14 @@ async function createWindow() {
     }
   });
 
-  sdk = SDK(win, eventBus);
+  // debug
+  console.log("Creating SDK");
+  try {
+    sdk = SDK(win, eventBus);
+  } catch (e) {
+    console.error("❌ Failed to create SDK:", e);
+  }
+  // end debug
   await win.loadURL(config.startPage || `file://${path.join(__dirname, '../ui/index.html')}`);
 
   if (config.debug) {

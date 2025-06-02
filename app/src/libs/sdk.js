@@ -31,31 +31,56 @@ module.exports = function (win,eventBus) {
         },
         ChangeMode({ModelID,ModeIndex}){
             console.log('change mode',{ModelID,ModeIndex});
-            Device.getDeviceByModelId(ModelID).then(async (device)=>{
-                if(ModeIndex!==5){
-                   if(device.isOnline()){
-                    Driver.stopModelLE(ModelID);
-                   await device.request(CMD.ToggleKeyReport(false));
-                    await new Promise((resolve)=>setTimeout(resolve, 200));
-                   }
-                }else{
-                    await  device.setOnlineMode(); 
+            /*
+             Rewrited for fix crash on mode changes
+             it partialy works, but app still can crash sometimes on mode changes
+            */
+            Device.getDeviceByModelId(ModelID).then(async (device) => {
+                if (!device) {
+                    console.error(`❌ Device with ModelID ${ModelID} not found`);
+                    return;
                 }
-                device.hasChangedMode = true;
-                if(!device.hasChangedMode){
-                    device.hasChangedMode=true;
-                    setTimeout(()=>{
-                        device.request(CMD.CHANGE_MODE(ModeIndex)).then(result=>{
-                            console.log('change mode',result);
-                        });
-                    },2500);
-                }else{
-                    device.request(CMD.CHANGE_MODE(ModeIndex)).then(result=>{
-                        console.log('change mode',result);
-                    });
-               }
-                
+
+                if (!ModelID || typeof ModelID !== 'number') {
+                    console.warn('⚠️ Invalid ModelID received:', ModelID);
+                }а
+
+                try {
+                    if (ModeIndex !== 5) {
+                        if (device.isOnline()) {
+                            Driver.stopModelLE(ModelID);
+                            await device.request(CMD.ToggleKeyReport(false));
+                            await new Promise(resolve => setTimeout(resolve, 200));
+                        }
+                    } else {
+                        await device.setOnlineMode();
+                    }
+
+                    device.hasChangedMode = true;
+
+                    const sendChangeMode = async () => {
+                        try {
+                            const result = await device.request(CMD.CHANGE_MODE(ModeIndex));
+                            console.log('✅ change mode', result);
+                        } catch (err) {
+                            console.error('❌ Error sending CHANGE_MODE:', err);
+                        }
+                    };
+
+                    if (!device.hasChangedMode) {
+                        device.hasChangedMode = true;
+                        setTimeout(sendChangeMode, 2500);
+                    } else {
+                        sendChangeMode();
+                    }
+
+                } catch (err) {
+                    console.error('❌ Error during ChangeMode:', err);
+                }
+            }).catch((err) => {
+                console.error('❌ Error resolving device:', err);
             });
+            // end of changes
           
             return Promise.resolve(true);
         },
