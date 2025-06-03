@@ -58,7 +58,6 @@ sudo chmod 666 /dev/hidraw*
 
 ## 💻 Running the application
 ```bash
-cd app
 npm start
 ```
 
@@ -68,12 +67,9 @@ npm start
 | Feature | Status |
 |---------|--------|
 | Keyboard detection | ✅ Tested, working |
-| Macro configuration | ⚠️ Not fully tested |
+| Macro configuration | ✅ Tested, working |
 | RGB lighting customization | ⚠️ Not fully tested |
-| Key mapping | ⚠️ Not fully tested |
-
-### Known issues
-- Some functions may cause the application to crash (like Win Set/Mac Set/Preset Lamp)
+| Key mapping | ✅ Tested, working |
 
 ## 🔍 Troubleshooting
 

@@ -9,6 +9,7 @@ const Driver = require('./driver');
 const CMD = require('./cmd');
 const {shell,dialog} = require('electron');
 const CCMLEManager = require('../libs/cmlemanager');
+let modeChangeLock = false; // check lock mode change, for crash fix
 module.exports = function (win,eventBus) {
     win.on('close',()=>{
         Device.release();
@@ -29,60 +30,64 @@ module.exports = function (win,eventBus) {
             win.webContents.openDevTools();
             return Promise.resolve(null);
         },
-        ChangeMode({ModelID,ModeIndex}){
-            console.log('change mode',{ModelID,ModeIndex});
-            /*
-             Rewrited for fix crash on mode changes
-             it partialy works, but app still can crash sometimes on mode changes
-            */
-            Device.getDeviceByModelId(ModelID).then(async (device) => {
+        ChangeMode({ ModelID, ModeIndex }) {
+            console.log('change mode', { ModelID, ModeIndex });
+
+            if (!ModelID || typeof ModelID !== 'number') {
+                console.warn('⚠️ Invalid ModelID received:', ModelID);
+                return Promise.resolve(false);
+            }
+
+            if (modeChangeLock) {
+                console.warn('⚠️ Mode change already in progress, skipping');
+                return Promise.resolve(false);
+            }
+
+            modeChangeLock = true;
+
+            return Device.getDeviceByModelId(ModelID).then(async (device) => {
                 if (!device) {
                     console.error(`❌ Device with ModelID ${ModelID} not found`);
-                    return;
+                    return false;
                 }
 
-                if (!ModelID || typeof ModelID !== 'number') {
-                    console.warn('⚠️ Invalid ModelID received:', ModelID);
-                }а
-
                 try {
-                    if (ModeIndex !== 5) {
-                        if (device.isOnline()) {
+                    if (ModeIndex !== 5 && device.isOnline()) {
+                        try {
                             Driver.stopModelLE(ModelID);
                             await device.request(CMD.ToggleKeyReport(false));
-                            await new Promise(resolve => setTimeout(resolve, 200));
+                            await new Promise(resolve => setTimeout(resolve, 300));
+                        } catch (err) {
+                            console.error("❌ Error in ToggleKeyReport:", err);
                         }
                     } else {
-                        await device.setOnlineMode();
+                        try {
+                            await device.setOnlineMode();
+                        } catch (err) {
+                            console.error("❌ Error in setOnlineMode:", err);
+                        }
                     }
 
-                    device.hasChangedMode = true;
+                    const command = CMD.CHANGE_MODE(ModeIndex);
+                    console.log("📤 Sending CHANGE_MODE command:", command);
 
-                    const sendChangeMode = async () => {
-                        try {
-                            const result = await device.request(CMD.CHANGE_MODE(ModeIndex));
-                            console.log('✅ change mode', result);
-                        } catch (err) {
-                            console.error('❌ Error sending CHANGE_MODE:', err);
-                        }
-                    };
-
-                    if (!device.hasChangedMode) {
-                        device.hasChangedMode = true;
-                        setTimeout(sendChangeMode, 2500);
-                    } else {
-                        sendChangeMode();
+                    try {
+                        const result = await device.request(command);
+                        console.log("✅ change mode", { mode: ModeIndex, result });
+                    } catch (err) {
+                        console.error("❌ Error during device.request(CHANGE_MODE):", err);
                     }
 
                 } catch (err) {
-                    console.error('❌ Error during ChangeMode:', err);
+                    console.error("❌ Unexpected error in ChangeMode:", err);
+                } finally {
+                    modeChangeLock = false;
                 }
+
             }).catch((err) => {
-                console.error('❌ Error resolving device:', err);
+                console.error("❌ Error resolving device by model ID:", err);
+                modeChangeLock = false;
             });
-            // end of changes
-          
-            return Promise.resolve(true);
         },
         OpenURL({URL}){
             shell.openExternal(URL);

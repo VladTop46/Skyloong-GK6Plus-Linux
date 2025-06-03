@@ -54,6 +54,12 @@ class Driver {
         return this;
     }
    async _onData(data) {
+        if (!Buffer.isBuffer(data) || data.length < 8) {
+            console.warn("⚠️ Invalid data buffer received:", data);
+            return false;
+        }
+        console.warn("⚠️ calling _onData(data)")
+
         debug && console.log('#receive data#',new Date(),data);
         if(data[0]==0x0b && !this.waitModeChange){
             // console.log('#mode change#',data[1]);
@@ -212,6 +218,11 @@ class Driver {
                        
                         if (!this.opened)this.close();
                        // setTimeout(()=>{
+                            if (!Buffer.isBuffer(data) || data.length < 8) {
+                                console.warn("⚠️ Invalid data buffer received:", data);
+                                return false;
+                            }
+                            console.warn("⚠️ calling resolve in request (cmd)")
                             resolve(cmd.res(data), data);
                        // },100);
                         
