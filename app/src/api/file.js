@@ -8,8 +8,12 @@ module.exports = ({fs,prefixes,eventBus})=>{
            // console.log('#get file#', fileName, Type)
             if(!fs.existsSync(fileName)){
                 console.log('#file not found#', fileName)
+                // Для profile_online файлов возвращаем null вместо ошибки
+                if(Path.includes('profile_online_')){
+                    return Promise.resolve(null);
+                }
                 return Promise.resolve({__error:true,code:0,message:`file not found:${fileName}`});
-            } 
+            }
             return fs.readFile(fileName)
             .then(buffer=>{
                 if(buffer[0]==0xEF && buffer[1]==0xBB && buffer[2]==0xBF){
